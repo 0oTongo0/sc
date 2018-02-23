@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>众联商城购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--头部-->
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<!--右侧固定热卖+购物车-->
+		<link rel="stylesheet" type="text/css" href="css/right-seller.css" />
+		<!--底部-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<!--购物车+log-->
+		<link rel="stylesheet" type="text/css" href="css/guc_log.css"/>
+		<link rel="stylesheet" type="text/css" href="css/account.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/account.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text" />
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部end-->
+		<!--log-->
+			<div class="header-log">
+				<div class="header-log-mian clearfix">
+					<h1 class="fl_lt"><a href="">众联商城</a></h1>
+					<span class="header-log-right fl_lt">购物车</span>
+					<div class="fl_rt header-log-mian-arrange">
+						<ul class="clearfix">
+							<!--颜色变化添加on-->
+							<li class="on">
+								<i class="ioc">1</i>
+								1.我的购物车
+							</li>
+							<li>
+								<i class="ioc">2</i>
+								2.填写核对订单信息
+							</li>	
+							<li>
+								<i class="ioc">3</i>
+								3.成功提交订单
+							</li>								
+						</ul>
+					</div>					
+				</div>
+			</div>
+		<!--logend-->
+		<!--主体-->
+		<div class="section-accounts table-responsive">
+			<p class="section-accounts-top">
+				<span style="color: #333;">全部商品</span>
+			</p>
+			<div class="section-accounts-center table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>选择</th>
+							<th>商品信息</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>金额</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="list">
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">111111</em>
+							</td>
+							<td>
+								<span class=" minus">-</span>
+								<span class=" input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class=" plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">1112222</em>
+							</td>
+							<td>
+								<span class="minus">-</span>
+								<span class="input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class="plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">111333</em>
+							</td>
+							<td>
+								<span class="minus">-</span>
+								<span class="input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class="plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+					</tbody>
+					<!--购物车为空时让vacancy显示-->
+					<div class="vacancy">
+						<img src="images/guc_kong.png"/>
+						<p>您的购物车内还没有商品!</p>
+						<a href="">
+							去购物
+						</a>
+					</div>
+				</table>
+				<div class="clearfix section-accounts-footer">
+					<div class="fl_lt section-accounts-footer-left">
+						<input type="checkbox" name="" value="" id="all" />
+						<label for="all" style="cursor: pointer;">全选</label>
+						<input type="button" id="del" value="全部清空" class="section-accounts-footer-left-but" />
+					</div>
+					<div class="fl_rt clearfix">
+						<div class="fl_lt text">
+							已选商品<strong id="jianshu">0</strong>件
+						</div>
+						<div class="fl_lt text">
+							合计:<strong id="AllTotal">0</strong>
+						</div>
+						<div class="fl_lt text bg">
+							<a href="" id="bg_link" style="background:#d41c1c; background-image:linear-gradient(to right, #f7325d 20%, #ff432c 80%);">
+								去结算
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--弹框提示-->
+				<div class="number">
+
+				</div>
+				<!--//弹框提示-->
+				<!--最大的蒙城-->
+				<div class="pop">
+					<div class="pop-mian">
+						<div class="pop-top clearfix">
+							<b id="del2" class="fl_rt" class="del">&times;</b>
+						</div>
+						<!--内容-->
+				<div class="pop-fot">
+							<p>是否删除商品？</p>
+							<div class="pop-fot-cik">
+								<a href="javascript:;" class="pop-fot-cik-left">确定</a>
+								<span  class="pop-fot-cik-right">取消</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--主体end-->
+		<!--底部-->
+		<div class="footer">
+			<!--4个图标-->
+			<div class="footer-top">
+				<ul class="footer-top-mian clearfix">
+					<li>
+						品类齐全，轻松购物
+					</li>
+					<li>
+						多仓直发，级速配送
+					</li>
+					<li>
+						正品行货，精致服务
+					</li>
+					<li>
+						天天低价，畅选无忧
+					</li>
+				</ul>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center clearfix">
+				<div class="footer-center-nav">
+					<h5>注销说明</h5>
+					<ul>
+						<li>
+							<a href="">优惠券</a>
+						</li>
+						<li>
+							<a href="">促销活动</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>付款方式</h5>
+					<ul>
+						<li>
+							<a href="">货到付款</a>
+						</li>
+						<li>
+							<a href="">在线支付</a>
+						</li>
+					</ul>
+				</div>
+				<!--一个地图-->
+				<div class="footer_map">
+					<p>众联自营覆盖区县</p>
+					<div>
+						众联已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。
+					</div>
+				</div>				
+			</div>
+			<!--版权说明-->
+			<div class="footer_fot">
+				<ul class="clearfix">
+					<li>
+						<a href="">
+							联系我们
+						</a>
+					</li>
+					<li>
+						<a href="">
+							关于我们
+						</a>
+					</li>
+				</ul>
+				<p>版权所有&copy;2018</p>
+				<div>
+					<a href=""><img src="images/gs.gif" /></a>
+				</div>
+			</div>
+		</div>
+		<!--版权说明end-->
+		<!--右边定位条-->
+		<div class="right-nav">
+			<div title="个人中心">
+				<a href="">
+					<img src="images/个人.png" />
+					<span href="">个人中心</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="购物车">
+				<a href="">
+					<img src="images/购物车空.png" />
+					<span href="">购物车</span>
+					<strong class="ico"></strong>
+					<i>1</i>
+				</a>
+			</div>
+			<div title="收藏">
+				<a href="">
+					<img src="images/sc.png" />
+					<span href="">收藏</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="回到底部" id="top">
+				<a>
+					<img src="images/top2.png" />
+					<span>回到顶部</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+		</div>
+		<!--右边定位条end-->
+	</body>
+
+</html>

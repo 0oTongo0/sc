@@ -1,0 +1,78 @@
+@charset "UTF-8";
+//头部
+.header-log{
+    width: 100%;
+    box-shadow: 0 1px 5px #ebebeb;
+    margin-bottom: 40px;
+    background: #fff;
+    .header-log-mian{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 33px;
+        padding-top: 43px;
+        h1{
+            width: 288px;
+            a{
+                display: block;
+                text-indent: -9999px;
+                height: 78px;
+                background: url(../images/商城logo.png)no-repeat;
+                background-size: contain;
+            }
+        }
+        .header-log-right{
+            display: block;
+            font-size: 33px;
+            border-left: 2px solid #f6f6f6;
+            line-height: 55px;
+            color: #888888;
+            padding: 0 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+//      右边的排列
+        .header-log-mian-arrange{
+            width: 360px;
+            margin-top: 30px;
+            margin-right: 25px;
+            ul{
+                width: 100%;
+                li{
+                    float: left;
+                    width: 33.3333%;
+                    line-height: 40px;
+                    position: relative;
+                    border-top: 5px solid #c4c4c4;
+                    font-size: 13px;
+                    text-align: center;
+                    color: #c4c4c4;
+                    .ioc{
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        border-radius: 50%;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 12px;
+                        line-height: 18px;
+                        top: -12px;
+                        left: 50%;
+                        margin-left: -9px;
+                        background: #c4c4c4;
+                        z-index: 99;
+                        font-style: normal;
+                    }
+                }
+                .on{
+                    border-top-color: #ff5a59;
+                    color: #ff5a59;
+                    .ioc{
+                        background: #ff5a59;
+                    }
+                }
+            }
+        }
+    }
+}

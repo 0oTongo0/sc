@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.header-log {
+  width: 100%;
+  box-shadow: 0 1px 5px #ebebeb;
+  margin-bottom: 40px;
+  background: #fff; }
+  .header-log .header-log-mian {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    padding-top: 43px; }
+    .header-log .header-log-mian h1 {
+      width: 288px; }
+      .header-log .header-log-mian h1 a {
+        display: block;
+        text-indent: -9999px;
+        height: 78px;
+        background: url(../images/商城logo.png) no-repeat;
+        background-size: contain; }
+    .header-log .header-log-mian .header-log-right {
+      display: block;
+      font-size: 33px;
+      border-left: 2px solid #f6f6f6;
+      line-height: 55px;
+      color: #888888;
+      padding: 0 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+      font-weight: 500; }
+    .header-log .header-log-mian .header-log-mian-arrange {
+      width: 360px;
+      margin-top: 30px;
+      margin-right: 25px; }
+      .header-log .header-log-mian .header-log-mian-arrange ul {
+        width: 100%; }
+        .header-log .header-log-mian .header-log-mian-arrange ul li {
+          float: left;
+          width: 33.3333%;
+          line-height: 40px;
+          position: relative;
+          border-top: 5px solid #c4c4c4;
+          font-size: 13px;
+          text-align: center;
+          color: #c4c4c4; }
+          .header-log .header-log-mian .header-log-mian-arrange ul li .ioc {
+            display: block;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            line-height: 18px;
+            top: -12px;
+            left: 50%;
+            margin-left: -9px;
+            background: #c4c4c4;
+            z-index: 99;
+            font-style: normal; }
+        .header-log .header-log-mian .header-log-mian-arrange ul .on {
+          border-top-color: #ff5a59;
+          color: #ff5a59; }
+          .header-log .header-log-mian .header-log-mian-arrange ul .on .ioc {
+            background: #ff5a59; }
+
+/*# sourceMappingURL=guc_log.css.map */

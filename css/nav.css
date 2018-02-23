@@ -1,0 +1,228 @@
+@charset "UTF-8";
+.section-nav {
+	width: 100%;
+	background: #ff5a59;
+}
+
+body {
+	background: #f5f5f5;
+}
+
+.section-nav-main {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.section-nav-main .section-nav-left {
+	width: 210px;
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	*background: #312b30;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 22px;
+}
+
+.section-nav-main .section-nav-left .classify {
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	background: url(../images/fl.png)no-repeat 40px center;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next {
+	width: 100%;
+	height: 420px;
+	position: absolute;
+	top: 42px;
+	font-size: 14px;
+	text-align: center;
+	background: rgba(21, 21, 21, 0.88);
+	font-size: 0;
+	display: none;
+	z-index: 999;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next li {
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next li span {
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	line-height: 38px;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next li a {
+	display: block;
+	font-size: 12px;
+	line-height: 23px;
+	color: #999;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next li .ioc {
+	display: block;
+	width: 44px;
+	height: 44px;
+	background: url(../images/fanhui.png) no-repeat center;
+	background-size: 50%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -22px;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next .on {
+	background: #fff;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next .on span {
+	font-weight: 700;
+	color: #464646;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next .on a {
+	color: #d41c1c;
+}
+
+.section-nav-main .section-nav-left .section-nav-left-next .bp:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 2px;
+	background: #D41C1C;
+}
+
+.section-nav-main .section-nav-left .next-right {
+	width: 800px;
+	height: 420px;
+	position: absolute;
+	top: 42px;
+	left: 210px;
+	background: #fff;
+	border-right: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	border-left-color: transparent;
+	box-shadow: inset -2px -2px 6px #F4F4F4;
+	z-index: 9999;
+	display: none;
+}
+
+.section-nav-main .section-nav-left .next-right .hide {
+	display: none;
+}
+
+.section-nav-main .section-nav-left .next-right .next-right-next {
+	width: 100%;
+	font-size: 12px;
+	color: #999;
+}
+.section-nav-main .section-nav-left .next-right .next-right-next a{
+	padding: 6px;
+	font-size: 14px;
+	color: #999;
+	margin: 6px;
+}
+.section-nav-main .section-nav-left .next-right .next-right-next a:hover{
+	color: #ff5a59;
+}
+.section-nav-main .section-nav-right {
+	width: 960px;
+}
+
+.section-nav-main .section-nav-right ul {
+	width: 100%;
+}
+
+.section-nav-main .section-nav-right ul li {
+	padding: 0 20px;
+}
+.section-nav-main .section-nav-right ul li:hover{
+	background: #fff;
+}
+.section-nav-main .section-nav-right ul li:hover a{
+	color: #ff5a59;
+	font-weight: 700;
+}
+.section-nav-main .section-nav-right ul li a {
+	color: #fff;
+	padding: 10px;
+	line-height: 42px;
+	transition: all 0.2s;
+}
+/*搜索*/
+.search {
+	width: 100%;
+	background: #fff;
+	padding: 10px 0;
+}
+
+.search .search-mian {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.search .search-mian .search-mian-log {
+	width: 288px;
+}
+
+.search .search-mian .search-mian-log a {
+	display: block;
+	text-indent: -9999px;
+	height: 78px;
+	background: url(../images/商城logo.png) no-repeat;
+	background-size: contain;
+}
+
+.search .search-mian .search-mian-right {
+	width: 872px;
+	padding-top: 23px;
+	margin-left: 40px;
+	font-size: 0;
+}
+
+.search .search-mian .search-mian-right .seek {
+	display: inline-block;
+	width: 503px;
+	height: 36px;
+	border: 1px solid #ff5a59;
+	vertical-align: middle;
+	font-size: 14px;
+	padding-left: 30px;
+	background: url(../images/fdj.png)no-repeat 4px center;
+}
+
+.search .search-mian .search-mian-right .sub {
+	display: inline-block;
+	vertical-align: middle;
+	width: 96px;
+	color: #fff;
+	background: #ff5a59;
+	letter-spacing: 2px;
+	line-height: 36px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.search .search-mian .search-mian-right .search-mian-right-footer {
+	width: 100%;
+}
+
+.search .search-mian .search-mian-right .search-mian-right-footer ul {
+	width: 100%;
+}
+
+.search .search-mian .search-mian-right .search-mian-right-footer ul a {
+	display: block;
+	color: #c4c4c4;
+	font-size: 12px;
+	padding: 6px 15px;
+}

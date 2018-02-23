@@ -1,0 +1,39 @@
+@charset "UTF-8";
+$yc:#ff5a59;
+//  左边
+    .main-left{
+        width: 180px;
+        background: #fff;
+        margin-right: 15px;
+        box-shadow: 0 0 3px #ccc;
+        height: 550px;
+        p{
+            line-height: 70px;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding-left: 15px;
+        }
+        .main-left-nav{
+            width: 100%;
+            padding-left: 33px;
+            li{
+                width: 100%;
+                text-align: left;
+                a{
+                    display: block;
+                    color: #888;
+                    font-size: 12px;
+                    padding: 10px 0;
+                    &:hover{
+                        color: $yc;
+                    }
+                }
+                .on{
+                    a{
+                        color: $yc;
+                    }
+                }
+            }
+        }
+    }

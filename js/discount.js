@@ -1,0 +1,10 @@
+$(function(){
+	$(".get").on('click',function(){
+		$(".pop").show(100).delay(1500).hide(300);
+		$(".ylq").show();
+		$(this).text("领取成功")
+		if($(this).text()=="领取成功"){
+			 $(this).unbind("click");
+		}
+	})
+})

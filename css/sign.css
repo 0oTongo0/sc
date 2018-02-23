@@ -1,0 +1,141 @@
+@charset "UTF-8";
+select::-ms-expand {
+  display: none; }
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+.header {
+  width: 100%;
+  box-shadow: 0 1px 5px #ebebeb;
+  margin-bottom: 40px; }
+  .header .header-log {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    padding-top: 43px; }
+    .header .header-log h1 {
+      width: 288px; }
+      .header .header-log h1 a {
+        display: block;
+        text-indent: -9999px;
+        height: 78px;
+        background: url(../images/商城logo.png) no-repeat;
+        background-size: contain; }
+    .header .header-log .header-log-right {
+      display: block;
+      font-size: 33px;
+      border-left: 2px solid #f6f6f6;
+      line-height: 55px;
+      color: #888888;
+      padding: 0 20px;
+      margin-left: 30px;
+      margin-top: 20px;
+      font-weight: 500; }
+
+.section {
+  width: 100%; }
+  .section .section-mian {
+    width: 1200px;
+    margin: 0 auto; }
+    .section .section-mian .section-mian-top {
+      width: 100%;
+      margin-bottom: -1px; }
+      .section .section-mian .section-mian-top .section-mian-top-left {
+        font-size: 13px;
+        line-height: 41px;
+        border: 1px solid #e6e6e6;
+        border-top: 2px solid #e3101e;
+        border-bottom: 1px solid #fff;
+        color: #e5313a;
+        padding: 0 48px;
+        z-index: 99; }
+      .section .section-mian .section-mian-top .section-mian-top-right {
+        color: #888888;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 20px; }
+        .section .section-mian .section-mian-top .section-mian-top-right a {
+          font-size: 14px;
+          color: #557afa;
+          margin-left: 3px; }
+    .section .section-mian .section-mian-top-center {
+      width: 100%;
+      border: 1px solid #e6e6e6;
+      padding-top: 40px;
+      padding-bottom: 62px; }
+      .section .section-mian .section-mian-top-center > div {
+        width: 100%; }
+        .section .section-mian .section-mian-top-center > div .hint {
+          height: 27px; }
+        .section .section-mian .section-mian-top-center > div label {
+          width: 120px;
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          vertical-align: middle;
+          text-align: right;
+          font-size: 13px;
+          color: #929292; }
+        .section .section-mian .section-mian-top-center > div input {
+          display: inline-block;
+          width: 296px;
+          line-height: 37px;
+          border: 1px solid #cccccc;
+          vertical-align: middle;
+          padding-left: 5px; }
+        .section .section-mian .section-mian-top-center > div .verify {
+          width: 131px; }
+        .section .section-mian .section-mian-top-center > div .gain {
+          width: 104px;
+          margin-left: 8px;
+          background: #fff;
+          cursor: pointer; }
+        .section .section-mian .section-mian-top-center > div .imgs {
+          display: inline-block;
+          width: 104px;
+          height: 40px;
+          vertical-align: middle;
+          border: 1px solid #CCCCCC;
+          margin-left: 8px;
+          cursor: pointer; }
+        .section .section-mian .section-mian-top-center > div span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 87px;
+          line-height: 37px;
+          text-align: center;
+          border: 1px solid #cccccc;
+          font-size: 12px;
+          color: #cccccc;
+          margin-right: 8px;
+          cursor: pointer; }
+        .section .section-mian .section-mian-top-center > div .on {
+          color: #ff5a59;
+          border: 1px solid #ff5757; }
+        .section .section-mian .section-mian-top-center > div select {
+          display: inline-block;
+          width: 87px;
+          height: 37px;
+          border: 1px solid #cccccc;
+          padding-left: 4%;
+          color: #c4c4c4; }
+        .section .section-mian .section-mian-top-center > div .sub {
+          background: #ff5757;
+          border: none;
+          color: #fff;
+          cursor: pointer; }
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 106px;
+  border-top: 2px solid #eeeeee; }
+
+.footer img {
+  margin-top: 20px;
+  margin-right: 20px; }
+
+/*# sourceMappingURL=sign.css.map */
