@@ -1,0 +1,240 @@
+@charset "UTF-8";
+$rc:20;
+$ys:#fff;
+.iput {
+    width: 100%;
+    border: 0;
+    color: $ys;
+    border-bottom: 2/$rc+rem solid $ys;
+    line-height: 30/$rc+rem;
+    padding-left: 40/$rc+rem;
+    padding-bottom: 3/$rc+rem;
+    margin-top: 10/$rc+rem;
+}
+
+label {
+    display: none;
+}
+
+input::-webkit-input-placeholder {
+    color: $ys;
+}
+
+input {
+    font-size: 10/$rc+rem;
+}
+body{
+     background: url(../images/sin_bg.jpg)no-repeat;
+    background-size: cover;   
+}
+section {
+    width: 100%;
+    height: 100%;
+//      background-color: #f95c68;
+
+    //  -webkit-filter:blur(3px);
+    .main {
+        width: 100%;
+        padding: 20/$rc+rem;
+        animation: wd 0.6s ease;
+//      position: fixed;
+        @-webkit-keyframes wd {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            50% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+        @keyframes wd {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            50% {
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+        h1 {
+            padding: 20/$rc+rem 0;
+            width: 100%;
+            font-size: 18/$rc+rem;
+            color: $ys;
+            text-align: center;
+            text-shadow: 1px 1px 8/$rc+rem green,0px 2px 6/$rc+rem red;
+        }
+        .main-top {
+            width: 100%;
+            position: relative;
+            font-size: 0;
+            background-color: transparent;
+            .yz {
+                @extend .iput;
+                background: url(../images/验证码.png)no-repeat 0px -2px;
+                background-size: contain;
+                margin-top: 20/$rc+rem;
+            }
+            #imgs {
+                position: absolute;
+                right: 0;
+                top: 6/$rc+rem;
+                width: 90/$rc+rem;
+                height: 40/$rc+rem;
+            }
+            #btn {
+                position: absolute;
+                right: 0;
+                top: 20/$rc+rem;
+                color: $ys;
+                line-height: 30/$rc+rem;
+                padding: 0 10/$rc+rem;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        .text {
+            @extend .iput;
+            background: url(../images/Icon_账号@2x.png)no-repeat;
+            background-size: contain;
+        }
+        .pass {
+            @extend .iput;
+            background: url(../images/Icon_密码@2x.png)no-repeat;
+            background-size: contain;
+            margin-top: 20/$rc+rem;
+        }
+        .phone {
+            @extend .iput;
+            background: url(../images/手机号.png)no-repeat 0px -2px;
+            background-size: contain;
+            margin-top: 20/$rc+rem;
+        }
+        .but_b {
+            position: absolute;
+            top: 50%;
+            margin-top: -10/$rc+rem;
+            right: 5/$rc+rem;
+            display: block;
+            width: 25/$rc+rem;
+            height: 25/$rc+rem;
+            background: url(../images/Icon_闭眼@2x.png) no-repeat;
+            background-size: contain;
+        }
+        .but {
+            position: absolute;
+            top: 50%;
+            margin-top: -10/$rc+rem;
+            right: 5/$rc+rem;
+            display: block;
+            width: 25/$rc+rem;
+            height: 25/$rc+rem;
+            background: url(../images/Icon_睁眼@2x.png) no-repeat;
+            background-size: contain;
+        }
+//      邀请码
+        .yqm{
+            @extend .iput;
+            background: url(../images/yqm.png)no-repeat 0px -2px;
+            background-size: contain;
+            margin-top: 20/$rc+rem;            
+        }
+//      安置人
+        .people{
+            @extend .iput;
+            background: url(../images/安置点.png)no-repeat;
+            background-size: contain;           
+        }
+//      级别
+        .jb{
+            @extend .iput;
+            background: url(../images/jb.png)no-repeat;
+            background-size: contain;               
+        }
+//      性别
+        .xb{
+            @extend .iput;
+            background: url(../images/xb.png)no-repeat;
+            background-size: contain;               
+        }
+        select{
+            @extend .iput;
+            background: transparent;
+            font-size: 10/$rc+rem;
+            padding: 10/$rc+rem 0;
+             padding-left: 40/$rc+rem;
+             
+        }
+//      区域        
+        .quyu{
+            @extend .iput;
+            background: url(../images/quyu.png)no-repeat;
+            background-size: contain;               
+        }
+        .sub {
+            width: 100%;
+            border: 2px solid $ys;
+            border-radius: 40/$rc+rem;
+            height: 40/$rc+rem;
+            text-align: center;
+            color: $ys;
+            background: transparent;
+            margin-top: 10/$rc+rem;
+        }
+        .link {
+            width: 100%;
+            text-align: right;
+            margin-top: 10/$rc+rem;
+            font-size: 12/$rc+rem;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+//弹框
+.pop {
+    width: 120/$rc+rem;
+    line-height: 30/$rc+rem;
+    color: #fff;
+    font-size: 15/$rc+rem;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -60/$rc+rem;
+    display: none;
+    -webkit-animation: wd 0.8s ease-in-out;
+    animation: dk 0.8s ease-in-out;
+}
+
+@keyframes dk {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

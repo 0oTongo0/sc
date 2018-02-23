@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<style>
+		.form{
+			width: 500px;
+			margin: 10px auto;
+		}
+		.form .form-top{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		.form .form-top>label,input,textarea{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.form .form-top>label{
+			width: 120px;
+			margin-right: 5px;
+			text-align: right;
+			font-size: 14px;
+			line-height: 35px;
+		}
+		.form .form-top>label.lab{
+			vertical-align: top;
+		}
+		.form .form-top>input{
+			border: 1px solid #eee;
+			padding-left: 5px;
+			width: 300px;
+			line-height: 35px;
+			border-radius: 4px;
+		}
+		.form .form-top>input:focus{
+			border-color: red;
+		}
+		.form .form-top>textarea{
+			width: 300px;
+			border: 1px solid #eee;
+			height: 100px;
+			padding: 5px;
+			border-radius: 4px;
+		}
+		.form .subb{
+			margin-left: 125px;
+			color: #fff;
+			cursor: pointer;
+			background: #307ecc;		
+		}
+		.form .subb:hover{
+			background: #5592d0;
+		}
+	</style>
+	<body>
+		<div class="form">
+			<form>
+				<div class="form-top">
+					<label>公司名:</label><input type="text" />
+				</div>
+				<div class="form-top">
+					<label>地址:</label><input type="text" />
+				</div>
+				<div class="form-top">
+					<label>邮箱:</label><input type="text"/>
+				</div>
+				<div class="form-top">
+					<label>电话:</label><input type="text"/>
+				</div>
+				<div class="form-top">
+					<label class="lab">公司简介:</label><textarea></textarea>
+				</div>
+				<div class="form-top">
+					<label class="lab">企业宗旨:</label><textarea></textarea>
+				</div>
+				<div class="form-top">
+					<label class="lab">企业理念:</label><textarea></textarea>
+				</div>
+				<div class="form-top">
+					<input type="submit"  class="subb"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

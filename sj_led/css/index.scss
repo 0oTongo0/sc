@@ -1,0 +1,375 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+
+body {
+//  background: url(../images/led_bg_03.png);
+background: #f4f4f4;
+}
+
+//中间
+.section {
+    width: 100%;
+    padding-top: 90/$rc+rem;
+    padding-bottom: 110/$rc+rem;
+    .section-main {
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+        //      头部
+        .section-main-top {
+            width: 100%;
+            box-shadow: 0px 1px 11/$rc+rem #dbdbdb;
+            color: #a52a2a;
+            font-size: 30/$rc+rem;
+            background: #fff;
+            padding: 10/$rc+rem 0;
+            margin-bottom: 11/$rc+rem;
+            padding-right: 22/$rc+rem;
+            background: #a52a2a;
+            border-radius: 10/$rc+rem;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 50/$rc+rem;
+                height: 50/$rc+rem;
+                margin-left: 35/$rc+rem;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 26/$rc+rem;
+                color: #fff;
+            }
+            .xiala {
+                display: inline-block;
+                vertical-align: middle;
+                width: 48/$rc+rem;
+                height: 48/$rc+rem;
+                color: #a52a2a;
+                float: right;
+                img {
+                    width: 100%;
+                    margin: 0;
+                    transition: all 0.2s;
+                }
+            }
+            .on {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        //      个人中心
+        .section-main-nav {
+            width: 100%;
+            margin-bottom: 37/$rc+rem;
+            padding: 0 12/$rc+rem;
+            box-shadow: 0px 1px 7/$rc+rem #ededed;
+            li {
+                width: 100%;
+                border-bottom: 1px solid #c4c4c4;
+                font-size: 24/$rc+rem;
+                padding: 15/$rc+rem 0;
+                position: relative;
+                label,
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                label {
+                    width: 190/$rc+rem;
+                    text-align: right;
+                    font-weight: 600;
+                }
+                span {
+                    margin-left: 60/$rc+rem;
+                    color: #a52a2a;
+                }
+            }
+        }
+        .hide {
+            display: none;
+        }
+//              新闻
+                .news{
+                    li{
+                        &:before{
+                            content: "";
+                            display: inline-block;
+                            width: 16/$rc+rem;
+                            height: 16/$rc+rem;
+                            background: url(../images/li_03.png);
+                            background-size: contain;
+                            margin-left: 12/$rc+rem;
+                        }
+                        a,strong{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        a{
+                            width: 70%;
+                            font-size: 25/$rc+rem;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            color: #5492f2;
+                            letter-spacing: 0.6px;
+                        }
+                        strong{
+                            width: 20%;
+                            font-size: 20/$rc+rem;
+                            color: #888;
+                            font-weight: 600;
+                            text-align: right;
+                        }
+                    }
+                }
+//              联系
+        .relation {
+            width: 100%;
+            margin-bottom: 0;
+            p {
+                width: 100%;
+                font-size: 24/$rc+rem;
+                padding: 15/$rc+rem 0;
+                label,
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                label {
+                    width: 190/$rc+rem;
+                    text-align: right;
+                    font-weight: 600;
+                }
+                span {
+                    margin-left: 10/$rc+rem;
+                    color: #464646;
+                }
+            }
+        }
+        //      现金财务
+        .finance {
+            width: 100%;
+            li {
+                width: 33.333%;
+                text-align: center;
+                border: none;
+                float: left;
+                a {
+                    font-size: 24/$rc+rem;
+                    color: #a52a2a;
+                    img {
+                        vertical-align: middle;
+                        width: 152/$rc+rem;
+                        height: 152/$rc+rem;
+                        margin-bottom: 23/$rc+rem;
+                    }
+                    span {
+                        display: block;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        //      资料修改页面 表单页面
+        .data_amend {
+            width: 100%;
+            padding: 0;
+            p {
+                background: #fff;
+                font-size: 0;
+                border-bottom: 1px solid #dfdfdf;
+                line-height: 70/$rc+rem;
+                label,
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                     font-size: 24/$rc+rem;
+                }
+                label {
+                    width: 200/$rc+rem;
+                    text-align: right;
+                    margin-right: 60/$rc+rem;
+                    color: #888;
+                }
+                span {
+                    color: #464646;
+                    font-weight: 600;
+                }
+//              标题
+                .biaoti{
+                    width: 300/$rc+rem;
+                }
+                .lab{
+                    vertical-align: top;
+                }
+                .text{
+                    width: 450/$rc+rem;
+                    height: 500/$rc+rem;
+                    border-radius: 8/$rc+rem;
+                }                  
+            }
+        }
+//      邮件
+            .mail{
+                font-size: 24/$rc+rem;
+                letter-spacing: 1px;
+                line-height: 35/$rc+rem;
+                padding: 30/$rc+rem 55/$rc+rem;
+                text-indent: 40/$rc+rem;
+                margin-bottom: 20/$rc+rem;
+            } 
+//      发送邮件
+            .link{
+                display: block;
+                width: 200px;
+                margin: 20/$rc+rem auto;
+                font-size: 24/$rc+rem;
+                color: #fff;
+                text-align: center;
+                line-height: 80/$rc+rem;
+                background: #a52a2a;
+                border-radius: 8/$rc+rem;
+            }
+    }
+}
+
+//底部
+.footer-copy {
+    width: 100%;
+    background: #c4c4c4;
+    border-top: 75/$rc+rem solid #f4f4f4;
+    padding: 40/$rc+rem 0;
+    .footer-nav {
+        width: 100%;
+        text-align: center;
+        ul {
+            width: 100%;
+            display: flex;
+            padding: 0 20/$rc+rem;
+            margin-bottom: 10/$rc+rem;
+            li {
+                flex: 1;
+                border-right: 1px solid #333;
+                height: 40/$rc+rem;
+                line-height: 40/$rc+rem;
+                a {
+                    display: block;
+                    color: #333;
+                    font-size: 24/$rc+rem;
+                    font-weight: 600;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+        font-size: 24/$rc+rem;
+        color: #464646;
+    }
+}
+
+//          公告
+.section-mian-center-top {
+    width: 100%;
+    display: flex;
+    padding: 10/$rc+rem 20/$rc+rem;
+    margin: 10/$rc+rem 0;
+    background: #fff;
+    .section-mian-center-top-left {
+        width: 100/$rc+rem;
+        font-size: 25/$rc+rem;
+        font-weight: 700;
+        background: #e51c23;
+        height: 40/$rc+rem;
+        color: #fff;
+        text-align: center;
+        margin-right: 3/$rc+rem;
+        line-height: 40/$rc+rem;
+        border-radius: 4px;
+    }
+    .section-mian-center-top-gg {
+        flex: 1;
+        height: 40/$rc+rem;
+        overflow: hidden;
+        .section-right-text-nav {
+            width: 100%;
+            a {
+                display: block;
+                font-size: 25/$rc+rem;
+                line-height: 40/$rc+rem;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #464646;
+                padding-left: 10/$rc+rem;
+            }
+        }
+    }
+    .section-mian-center-top-right {
+        width: 80/$rc+rem;
+        font-size: 25/$rc+rem;
+        line-height: 40/$rc+rem;
+        text-align: center;
+        border-left: 2px solid #ccc;
+        color: #999;
+    }
+}
+
+//          公告end
+//表单
+.form{
+    width: 100%;
+    p{
+        font-size: 0;
+    }
+    input,textarea,select{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24/$rc+rem;
+    }
+    input{
+        width: 210/$rc+rem;
+        border: 1px solid #dcdcdc;
+        line-height: 44/$rc+rem;
+        border-radius: 8/$rc+rem;
+        padding-left: 6/$rc+rem;
+    }
+//  验证
+    .yz{
+        background: #90ceee;
+        border-color: #90ceee;
+        color: #fff;
+        margin-left: 10/$rc+rem;
+    }
+    select{
+        width: 150/$rc+rem;
+        border: 1px solid #dcdcdc;
+        background: transparent;
+        padding: 1%;
+    }
+    textarea{
+        width: 330/$rc+rem;
+        height: 100/$rc+rem;
+        border: 1px solid #dcdcdc;
+        margin: 6/$rc+rem 0;
+        border-radius: 8/$rc+rem;
+        padding: 8/$rc+rem;
+    }  
+//  提交
+    .sub{
+        background: #A52A2A;
+        color: #fff;
+         line-height: 65/$rc+rem;
+         margin: 15/$rc+rem 0;
+         margin-left: 260/$rc+rem;
+    }
+  }

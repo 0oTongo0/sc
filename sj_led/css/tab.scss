@@ -1,0 +1,36 @@
+@charset "UTF-8";
+$rc:200;
+.section-tab{
+    width: 100%;
+    overflow: auto;
+    .tab-main{
+        width: 100%;
+        th,td{
+            white-space: nowrap;
+            padding: 20/$rc+rem;
+            font-size: 24/$rc+rem;
+            text-align: center;
+        }
+        thead{
+            tr{
+                border-top: 10/$rc+rem solid #F4F4F4;
+                border-bottom: 10/$rc+rem solid #F4F4F4;
+                background: #fff;
+            }
+            th{
+                color: #a52a2a;
+            }
+        }
+        tbody{
+            tr{
+                background: #fff;
+                td:nth-child(1){
+                    color: #888;
+                }
+                td:last-child{
+                    color: #1f7eff;
+                }
+            }
+        }
+    }
+}

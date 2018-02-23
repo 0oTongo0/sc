@@ -1,0 +1,73 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+//  background: #ccc;
+    font-size: 0.4rem;
+    background: url(../images/beijin.png)no-repeat fixed;
+    background-size: 100% 100%;
+}
+$yc:#297de5;
+.section{
+    width: 100%;
+    padding-bottom: 110/$rc+rem;
+//  数据
+    .section-data{
+        width: 100%;
+        &>p{
+            width: 92%;
+            margin: 10/$rc+rem auto;
+            padding-left: 55/$rc+rem;
+            background: rgba(0,0,0,.1);
+            border-radius: 20/$rc+rem;
+             box-shadow: 1px 1px 3px #9a8163;
+            span,strong{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            span{
+                width: 250/$rc+rem;
+                line-height: 50/$rc+rem;
+                color: #464646;
+                font-size: 25/$rc+rem;
+                margin-right: 10/$rc+rem;
+                text-align: right;
+                padding-right: 10/$rc+rem;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+            strong{
+                font-size: 34/$rc+rem;
+                color: $yc;
+            }
+        }
+    }
+//  表格
+    .tab-main{
+        tbody{
+            td:nth-child(n+5){
+                color: $yc;
+            }
+        }
+    }
+}
+//分类层
+#header{
+    margin: 20/$rc+rem 0;
+    background: rgba(0,0,0,.1);
+    padding: 10/$rc+rem 0;
+}
+#header .swiper-slide{
+    padding: 8/$rc+rem 40/$rc+rem;
+    width: auto;
+    font-size: 25/$rc+rem;
+    color: #999;
+    margin-left: 10/$rc+rem;
+}
+#header .on{
+        background: #f4f4f4;
+        border-radius: 10/$rc+rem;
+        color: #464646;
+    }

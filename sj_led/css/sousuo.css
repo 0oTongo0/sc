@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  background: #F4F4F4; }
+
+input::-webkit-input-placeholder {
+  　　color: #b8b8b8;
+  font-size: 0.135rem; }
+
+.header {
+  width: 100%;
+  background: #fff;
+  overflow: hidden; }
+  .header .form {
+    width: 5rem;
+    padding: 0.12rem 0.15rem;
+    height: 0.56rem;
+    font-size: 0; }
+    .header .form .input-text {
+      width: 3.45rem;
+      position: relative;
+      transition: all 0.5s; }
+    .header .form #sousuo {
+      display: inline-block;
+      width: 100%;
+      height: 0.32rem;
+      line-height: 0.32rem;
+      padding-left: 0.35rem;
+      border-radius: 0.05rem;
+      background: #f4f4f4 url(../images/Icon_搜索@2x.png) no-repeat;
+      background-size: contain;
+      font-size: 0.15rem; }
+    .header .form #but {
+      display: inline-block;
+      width: 0.18rem;
+      height: 0.18rem;
+      background: url(../images/Icon_叉@2x.png) no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      right: 0.15rem;
+      margin-top: -0.09rem;
+      display: none;
+      font-size: 0.15rem; }
+    .header .form #sousuo:valid .clear {
+      display: block; }
+    .header .form .lab {
+      display: inline-block;
+      width: 0.4rem;
+      vertical-align: top;
+      font-size: 0.15rem;
+      height: 0.32rem;
+      line-height: 0.32rem;
+      margin-left: 0.2rem;
+      background-color: #fff; }
+    .header .form .col {
+      color: red; }
+
+.mian {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #cecece;
+  padding-bottom: 0.55rem; }
+  .mian .left {
+    width: 1.2rem;
+    background: #f4f4f4;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px; }
+    .mian .left .tab_menu {
+      width: 100%; }
+      .mian .left .tab_menu li {
+        width: 100%;
+        height: 0.52rem;
+        line-height: 0.52rem;
+        font-size: 0.135rem;
+        color: #454545;
+        text-align: center;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        .mian .left .tab_menu li.on {
+          color: #ed325f;
+          background: #fff; }
+          .mian .left .tab_menu li.on:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0.02rem;
+            height: 100%;
+            background: #ed325f; }
+  .mian .right {
+    width: 2.55rem;
+    background: #fff;
+    font-size: 0.125rem; }
+    .mian .right:after {
+      content: "";
+      display: block;
+      width: 2.55rem;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      background: #fff; }
+    .mian .right .hide {
+      display: none; }
+    .mian .right .top {
+      width: 100%; }
+      .mian .right .top .link {
+        width: 100%;
+        font-size: 0.15rem;
+        color: #454545;
+        padding-left: 0.125rem; }
+        .mian .right .top .link a {
+          color: #454545;
+          display: inline-block;
+          padding: 0.12rem 0;
+          width: 100%; }
+          .mian .right .top .link a.yes {
+            border-top: 1px solid #cecece;
+            margin-top: 0.075rem; }
+        .mian .right .top .link .but {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 0.225rem;
+          width: 0.22rem;
+          height: 0.22rem;
+          background: url(../img/Icon_更多-拷贝-2@2x.png) no-repeat;
+          background-size: contain; }
+      .mian .right .top li {
+        width: 33.33333%;
+        text-align: center;
+        margin-top: 0.08rem; }
+        .mian .right .top li img {
+          display: block;
+          width: 0.66rem;
+          height: 0.66rem;
+          margin: 0 auto; }
+        .mian .right .top li span {
+          display: block;
+          margin-top: 0.08rem;
+          color: #787878;
+          height: 0.3rem;
+          margin-bottom: 0.075rem;
+          font-size: 0.135rem;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          display: -webkit-box; }
+
+/*# sourceMappingURL=sousuo.css.map */

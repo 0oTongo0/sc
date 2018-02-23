@@ -1,0 +1,291 @@
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  background: #f4f4f4; }
+
+.section {
+  width: 100%;
+  padding-top: 0.45rem;
+  padding-bottom: 0.55rem; }
+  .section .section-main {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); }
+    .section .section-main .section-main-top {
+      width: 100%;
+      box-shadow: 0px 1px 0.055rem #dbdbdb;
+      color: #a52a2a;
+      font-size: 0.15rem;
+      background: #fff;
+      padding: 0.05rem 0;
+      margin-bottom: 0.055rem;
+      padding-right: 0.11rem;
+      background: #a52a2a;
+      border-radius: 0.05rem; }
+      .section .section-main .section-main-top img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0.25rem;
+        height: 0.25rem;
+        margin-left: 0.175rem; }
+      .section .section-main .section-main-top span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.13rem;
+        color: #fff; }
+      .section .section-main .section-main-top .xiala {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0.24rem;
+        height: 0.24rem;
+        color: #a52a2a;
+        float: right; }
+        .section .section-main .section-main-top .xiala img {
+          width: 100%;
+          margin: 0;
+          transition: all 0.2s; }
+      .section .section-main .section-main-top .on img {
+        transform: rotate(180deg); }
+    .section .section-main .section-main-nav {
+      width: 100%;
+      margin-bottom: 0.185rem;
+      padding: 0 0.06rem;
+      box-shadow: 0px 1px 0.035rem #ededed; }
+      .section .section-main .section-main-nav li {
+        width: 100%;
+        border-bottom: 1px solid #c4c4c4;
+        font-size: 0.12rem;
+        padding: 0.075rem 0;
+        position: relative; }
+        .section .section-main .section-main-nav li label,
+        .section .section-main .section-main-nav li span {
+          display: inline-block;
+          vertical-align: middle; }
+        .section .section-main .section-main-nav li label {
+          width: 0.95rem;
+          text-align: right;
+          font-weight: 600; }
+        .section .section-main .section-main-nav li span {
+          margin-left: 0.3rem;
+          color: #a52a2a; }
+    .section .section-main .hide {
+      display: none; }
+    .section .section-main .news li:before {
+      content: "";
+      display: inline-block;
+      width: 0.08rem;
+      height: 0.08rem;
+      background: url(../images/li_03.png);
+      background-size: contain;
+      margin-left: 0.06rem; }
+    .section .section-main .news li a, .section .section-main .news li strong {
+      display: inline-block;
+      vertical-align: middle; }
+    .section .section-main .news li a {
+      width: 70%;
+      font-size: 0.125rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #5492f2;
+      letter-spacing: 0.6px; }
+    .section .section-main .news li strong {
+      width: 20%;
+      font-size: 0.1rem;
+      color: #888;
+      font-weight: 600;
+      text-align: right; }
+    .section .section-main .relation {
+      width: 100%;
+      margin-bottom: 0; }
+      .section .section-main .relation p {
+        width: 100%;
+        font-size: 0.12rem;
+        padding: 0.075rem 0; }
+        .section .section-main .relation p label,
+        .section .section-main .relation p span {
+          display: inline-block;
+          vertical-align: middle; }
+        .section .section-main .relation p label {
+          width: 0.95rem;
+          text-align: right;
+          font-weight: 600; }
+        .section .section-main .relation p span {
+          margin-left: 0.05rem;
+          color: #464646; }
+    .section .section-main .finance {
+      width: 100%; }
+      .section .section-main .finance li {
+        width: 33.333%;
+        text-align: center;
+        border: none;
+        float: left; }
+        .section .section-main .finance li a {
+          font-size: 0.12rem;
+          color: #a52a2a; }
+          .section .section-main .finance li a img {
+            vertical-align: middle;
+            width: 0.76rem;
+            height: 0.76rem;
+            margin-bottom: 0.115rem; }
+          .section .section-main .finance li a span {
+            display: block;
+            margin: 0; }
+    .section .section-main .data_amend {
+      width: 100%;
+      padding: 0; }
+      .section .section-main .data_amend p {
+        background: #fff;
+        font-size: 0;
+        border-bottom: 1px solid #dfdfdf;
+        line-height: 0.35rem; }
+        .section .section-main .data_amend p label,
+        .section .section-main .data_amend p span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 0.12rem; }
+        .section .section-main .data_amend p label {
+          width: 1rem;
+          text-align: right;
+          margin-right: 0.3rem;
+          color: #888; }
+        .section .section-main .data_amend p span {
+          color: #464646;
+          font-weight: 600; }
+        .section .section-main .data_amend p .biaoti {
+          width: 1.5rem; }
+        .section .section-main .data_amend p .lab {
+          vertical-align: top; }
+        .section .section-main .data_amend p .text {
+          width: 2.25rem;
+          height: 2.5rem;
+          border-radius: 0.04rem; }
+    .section .section-main .mail {
+      font-size: 0.12rem;
+      letter-spacing: 1px;
+      line-height: 0.175rem;
+      padding: 0.15rem 0.275rem;
+      text-indent: 0.2rem;
+      margin-bottom: 0.1rem; }
+    .section .section-main .link {
+      display: block;
+      width: 200px;
+      margin: 0.1rem auto;
+      font-size: 0.12rem;
+      color: #fff;
+      text-align: center;
+      line-height: 0.4rem;
+      background: #a52a2a;
+      border-radius: 0.04rem; }
+
+.footer-copy {
+  width: 100%;
+  background: #c4c4c4;
+  border-top: 0.375rem solid #f4f4f4;
+  padding: 0.2rem 0; }
+  .footer-copy .footer-nav {
+    width: 100%;
+    text-align: center; }
+    .footer-copy .footer-nav ul {
+      width: 100%;
+      display: flex;
+      padding: 0 0.1rem;
+      margin-bottom: 0.05rem; }
+      .footer-copy .footer-nav ul li {
+        flex: 1;
+        border-right: 1px solid #333;
+        height: 0.2rem;
+        line-height: 0.2rem; }
+        .footer-copy .footer-nav ul li a {
+          display: block;
+          color: #333;
+          font-size: 0.12rem;
+          font-weight: 600; }
+        .footer-copy .footer-nav ul li:last-child {
+          border: none; }
+  .footer-copy .copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #464646; }
+
+.section-mian-center-top {
+  width: 100%;
+  display: flex;
+  padding: 0.05rem 0.1rem;
+  margin: 0.05rem 0;
+  background: #fff; }
+  .section-mian-center-top .section-mian-center-top-left {
+    width: 0.5rem;
+    font-size: 0.125rem;
+    font-weight: 700;
+    background: #e51c23;
+    height: 0.2rem;
+    color: #fff;
+    text-align: center;
+    margin-right: 0.015rem;
+    line-height: 0.2rem;
+    border-radius: 4px; }
+  .section-mian-center-top .section-mian-center-top-gg {
+    flex: 1;
+    height: 0.2rem;
+    overflow: hidden; }
+    .section-mian-center-top .section-mian-center-top-gg .section-right-text-nav {
+      width: 100%; }
+      .section-mian-center-top .section-mian-center-top-gg .section-right-text-nav a {
+        display: block;
+        font-size: 0.125rem;
+        line-height: 0.2rem;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #464646;
+        padding-left: 0.05rem; }
+  .section-mian-center-top .section-mian-center-top-right {
+    width: 0.4rem;
+    font-size: 0.125rem;
+    line-height: 0.2rem;
+    text-align: center;
+    border-left: 2px solid #ccc;
+    color: #999; }
+
+.form {
+  width: 100%; }
+  .form p {
+    font-size: 0; }
+  .form input, .form textarea, .form select {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.12rem; }
+  .form input {
+    width: 1.05rem;
+    border: 1px solid #dcdcdc;
+    line-height: 0.22rem;
+    border-radius: 0.04rem;
+    padding-left: 0.03rem; }
+  .form .yz {
+    background: #90ceee;
+    border-color: #90ceee;
+    color: #fff;
+    margin-left: 0.05rem; }
+  .form select {
+    width: 0.75rem;
+    border: 1px solid #dcdcdc;
+    background: transparent;
+    padding: 1%; }
+  .form textarea {
+    width: 1.65rem;
+    height: 0.5rem;
+    border: 1px solid #dcdcdc;
+    margin: 0.03rem 0;
+    border-radius: 0.04rem;
+    padding: 0.04rem; }
+  .form .sub {
+    background: #A52A2A;
+    color: #fff;
+    line-height: 0.325rem;
+    margin: 0.075rem 0;
+    margin-left: 1.3rem; }
+
+/*# sourceMappingURL=index.css.map */

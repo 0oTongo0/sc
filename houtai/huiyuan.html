@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员列表</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+	</head>
+	<style type="text/css">
+				body{
+			background: rgba(255,255,255,0.5);
+		}
+		input{
+			width: 60px;
+		}
+		button{
+			margin-left: 10px;
+		}
+		label{
+			font-size: 12px;
+		}
+		input{
+			margin: 0 3px;
+		}
+		th{
+			text-align: center;
+		}
+		td{
+			text-align: center;
+		}
+		caption{
+			font-weight: 700;
+		}
+		.btn{
+			margin: 0;
+		}
+	</style>
+	<body>
+	<div style="position: relative; width: 100%; padding: 20px;">
+		<div class="top">当前位置：系统管理 >> 财务管理 >> 财务明细</div>
+			<table class="table table-bordered">
+		  <tbody>
+		    <tr>
+		      <td>会员类型：</td>
+		      <td style="text-align: left;">
+		      	<a href="">所以会员|</a>
+		      	<a href="">未激活会员|</a>
+		      	<a href="">空单会员|</a>
+		      	<a href="">回填单会员|</a>
+		      	<a href="">冻结会员|</a>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>店铺类型：</td>
+		      <td style="text-align: left;">
+		      	<a href="">所有级别|</a>
+		      	<a href="">一类店铺|</a>
+		      	<a href="">三类店铺|</a>
+		      	<a href="">四类店铺|</a>
+		      	<a href="">五类店铺|</a>
+		      </td>
+		    </tr>
+		    <tr>
+		      <td>会员晋级：</td>
+		      <td style="text-align: left;">
+		      	<a href="">银钻|</a>
+		      	<a href="">金钻|</a>
+		      	<a href="">白钻|</a>
+		      	<a href="">黑钻|</a>
+		      	<a href="">绿宝|</a>
+		      	<a href="">红宝|</a>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+		<table class="table table-hover" style="text-align: center;">
+		  <caption style="text-align: center;">会员列表</caption>
+		  <thead>
+		    <tr>
+		      <th>客户总数：</th>
+		      <th style="text-align: left; border-left: 1px solid #ddd;">1</th>
+		      <th>报单总额：</th>
+		      <th style="text-align: left; border-left: 1px solid #ddd;">1</th>
+		      <th>奖金总额：</th>
+		      <th style="text-align: left; border-left: 1px solid #ddd;">1</th>
+		    </tr>
+		  </thead>
+		</table>
+						<form action="" method="post">
+				<label>用户名：</label>
+				<input type="" name="" id="" value="" required/>
+				<label>级别：</label>
+				<select>
+					<option>1</option>
+				</select>	
+				<label>推荐人：</label>
+				<input type="text" required/>
+				<label>安置人：</label>
+				<input type="text" required/>
+				<label>代理：</label>
+				<input type="text" required/>
+				<label>注册日期：</label>
+				<input type="data" required/>
+				<label>至</label>
+				<input type="data" required/>
+				<label>身份证</label>	
+				<input type="text" required/>
+				<label>姓名</label>	
+				<input type="text" />
+				<select>
+					<option>1</option>
+				</select>	
+					<input type="submit" value="搜索"  class="btn btn-primary"/>
+				</form>
+		<table class="table table-hover" style="text-align: center;">
+		  <caption style="text-align: center;">会员列表</caption>
+		  <thead>
+		    <tr>
+		      <th>序列<br/>序号</th>
+		      <th>用户名</th>
+		      <th>推荐人</th>
+		      <th>安置人<br>安置区域</th>
+		      <th>级别/配套<br>单数 总pv</th>
+		      <th>级差</th>
+		      <th>所属团队</th>
+		      <th>注册时间<br>开通时间</th>
+		      <th>报单/奖金<br>财务管理</th>
+		      <th>RS-Coin<br>RH-Coin</th>
+		      <th>状态<br>操作</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>4<br><span style="color: #D5D5D5;">1</span></td>
+		      <td>5<br><span >1</span></td>
+		      <td>6</td>
+		      <td>1<br><span >1</span></td>
+		      <td>1<br><span >1</span></td>
+		      <td>1<br><span >1</span></td>
+		      <td>1<br><span >1</span></td>
+		      <td>1<br><span >1</span></td>
+		      <td>
+		      	<span>1111</span><br>
+		      	<button class="btn btn-primary btn-xs">修改</button>
+		      	<button class="btn btn-danger btn-xs">删除</button>
+		      	<button class="btn btn-warning btn-xs">关闭</button>
+		      </td>
+		    <td>1<br><span >1</span></td>
+		    <td>1<br>
+		    	<a href="">1</a>
+		    	<a href="">2</a>
+		    </td>
+		    </tr>
+		  </tbody>
+		</table>
+		<ul class="pagination" style="position: absolute; bottom: -20px; left: 50%;margin-bottom: 20px;">
+		    <li><a href="#">&laquo;</a></li>
+		    <li ><a href="#">当前页面<span style="color: red;">1</span></a></li>
+		    <li class="active"><a href="#">1</a></li>
+		    <li ><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a href="#">&raquo;</a></li>
+		    <li><a href="#">跳转</a></li>
+		    <li>
+		    	<select style="height: 34px;border: 1px solid #ddd;margin-left: -1px;">
+		    	<option>1</option>
+		    </select></li>
+		</ul>
+	</div>
+	</body>
+</html>
+
+
+

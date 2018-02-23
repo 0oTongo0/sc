@@ -1,0 +1,25 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+.maximal{
+    width: 100%;
+    font-size: 25/$rc+rem;
+    margin-top: 10/$rc+rem;
+    .maximal-next{
+        width: 35%;
+        margin: 0 auto;
+        tr{
+            border: 1px solid #ddd;
+            td{
+                text-align: center;
+                padding: 10/$rc+rem 0;
+            }
+            &:nth-child(1){
+                    background: #A52A2A;
+                    color: #fff;
+                }
+        }
+    }
+}

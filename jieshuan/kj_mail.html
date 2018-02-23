@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>邮件中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<style type="text/css">
+				.gonggao{
+					width: 1200px;
+					margin: 0 auto;
+					text-align: center;
+				}
+				.gonggao #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width: 700px;
+					margin: 0 auto;
+					color: red;
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 5s steps(30,end) infinite,/* # of steps = # of chars */
+						 blink-caret 5s step-end infinite alternate;
+				}
+
+				.mian_kj{
+					width: 1200px;
+					margin: 0 auto;
+				}
+								   .section-cx {
+					    width: 100%;
+					    text-align: center;
+					    margin-top: 10px; }
+					   .section-cx input {
+					      width: 12%;
+					      border: 1px solid #ddd;
+					      margin: 0 3px; }
+					    .section-cx label {
+					      display: inline-block;
+					      margin: 0 3px; }
+		</style>
+	<body>
+		<div>
+			<iframe src="top_kj.html" width="100%" height="102px;" frameborder="0"   scrolling="no"></iframe>
+		<div style="margin-top: 20px; width: 1200px; margin: 0 auto;margin-top: 10px;">
+			<img src="images/xw.jpg"/>
+		</div>
+			<div class="clearfix mian_kj">
+				<div class="fl_lt">
+					<iframe src="left_kj.html" width="350px" height="700px" frameborder="0"   scrolling="no"></iframe>
+				</div>				
+			<div class="section-main-right fl_lt">
+				<!--个人资料-->
+			<div class="section-main-right fl_lt">
+				<!--个人资料-->
+				<div class="section-right-main">
+					<p>
+						<span>邮件中心</span>
+					</p>
+					<div class="section-right-main-text">
+						如您需要帮助，欢迎您与我们取得联系，我们将竭诚为您提供服务。客服在服务时间内收到您的咨询后，将尽快为您服务，请勿重复提交相同咨询内容，谢谢！
+					</div>
+					<div class="section-right-main-news ">
+						<a href="" class="btn btn-info">发送新的邮件</a>
+					</div>
+						<div class="section-cx">
+							<!--<form action="" method="post">-->
+								<label>类型：</label>
+								<select>
+									<option>1</option>
+								</select>
+								<label>数量</label>
+								<input type="text" />
+								<label>价格：</label>
+								<input type="text" />
+								<input type="submit" name="" id="" value="搜索" class="btn btn-info"/>
+							<!--</form>-->
+						</div>					
+					<table class="table table-striped section-right-main-table">
+					  <thead>
+					    <tr>
+					      <th>系列</th>
+					      <th>发送方</th>
+					      <th>标题</th>
+					      <th>发送时间</th>
+					      <th>状态</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>					    	
+					      <td>Tanmay</td>
+					      <td>Bangalore</td>					    	
+					      <td>Tanmay</td>
+					      <td>Bangalore</td>
+					      <td>11</td>
+					    </tr>
+					    <tr>
+					      <td>Sachin</td>
+					      <td>Mumbai</td>
+					      <td>400003</td>
+					    </tr>
+					  </tbody>
+				</table>	
+				<div class="fenye">
+					<ul class="pagination">
+					    <li><a href="#">&laquo;</a></li>
+					    <li><a href="#">首页</a></li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">尾页</a></li>
+					    <li><a href="#">&raquo;</a></li>
+					    <li>
+					    	<a href="#">
+					    		跳转:
+					    		<select name="">
+					    			<option value="">1</option>
+					    		</select>
+					    	</a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="foot-down">
+			<p>版权所有</p>
+		</div>
+		<!--回到顶部-->
+		<div id="back-top">
+			top
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$(".nav_top>li>a").mouseenter(function() {
+				$(this).children(".ink").addClass("animate");
+				$(this).parent().siblings().children().children(".ink").removeClass("animate");
+			})
+			var page = 0;
+			var stop = true;
+			var time;
+
+			$('#myCarousel').carousel({
+			    interval: 4000
+			})
+			$(window).on('scroll', function() {
+				if($(window).scrollTop() > 30) {
+					$("#back-top").show();
+				} else {
+					$("#back-top").hide();
+				}
+			})
+			$("#back-top").click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 200);
+			});
+		})
+	</script>
+
+

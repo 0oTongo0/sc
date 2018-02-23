@@ -1,0 +1,43 @@
+.main-left {
+	width: 180px;
+	background: #fff;
+	margin-right: 15px;
+	box-shadow: 0 0 3px #ccc;
+	height: 550px;
+}
+
+.main-left p {
+	line-height: 70px;
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding-left: 15px;
+}
+
+.main-left .main-left-nav {
+	width: 100%;
+	padding-left: 33px;
+}
+
+.main-left .main-left-nav li {
+	width: 100%;
+	text-align: left;
+}
+
+.main-left .main-left-nav li a {
+	display: block;
+	color: #888;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.main-left .main-left-nav li a:hover {
+	color: #ff5a59;
+}
+
+.main-left .main-left-nav li .on a {
+	color: #ff5a59;
+}
+
+
+/*# sourceMappingURL=left_kj.css.map */

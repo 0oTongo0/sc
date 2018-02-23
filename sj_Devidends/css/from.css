@@ -1,0 +1,80 @@
+body { background: #efeff4 url(../img/aa.png); }
+
+a:hover { text-decoration: none; }
+
+header { width: 100%; background-color: #fff; }
+header .top { padding: 0.5rem; font-size: 0.8rem; background-color: #e77171; }
+header .top .zt { color: #ddd; }
+header .top .one { font-weight: 700; color: #464646; text-shadow: 1px 1px 3px #ddd; }
+header .top .cn { display: inline-block; width: 4rem; text-align: center; vertical-align: middle; font-size: 0.45rem; background: url(../img/cn.gif) no-repeat 0.5rem center; margin-left: 20%; color: #fff; }
+header .top .en { width: 4rem; display: inline-block; font-size: 0.45rem; text-align: center; vertical-align: middle; background: url(../img/en.gif) no-repeat 0.5rem center; color: #fff; }
+header nav { width: 100%; text-align: center; display: none; padding-bottom: 0.5rem; background-color: #52504d; }
+header nav .u1 { width: 100%; }
+header nav .u1 > li { line-height: 1.5rem; position: relative; border-bottom: 1px solid #64625f; }
+header nav .u1 > li a { font-size: 0.6rem; color: #fff; }
+header nav .u1 > li #u2 { position: relative; display: none; background: #363432; }
+header nav .u1 > li #u2 a { color: #f9f9f9; font-size: 0.6rem; }
+
+section { width: 100%; padding-bottom: 2rem; }
+section .section-main-right-top { width: 100%; padding: 0.75rem 0.5rem; text-align: center; background-color: #64625f; color: #fff; line-height: 1.5rem; background-color: #f4f4f4; box-shadow: inset 0 0.05rem 0.4rem -0.4rem rgba(0, 0, 0, 0.2), inset 0 -0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.2); }
+section .section-main-right-top strong { color: red; display: inline-block; letter-spacing: 1px; font-weight: 700; }
+section .section-main-right-top span { color: #999; letter-spacing: 2px; position: relative; font-size: 0.7rem; }
+section .section-main-right-top .section-main-right-top-link { display: inline-block; font-size: 0.7rem; background: #e77171; text-decoration: none; padding: 0 10px; border-radius: 0.25rem; line-height: 1.25rem; margin-left: 0.5rem; color: #FFF; }
+section .section-main-right-center { width: 100%; -webkit-animation: ease-in-out breathbg 3500ms infinite alternate; }
+section .section-main-right-center .mian-top { width: 100%; text-align: center; font-size: 0.8rem; font-weight: 500; position: relative; overflow: hidden; background-color: #fff; }
+section .section-main-right-center .mian-top span { display: inline-block; background-color: #fff; line-height: 1.5rem; }
+section .section-main-right-center .mian-top span:after { content: ""; width: 50%; position: absolute; left: -2.5rem; height: 0.05rem; background-color: #999; top: 0.75rem; }
+section .section-main-right-center .mian-top span:before { content: ""; width: 50%; position: absolute; right: -2.5rem; height: 0.05rem; background-color: #999; top: 0.75rem; }
+section .section-main-right-center .section-main-right-center-nav { width: 100%; padding: 1.5rem 1rem; font-size: 0.4rem; margin-left: -0.25rem; }
+section .section-main-right-center .section-main-right-center-nav li { width: 48.2%; background: #FFF; border-radius: 0.3rem; overflow: hidden; margin-left: 0.25rem; }
+section .section-main-right-center .section-main-right-center-nav li h3 { width: 100%; background-color: #0088cc; text-align: center; color: #fff; padding: 10px 0px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+section .section-main-right-center .section-main-right-center-nav li h3 p { font-size: 0.6rem; font-weight: 100; margin-bottom: 0.5rem; }
+section .section-main-right-center .section-main-right-center-nav li h3 span { font-size: 0.7rem; }
+section .section-main-right-center .section-main-right-center-nav li h3 em { font-size: 0.6rem; font-style: normal; }
+section .section-main-right-center .section-main-right-center-nav li div { width: 100%; line-height: 35px; text-align: center; border-bottom: 1px solid #ddd; margin-bottom: -1px; color: #777; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+section .section-main-right-center .section-main-right-center-nav li div strong { font-size: 0.45rem; }
+section .section-main-right-center .section-main-right-center-nav li div:last-child { line-height: 1.5rem; }
+@keyframes breathbg { 0% { background-color: #00BCD4; }
+  50% { background-color: #2196F3; }
+  100% { background-color: #e77171; } }
+section .section-right-brand { margin-top: 0.75rem; width: 100%; }
+section .section-right-brand .section-right-brand-text { width: 100%; text-indent: 1.5rem; }
+section .section-right-brand .section-right-brand-text span { display: block; color: #222; font-size: 0.7rem; font-weight: 700; line-height: 1.5rem; width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.4); margin-bottom: -1px; }
+section .section-right-brand form { width: 100%; padding: 0 1rem; margin: 0 auto; margin-top: 1rem; }
+section .section-right-brand form .form-main { width: 100%; line-height: 1.25rem; z-index: 1; }
+section .section-right-brand form .form-main label { display: inline-block; width: 4rem; text-align: right; font-size: 0.45rem; margin-right: 10px; }
+section .section-right-brand form .form-main input, section .section-right-brand form .form-main select { display: inline-block; vertical-align: middle; width: 5rem; border: 1px solid #ccc; line-height: 1rem; border-radius: 0.1rem; font-size: 0.45rem; padding-left: 0.25rem; }
+section .section-right-brand form .form-main select { padding-bottom: 0.25rem; }
+section .section-right-brand form .form-main select option { display: inline-block; width: 50%; }
+section .section-right-brand form .form-main span { font-size: 0.45rem; margin-left: 0.3rem; color: red; }
+section .section-right-brand form .form-main:nth-child(1):after { content: " "; }
+section .section-right-brand form .form-main:after { content: "*"; color: red; vertical-align: middle; }
+section .section-right-brand form .form-main-textarea { width: 100%; line-height: 35px; z-index: 1; }
+section .section-right-brand form .form-main-textarea label { display: inline-block; width: 80px; text-align: right; font-size: 14px; margin-right: 10px; }
+section .section-right-brand form .form-main-textarea textarea { width: 500px; height: 100px; display: inline-block; vertical-align: middle; line-height: 25px; }
+section .section-right-brand form #sub { display: block; margin-top: 2.5rem; width: 4rem; color: #fff; letter-spacing: 1px; line-height: 0.9rem; margin-left: 20%; cursor: pointer; font-size: 0.6rem; margin-bottom: 1rem; }
+section .section-right-brand table { width: 100%; margin: 0 auto; }
+section .section-right-brand table tr, section .section-right-brand table td, section .section-right-brand table th { text-align: center; font-size: 0.6rem; }
+section .section-right-brand .fot { width: 100%; text-align: right; font-size: 0.45rem; }
+section .section-right-brand .fot .pagination { width: 80%; }
+section .section-right-brand .section-right-account { width: 100%; margin: 0 auto; margin-bottom: 10px; }
+section .section-right-brand .section-right-account p { background-color: #ddd; line-height: 1.5rem; color: #0D195D; font-weight: 700; font-size: 0.6rem; padding-left: 1rem; }
+section .section-right-brand .section-right-account .section-right-main { width: 100%; font-size: 12px; }
+section .section-right-brand .section-right-account .section-right-main i { display: inline-block; width: 50%; background-color: #ddd; font-style: normal; color: #888; padding-left: 2.5rem; text-align: right; margin-bottom: 1px; line-height: 1.5rem; margin-top: 1px; font-size: 0.45rem; }
+section .section-right-brand .section-right-account .section-right-main span { margin-left: 5%; }
+section .section-right-brand .section-right-account .section-right-main input { width: 48%; line-height: 1.25rem; padding-left: 0.25rem; border: 1px solid #ddd; margin-left: 2%; font-size: 0.45rem; }
+section .section-right-brand .section-right-account .submit { margin-top: 0.5rem; width: 6rem; margin-left: 30%; font-size: 0.6rem; }
+section .section-right-brand .section-right-new-nav { width: 100%; padding: 0 1rem; margin: 0 auto; font-size: 0; }
+section .section-right-brand .section-right-new-nav li { width: 100%; line-height: 1rem; }
+section .section-right-brand .section-right-new-nav li a { display: inline-block; color: #333; font-size: 0.6rem; width: 80%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+section .section-right-brand .section-right-new-nav li:hover a { color: red; }
+section .section-right-brand .section-right-new-nav li:nth-child(4n+4) { border-bottom: 1px dashed #999; padding-bottom: 0.25rem; }
+section .section-right-brand .section-right-new-nav li .time { display: inline-block; width: 20%; color: #ccc; font-size: 0.4rem; text-align: right; }
+
+.footer { width: 100%; position: fixed; bottom: 0; padding-top: 0.25rem; background-color: #F4F4F4; box-shadow: inset -0.05rem 0 0.4rem -0.4rem rgba(0, 0, 0, 0.2), inset 0 0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.2); }
+.footer .footer-nav { padding: 0 1rem; display: flex; justify-content: space-around; }
+.footer .footer-nav li { text-align: center; flex: 1; }
+.footer .footer-nav li a, .footer .footer-nav li i { display: block; line-height: 1rem; font-size: 0.45rem; font-style: normal; color: #999; }
+.footer .footer-nav li i { font-size: 0.6rem; }
+
+/*# sourceMappingURL=from.css.map */

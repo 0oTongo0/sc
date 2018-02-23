@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>转账中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<script type="text/javascript">
+		document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+	</script>
+
+	<body>
+		<!--最大的框-->
+		<div class="subject">
+			<!--头部-->
+			<div class="herder-top">
+				<h1>
+					<a href="">汇查查</a>
+				</h1>
+				<div class="herder-top-right">
+					<img src="images/fenlei.png" id="fenl" />
+				</div>
+				<!--隐藏的导航栏-->
+				<div class="herder-top-nav">
+					<ul>
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">推荐中心</a>
+						</li>
+						<li>
+							<a href="">个人中心</a>
+						</li>
+						<li>
+							<a href="">提款</a>
+						</li>
+						<li>
+							<a href="">财务中心</a>
+						</li>
+						<li>
+							<a href="">转账中心</a>
+						</li>
+						<li>
+							<a href="">修改密码</a>
+						</li>
+						<li>
+							<a href="">安全退出</a>
+						</li>
+					</ul>
+				</div>
+				<!--导航栏end-->
+			</div>
+			<!--头部end-->
+			<!--主体-->
+			<div class="section-mian">
+				<!--内容来了↓-->
+				<div class="section-mian-center">
+					<!--转账中心-->
+					<div class="section-mian-center-nav">
+						<p>转账中心</p>
+						<form action="">
+							<div class="section-mian-center-form	">
+								<div>
+									<label>金额:</label><input type="text" id="name" />
+								</div>
+								<div>
+									<label>汇款人:</label><input type="text" id="name2" />
+								</div>
+								<div>
+									<label>收款人:</label><input type="text" id="name3" />
+								</div>
+								<div>
+									<label>密码:</label><input type="password" id="name4" />
+								</div>
+								<div>
+									<input type="submit" class="sub" id="sub" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--内容end-->
+			</div>
+			<!--底部-->
+			<div class="section-footer">
+				<ul class="section-footer-nav">
+					<li>
+						<a href="">
+							<i>
+								<img src="images/jia.png"/>
+							</i>
+							<span>
+								返回首页
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i>
+								<img src="images/geren.png"/>
+							</i>
+							<span>
+								个人中心
+							</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<i>
+								<img src="images/top.png"/>
+							</i>
+							<span>
+								回到顶部
+							</span>
+						</a>
+					</li>
+					<li id="sx">
+						<a href="">
+							<i>
+								<img src="images/sx2.png"/>
+							</i>
+							<span>
+								刷新
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--弹框-->
+		<div class="pop">
+			不能为空
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			//			表单验证
+			$("#sub").click(function() {
+				var val1 = $("#name").val();
+				var val2 = $("#name2").val();
+				var val3 = $("#name3").val();
+				var val4 = $("#name4").val();
+				var check = /^\d+(\.{0,1}\d+){0,1}$/;
+				if(val1 == "") {
+					$(".pop").text("金额不能为空")
+					$(".pop").stop().show(100).delay(1000).hide(300);
+					return false;
+				} else if(val2 == "") {
+					$(".pop").text("汇款人不能为空")
+					$(".pop").stop().show(100).delay(1000).hide(300);
+					return false;
+				} else if(val3 == "") {
+					$(".pop").text("收款人不能为空")
+					$(".pop").stop().show(100).delay(1000).hide(300);
+					return false;
+				} else if(val4 == "") {
+					$(".pop").text("密码不能为空")
+					$(".pop").stop().show(100).delay(1000).hide(300);
+					return false;
+				} else if(!check.test(val1)) {
+					$(".pop").text("金额不能小于0")
+					$(".pop").stop().show(100).delay(1000).hide(300);
+					return false;
+				} else {
+					return true;
+				}
+			})
+		})
+	</script>
+
+</html>

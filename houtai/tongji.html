@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>统计</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/right.css" />
+	</head>
+	<style type="text/css">
+				body{
+			background: rgba(255,255,255,0.5);
+		}
+		input{
+			width: 80px;
+		}
+		button{
+			margin-left: 10px;
+		}
+		label{
+			font-size: 12px;
+		}
+		input[type="date"]{
+			width: 115px;
+		}
+		caption{
+			font-weight: 700;
+		}
+		.btn{
+			margin: 0;
+		}
+	</style>
+	<body>
+	<div style="position: relative; width: 100%; padding: 20px;">
+		<div class="top">当前位置：系统管理 >> 财务管理 >> 财务明细</div>
+						<form action="">
+				<label>会员ID：</label>
+				<input type="" name="" id="" value="" required/>
+				<label>标记：</label>
+				<input type="text" name="" id="" value="" required/>
+				<label>领导ID：</label>
+				<input type="text" required/>
+				<label>代数：</label>
+				<input type="text" required/>
+				<label>会员关系：</label>
+				<select>
+					<option>1</option>
+				</select>	
+				<label>时间</label>
+				<input type="date" required/>
+				<label>至</label>
+				<input type="date" required/>
+				<button class="btn btn-primary">搜索</button>
+				</form>
+		<table class="table table-hover" style="text-align: center;">
+		  <caption style="text-align: center;">内容列表</caption>
+		  <thead>
+		    <tr>
+		      <th>敏感级别</th>
+		      <th>会员编号</th>
+		      <th>户名</th>
+		      <th>银行账号</th>
+		      <th>添加时间</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>4</td>
+		      <td>5</td>
+		      <td>6</td>
+		    </tr>
+		  </tbody>
+		</table>
+		<ul class="pagination" style="position: absolute; bottom: -20px; left: 50%;margin-bottom: 20px;">
+		    <li><a href="#">&laquo;</a></li>
+		    <li ><a href="#">当前页面<span style="color: red;">1</span></a></li>
+		    <li class="active"><a href="#">1</a></li>
+		    <li ><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a href="#">&raquo;</a></li>
+		    <li><a href="#">跳转</a></li>
+		    <li>
+		    	<select style="height: 34px;border: 1px solid #ddd;margin-left: -1px;">
+		    	<option>1</option>
+		    </select></li>
+		</ul>
+	</div>
+	</body>
+</html>
+

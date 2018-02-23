@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/hy-dl.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+			<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+		</script>
+	<body>
+		<section>
+			<div class="main">
+				<h1>全球净</h1>
+				<form action="" >
+					<div class="centre-main-radio clearfix">
+						<!--<div class="row">-->
+						<div class="centre-main-radio-left fl_lt bg on">
+							<input type="radio" name="login" id="dealer" value="" checked="checked" />
+							<label for="dealer" class="lab">我是经销商</label>
+						</div>
+						<div class="centre-main-radio-right fl_lt bg">
+							<input type="radio" name="login" id="customer" value="" />
+							<label for="customer" class="lab">我是消费者</label>
+						</div>
+						<!--</div>-->
+					</div>
+					<div>
+						<input type="number" name="" id="phone" value="" placeholder="请输入用户名"/>
+					</div>
+					<div>
+						<input type="password" name="" id="pass" value="" placeholder="请输入密码"/>
+						<a href="javascript:;" class="but_b" id="butt_b"></a>
+					</div>
+					<input type="submit" value="登录"/>
+				</form>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+//	背景切换
+		$(".centre-main-radio>.bg").click(function() {
+				$(this).addClass("on").siblings().removeClass("on")
+		})
+//		$(".text").blur(function(){
+//				if($("#name").val() == ""){
+//					$("#name-text").text("请输入会员名");
+//					$("#name-text").css("color","red");
+//				}else{
+//					$("#name-text").text("")
+//				}
+//			})
+//			$("#name").blur(function(){
+//				if($("#name").val() != ""){
+//					$("#name-s").text("")
+//				}
+//			})		
+})
+	</script>
+</html>

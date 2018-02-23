@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>推荐关系</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/relation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		#menu {
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 0.5rem;
+			padding-left: 0.5rem;
+		}
+		
+		#menu #tree_root li span {
+			display: block;
+			line-height: 0.6rem;
+			color: #222;
+			font-size: 0.6rem;
+		}
+		
+		#menu ul li b {
+			font-weight: normal;
+			position: relative;
+			padding-left: 1.2rem;
+			font-size: 0.6rem;
+			line-height: 1rem;
+			cursor: pointer;
+		}
+		
+		#menu ul li b:before {
+			display: block;
+			font-size: 0;
+			content: "";
+			width: 0.8rem;
+			height: 0.8rem;
+			position: absolute;
+		}
+		
+		#menu ul li .On:before,
+		#menu ul li .On2Off:before {
+			background: url(images/wenjian.png)no-repeat;
+			background-size: contain;
+		}
+		
+		#menu ul li .Off:before {
+			background: url(images/wenjian.png)no-repeat;
+			background-size: contain;
+		}
+		
+		#menu .wd {
+			margin-left: 0.5rem;
+			display: none
+		}
+	</style>	
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+	<body>
+		<!--最大的框-->
+		<div class="subject">
+			<!--头部-->		
+			<div class="herder-top">
+				<h1>
+					<a href="">汇查查</a>
+				</h1>
+				<div class="herder-top-right">
+					<img src="images/fenlei.png" id="fenl"/>
+				</div>
+				<!--隐藏的导航栏-->
+				<div class="herder-top-nav">
+					<ul >
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">推荐中心</a>
+						</li>
+						<li>
+							<a href="">个人中心</a>
+						</li>
+						<li>
+							<a href="">提款</a>
+						</li>						
+						<li>
+							<a href="">财务中心</a>
+						</li>
+						<li>
+							<a href="">转账中心</a>
+						</li>	
+						<li>
+							<a href="">修改密码</a>
+						</li>	
+						<li>
+							<a href="">安全退出</a>
+						</li>						
+					</ul>
+				</div>
+				<!--导航栏end-->
+			</div>
+			<!--头部end-->
+			<!--主体-->
+			<div class="section-mian">
+				<!--内容来了↓-->
+				<div class="section-mian-center">
+					<!--推荐关系-->
+					<div class="section-mian-center-nav">
+						<p>推荐关系</p>
+					<div id="menu">
+						<ul id="tree_root">
+							<!--<li>
+								<span><b class="Off">一级分类</b></span>
+								<ul class="wd">
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+								</ul>
+							</li>-->
+							<li>
+								<span><b class="Off">一级分类</b></span>
+								<ul class="wd">
+									<li class="a1">
+										<span><b class="Off">二级分类</b></span>
+										<ul class="wd">
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+										</ul>
+									</li>
+									<li>
+										<span><b class="Off">二级分类</b></span>
+										<ul class="wd">
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+											<li class="a1">
+												<span><b class="Off">三级分类</b></span>
+												<ul class="wd">
+													<li><span><b>四级分类</b></span></li>
+													<li><span><b>四级分类</b></span></li>
+													<li><span><b>四级分类</b></span></li>
+													<li class="a1">
+														<span><b class="Off">四级分类</b></span>
+														<ul class="wd">
+															<li><span><b>五级分类</b></span></li>
+															<li><span><b>五级分类</b></span></li>
+															<li><span><b>五级分类</b></span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>						
+					</div>
+				</div>
+				<!--内容end-->
+			</div>
+			<!--底部-->
+			<div class="section-footer">	
+				<ul class="section-footer-nav">
+					<li>
+						<a href="">
+							<i>
+								<img src="images/jia.png"/>
+							</i>
+							<span>
+								返回首页
+							</span>
+						</a>
+					</li>
+					<li>	
+						<a href="">
+							<i>
+								<img src="images/geren.png"/>
+							</i>
+							<span>
+								个人中心
+							</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<i>
+								<img src="images/top.png"/>
+							</i>
+							<span>
+								回到顶部
+							</span>
+						</a>
+					</li>
+					<li id="sx">
+						<a href="">
+							<i>
+								<img src="images/sx2.png"/>
+							</i>
+							<span>
+								刷新
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+
+

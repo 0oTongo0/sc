@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/sigin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+		</script>
+	</head>
+	<body>
+		<section class="main">
+			<form action="" method="post" class="centre-main-form" id="mt">
+				<p>登录</p>
+				<div class="centre-main-form-width">
+					<input type="text" name="" id="" value="" placeholder="请输入用户名" class="text"/>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="password" name="" id="" value="" placeholder="请输入密码" class="password"/>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="submit" value="登录" id="sub"/>
+				</div>
+				<input type="submit" value=""/>
+			</form>
+		<div class="voice">
+			<span class="cn">中文</span>
+			<span class="en">英文</span>
+		</div>
+		<div class="clearfix" style="margin-top: 1rem;">
+			<a href="" class="fl_lt" style="color: #333; font-size: 1rem;">登录</a>
+			<a href="" class="fl_rt" style="color: #333;font-size: 1rem;">忘记密码</a>
+		</div>
+		<div class="mc">
+				请检查所有的输入，都不能为空,谢谢~~
+		</div>
+		</section>
+	</body>
+	<script>
+//	验证码
+$(function(){
+		var wait=60;  
+		function time(o) {  
+		        if (wait == 0) {  
+		            o.removeAttribute("disabled");            
+		            o.value="免费获取验证码";  
+		            wait = 60;  
+		        } else {  
+		            o.setAttribute("disabled", true);  
+		            o.value="重新发送(" + wait + ")";  
+		            wait--;  
+		            setTimeout(function() {  
+		                time(o)  
+		            },  
+		            1000)  
+		        }  
+		    }  
+		$("#btn").click(function(){
+			time(this)
+		})
+		//提交表单
+	   $("#sub").bind("click",function(event){
+         var username = $(".text").val();  //获取元素的值
+          var username2 = $(".password").val();
+         if(username=="" || username2==""){     //判断值是否为空
+       		$(".mc").show(100).delay(1000).hide(300);
+       		return false;
+  		 }else{
+  		 	return true;
+  		 }
+   })					
+})
+	</script>
+</html>
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/particulars.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gouwuc_you.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="" method="post">
+		<header class="header">
+			<span class="header-left"><img src="images/返回.png" onclick="javascript:history.back(-1);"/></span>
+			<span class="header-center">结算</span>
+		</header>		
+		<section class="top">
+			<div class="main clearfix">        <!--大的-->
+				<div class="input fl_lt">  <!--左-->
+					<input type="checkbox" name="" value="" class="che"/>
+				</div>
+				<img src="" class="fl_lt"/> <!--中-->
+				<div class="fl_lt right"> <!--右-->
+					<p>我对我的我的我的我的我的我单位 我的我的我</p>
+					<div class="money">￥<span class="qian">9.90</span></div>
+					<!--删除-->
+					<div class="remove">
+						<img src="images/删除.png"/>
+					</div>					
+					<div class="but fl_rt"> <!--加减-->
+						<span class="subtract on">-</span>
+						<input type="text" class="centre" value="1"/>
+						<span class="add on">+</span>
+					</div>
+				</div>
+			</div>
+			<div class="main clearfix">        <!--大的-->
+				<div class="input fl_lt">  <!--左-->
+					<input type="checkbox" name="" value="" class="che"/>
+				</div>
+				<img src="" class="fl_lt"/> <!--中-->
+				<div class="fl_lt right"> <!--右-->
+					<p>我对我的我的我的我的我的我单位 我的我的我</p>
+					<div class="money">￥<span class="qian">9.90</span></div>
+					<!--删除-->
+					<div class="remove">
+						<img src="images/删除.png"/>
+					</div>
+					<div class="but fl_rt"> <!--加减-->
+						<span class="subtract on">-</span>
+						<input type="text" class="centre" value="1"/>
+						<span class="add on">+</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="result">   <!--计算结果-->
+			<div class="result-left">
+				<input type="checkbox" name="" id="chex" value="" />
+				<label for="chex" id="selectAll">全选</label>
+				<p><span>合计：￥</span><span id="zongji">11.11</span><span>折扣:</span><strong>111</strong></p>
+			</div>
+			<a href="#" class="butt">结算</a>
+		</section>
+		<!--蒙层+删除-->
+				<div class="pop2">
+					<div class="pop-mian">
+						<div class="pop-top clearfix">
+							<b id="del2" class="fl_rt" class="del">&times;</b>
+						</div>
+						<!--内容-->
+				<div class="pop-fot">
+							<p>是否删除商品？</p>
+							<div class="pop-fot-cik">
+								<a href="javascript:;" class="pop-fot-cik-left">确定</a>
+								<span  class="pop-fot-cik-right">取消</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/h_index.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_sc.png"/>
+							<span>我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_fl.png"/>
+							<span>商品分类</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<img src="images/top2.png"/>
+							<span>回到顶部</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->		
+			</form>
+	</body>
+		<script type="text/javascript">
+		$(function(){			
+			function TotalPrice() {
+				var allprice = 0; //总价 
+				$(".main").each(function() { //循环每个店铺 
+					var oprice = 0; //店铺总价 
+					$(this).find(".che").each(function() { //循环店铺里面的商品 
+						if($(this).is(":checked")) { //如果该商品被选中 
+							var num = parseInt($(this).parents(".main").find(".centre").val()); //得到商品的数量 				
+							var price = parseFloat($(this).parents(".main").find(".qian").text()); //得到商品的单价 						
+							var total = price * num; //计算单个商品的总价 							
+							oprice += total; //计算该店铺的总价 
+						}
+						$("#zongji").text(oprice.toFixed(2)); //显示被选中商品的店铺总价 
+					});
+					var oneprice = parseFloat(oprice); //得到每个店铺的总价 	
+					allprice += oneprice; //计算所有店铺的总价 
+				});
+				$("#zongji").text(allprice.toFixed(2)); //输出全部总价 
+			}
+			 $(".main :checkbox").click(function(){				
+				TotalPrice()	
+				allchk()
+			});	
+						//加的效果
+			$(".add").click(function(){
+				var n=$(this).siblings("input").val();
+				var num=parseInt(n)+1;
+				if(num ==0){ 
+					return;
+				}						
+				$(this).siblings("input").val(num);
+				TotalPrice();
+			});
+			//减的效果
+				$(".subtract").click(function(){
+				var n=$(this).siblings("input").val();
+				var num=parseInt(n)-1;
+				if(num ==0){
+					return;
+				}				
+				$(this).siblings("input").val(num);
+				TotalPrice();
+			});
+
+//			勾选全选  
+			$("#chex").click(function() {
+				if(this.checked) {
+					$(".main .input input[type=checkbox]").prop("checked", true);
+					TotalPrice()
+				} else {
+					$(".main .input input[type=checkbox]").prop("checked", false);
+					$("#zongji").text(0)
+				}			
+			});		
+			var chk = 0; //定义选中的个数chk = 0; //定义选中的个数
+			function allchk() {
+				chk = 0; //定义选中的个数
+				var chknum = $(".main :checkbox").size(); //选项总个数的数量 
+				$(".main :checkbox").each(function() {
+					if($(this).prop("checked") == true) {
+						chk++;
+					}
+				});
+				if(chknum == chk) { //全选
+					$("#chex").prop("checked", true);
+				} else { //不全选
+					$("#chex").prop("checked", false);
+				}
+			}
+//			弹框出现
+			$(".remove").each(function(){
+				$(this).click(function(){
+				$(".pop2").show();
+					var the = $(this).parents('.main');
+					var the2 = $(this).parents('.main').find(".che");
+					var num = parseInt($(this).parents(".main").find(".centre").val()); //得到商品的数量 		
+					var price = parseFloat($(this).parents(".main").find(".qian").text()); //得到商品的单价 		
+					var total = price * num; //计算单个商品的总价 
+//					var zs =  parseInt($("#jianshu").text());  //当前总个数
+					var qs =  parseFloat($("#zongji").text()); //当前总钱数
+//					var chaji;   //定义个数差级
+					var chaji2;   //定义钱数差级				
+					$(".pop-fot-cik-right").on('click',function(){
+						$(".pop2").hide()
+						the = $(this).parents('.main');
+						the2 = $(this).parents('.main').find(".che");
+					})	
+					$(".pop-fot-cik-left").on('click',function(){
+						the.remove();
+						$(".pop2").hide()
+						if(the2.is(":checked")){
+//								chaji = zs-num;
+								chaji2 = qs-total;
+//							$("#jianshu").text(chaji)
+							$("#zongji").text(chaji2.toFixed(2))
+						}else{
+							return false;
+						}
+					})	
+				})
+			})
+//			删除
+			$("#del2").on('click',function(){
+				$(".pop2").hide()
+			})			
+		})
+	</script>
+</html>

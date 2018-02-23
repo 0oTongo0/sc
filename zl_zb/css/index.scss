@@ -1,0 +1,630 @@
+@charset "UTF-8";
+$yc:#ea5150;
+//主体
+.personal{
+    width: 100%;
+    background: url(../images/bg.jpg)no-repeat fixed;
+    background-size: 100% 100%;
+    padding-bottom: 25px;
+    .personal-mian{
+        width: 1200px;
+        margin: 0 auto;
+//      左边
+        .personal-mian-left{
+            width: 180px;
+            margin-right: 15px;
+            *background: #fff;
+            background: rgba(0,0,0,.4);
+            margin-top: 30px;
+            h3{
+                color: #fff;
+                line-height: 38px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                padding-left: 15px;
+                margin: 10px 0;
+            }
+            .personal-mian-left-nav{
+                width: 100%;
+                padding-left: 30px;
+                li{
+                    padding: 14px 0;
+                    position: relative;
+                    a{
+                        display: block;
+                        color: #fff;
+                        font-size: 13px;
+                        position: relative;
+                        transition: all 0.2s;
+                        &:hover{
+                            color: $yc;
+                            font-weight: 700;
+                            background: rgba(0,0,0,0.4);
+                        }
+                    }
+//                  子集
+                    .personal-mian-left-nav-nexts{
+                        padding-left: 20px;
+                        display: none;
+                        li{
+                             padding: 14px 0;
+                             a{
+                                display: block;
+                                color: #fff;
+                                font-size: 12px; 
+                                &:hover{
+                                    color: $yc;
+                                    font-weight: 700;
+                                }                                                                
+                             }
+                        }
+                    }
+                }
+                .jiaoyi>a:before{
+                    content: " ";
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: absolute;
+                    left: -10px;
+                    top: 50%;
+                    margin-top: -4px;
+                    border: 4px solid transparent;
+                    border-left-color: #fff;
+                }
+                .yes>a:before{
+                    content: " ";
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: absolute;
+                    left: -15px;
+                    top: 50%;
+                    margin-top: -4px;                    
+                    border: 4px solid transparent;
+                    border-top-color:#fff;
+                }
+            }
+        }
+//      右边
+        .personal-mian-right{
+            width: 1005px;
+            margin-top: 30px;
+            *background: #fff;
+            background: rgba(0,0,0,.4);
+            h4{
+                line-height: 27px;
+                border-left: 4px solid $yc;
+                color: #fff;
+                font-size: 14px;
+                padding-left: 3px;
+            }
+//          数据开始
+            .data{
+                width: 100%;
+                padding-left: 38px;
+                padding-bottom: 24px;
+                border-bottom: 1px solid #fff;
+                &>div{
+                    width: 49%; 
+                }
+//              左边
+                .data-left{
+                   border-right: 1px dashed #fff;
+                   .data-left-top{
+                       line-height: 38px;
+                       color: #fff;
+                       font-size: 15px;
+                   }
+                   .data-left-center{
+                       width: 100%;
+                       margin-bottom: 20px;
+                       strong{
+                           font-size: 36px;
+                           color: #297de5;
+                           margin-right: 50px;
+                       }
+                       a{
+                           margin-right: 20px;
+                           color: #fff;
+                           font-size: 12px;
+                           &:hover{
+                               color: $yc;
+                               font-weight: 700;
+                           }
+                       }
+                   }
+                }
+//              右边
+                .data-right{
+                    width: 50%;
+                    padding-top: 106px;
+                    padding-left: 77px;
+                    p{
+                       line-height: 38px;
+                       color: #fff;
+                       font-size: 15px; 
+                    }
+                    .data-right-center{
+                       width: 100%;
+                       margin-bottom: 20px;
+                       strong{
+                           color: #cc2732;
+                           margin-right: 50px;
+                           font-size: 36px;
+                       } 
+                       a{
+                           margin-right: 20px;
+                           color: #fff;
+                           font-size: 12px;
+                             &:hover{
+                               color: $yc;
+                               font-weight: 700;
+                           }
+                       }                                              
+                    }
+                }
+            }
+//          折线图
+            .section{
+                width: 100%;
+                margin-top: 20px;
+                border-bottom: 1px solid #fff;
+            }
+            .tab-top{
+                     line-height: 27px;
+                    border-left: 4px solid $yc;
+                    color: #fff;
+                    font-size: 14px;
+                    padding-left: 3px;                 
+            }
+        }
+    }
+}
+//提款
+.deposit-mian-right{
+     width: 1005px;
+     margin-top: 30px; 
+//   头部   
+    .deposit-mian-right-top{
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 20px;
+            *background: #fff;
+            background: rgba(0,0,0,.4);        
+        span{
+            color: #fff;
+            border-left: 2px solid $yc;
+            padding-left: 3px;
+            font-size: 14px;
+        }
+    }
+        //中间
+        .deposit-mian-right-center{
+            width: 100%;
+            *background: #fff;
+            background: rgba(0,0,0,.4);  
+//          数据 
+            .data{
+                width: 100%;
+                padding: 0 28px;
+                .data-nav{
+                    width: 100%;
+                    padding-bottom: 36px;
+                    border-bottom: 1px dashed #fff;
+                    li{
+                        width: 33.333%;
+                        float: left;
+                        span,strong{
+                            display: block;
+                        }
+                        span{
+                            color: #fff;
+                            font-size: 12px;
+                            line-height: 35px;
+                            font-weight: 600;
+                        }
+                        strong{
+                            font-size: 36px;
+                            color: #297DE5;
+                        }
+                    }
+                }
+            }    
+        }
+    
+}
+//财务明细
+.detail-mian-right{
+       width: 1005px;
+     margin-top: 30px;   
+     .detail-mian-right-top{
+         width: 100%;
+        padding: 24px;
+            *background: #fff;
+            background: rgba(0,0,0,.4);        
+        span{
+            color: #fff;
+            border-left: 2px solid $yc;
+            padding-left: 3px;
+            font-size: 14px;
+        }        
+     }
+//   导航
+    .detail-mian-right-nav{
+        width: 100%;
+        padding-left: 20px;
+        li{
+            padding: 25px 15px 10px;
+            font-size: 13px;
+            color: #fff;
+            float: left;
+            cursor: pointer;
+            transition:all 0.2s;
+             border-bottom: 1px solid transparent; 
+            &:hover{
+                color: $yc;
+                font-weight: 700;
+            }
+            &.on{
+                border-bottom: 1px solid $yc;
+            }
+        }
+    }
+}
+//财务明细end
+//我要出售
+.sell-mian-right{
+      width: 1005px;
+     margin-top: 30px;
+     .sell-mian-right-top{
+         width: 100%;
+        padding: 24px;
+            *background: #fff;
+            background: rgba(0,0,0,.4);        
+        span{
+            color: #fff;
+            border-left: 2px solid $yc;
+            padding-left: 3px;
+            font-size: 14px;
+        }        
+     }  
+     .sell-mian-right-center{
+         width: 100%;
+         padding: 20px;
+         margin-top: 20px;
+          background: rgba(0,0,0,.4);  
+          color: #fff;
+//        数据
+          .sell-top{
+              width: 100%;
+              background: rgba(0,0,0,.2); 
+              padding: 10px;
+              margin-bottom: 10px;
+              ul{
+                  width: 100%;
+                  li{
+                      float: left;
+                      width: 160px;
+                      span,strong{
+                          display: block;
+                          line-height: 25px;
+                      }
+                      span{
+                          font-size: 12px;
+                      }
+                      strong{
+                          color: #297DE5;
+                          font-size: 36px;
+                            padding-left: 15px;
+                      }
+                      .col{
+                          color: #cc2732;
+                      }
+                  }
+              }
+          }
+//        表单
+          .sell-form{
+              width: 100%;
+              background: rgba(0,0,0,.2); 
+              padding: 10px;
+              margin-bottom: 50px;
+              border-bottom: 1px solid #fff;              
+          }
+     } 
+       
+}
+//在线充值
+.form .form-main .zhanghao{
+    width: 270px;
+}
+//兑换中心
+.conversion{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 13px;
+    .conversion-top{
+        width: 100%;
+        .conversion-top-nav{
+            width: 100%;
+            li{
+                background: rgba(0,0,0,0.2);
+                line-height: 30px;
+                margin-top: 11px;
+                padding-left: 35px;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                    color: #297DE5;
+                    font-weight: 700;
+                    width: 200px;
+                }
+                a{
+                    font-size: 12px;
+                    margin: 0 20px;
+                    color: #fff;
+                    &:hover{
+                        color: $yc;
+                    }
+                }
+            }
+        }
+    }
+}
+.conversion-form{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    padding-top: 38px;
+}
+//我的咨询
+.advisory{
+    width: 100%;
+     background: rgba(0, 0, 0, 0.4);
+     padding: 31px 70px;
+     margin-top: 20px;
+     .advisory-top{
+         width: 100%;
+         font-size: 0;
+         margin-bottom: 20px;
+         label{
+             display: inline-block;
+             width: 50px;
+             text-align: right;
+             vertical-align: middle;
+             color: #fff;
+             font-size: 12px;
+             margin-right: 15px;
+             line-height: 40px;
+         }
+         .main{
+             vertical-align: top;
+         }
+         input,textarea{
+             width: 742px;
+              vertical-align: middle;
+             line-height: 40px;
+             font-size: 13px;
+             background: rgba(255,255,255,0.5);
+             padding-left: 5px;
+         }
+         textarea{
+             height: 580px;
+         }
+     }
+     .sub{
+         width: 121px;
+         line-height: 30px;
+         background: transparent;
+         border: 1px solid #3b3944;
+         text-align: center;
+         color: #fff;
+         cursor: pointer;
+         &:hover{
+             border-color: $yc;
+         }
+     }
+}
+//弹框提示
+.pop{
+    padding: 10px;
+    *background: #fff;
+    background: rgba(0,0,0,0.6);
+    *color: red;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    margin-top: -10px;
+    left: 45%;
+    display: none;
+    -webkit-animation: wd 0.8s ease-in-out;
+    animation: dk 0.8s ease-in-out;   
+    font-size: 13px; 
+}
+@keyframes dk {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+//分页
+.footer-paging {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer-paging .footer-paging-main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav {
+    width: 100%;
+    padding-left: 50%;
+    
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li a:hover {
+    border: 1px solid #ff5a59;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li .link {
+    background: #ff5a59;
+    color: #fff;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li .yes {
+    width: 60px;
+    border-radius: 12px;
+    background: #fff;
+    color: #333;
+    margin: 0 10px;
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.footer-paging .footer-paging-main .footer-paging-main-nav li .yes:hover {
+    background: #ff5a59;
+    color: #fff;
+}
+//          表单    
+            .form{
+                width: 100%;
+                margin-top: 35px;
+                padding-left: 150px;
+                padding-bottom: 50px;
+                .form-main{
+                    width: 100%;
+                    margin-bottom: 13px;
+                    label{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 70px;
+                        margin-right: 13px;
+                        line-height: 24px;
+                        color: #fff;
+                        text-align: right;
+                        font-size: 13px;
+                    }
+                    input,select{
+                        display: inline-block;
+                        vertical-align: middle;                        
+                        width: 120px;
+                        border: 1px solid #e6e6e6;
+                        line-height: 24px;
+                        padding-left: 2px;
+                        background: #fff;
+                        border-radius: 3px;
+                    }
+                    input:focus{
+                        border-color: #EA5150;
+                    }
+                    select{
+                        padding:4px 1%;
+                    }
+                    .tixian{
+                        width: 198px;
+                    }
+                    .zhanghu{
+                        width: 553px;
+                    }
+                    .pass{
+                        width: 198px;
+                    }
+                    .sub{
+                        margin-left: 83px;
+                        color: #888;
+                        cursor: pointer;
+                        border: 1px solid transparent;
+                        padding: 5px 0;
+                        &:hover{
+                            background: #EA5150;
+                            border-color: #EA5150;
+                            color: #fff;
+                            
+                        }
+                    }
+                }
+                .form-footer{
+                    color: #fff;
+                    margin-top: 40px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                }
+            } 
+//  表格
+        .detail-tab{
+            width: 100%;
+            margin-top: 11px;
+            background: rgba(0,0,0,0.2);
+            table{
+                width: 100%;
+                color: #fff;
+                font-size: 12px;
+            }
+            th,td{
+                text-align: center;
+            }
+             thead>tr{
+                background: rgba(0,0,0,0.3);  
+             }
+              tbody>tr{
+                  cursor: pointer;
+              }
+            thead>tr>th{
+              
+               padding: 16px 0;
+               border-bottom: 16px solid rgba(255,255,255,0.1);
+            }
+            tbody tr:nth-child(2n+1){
+               background: rgba(0,0,0,0.3); 
+            }
+            tbody tr td{
+                 padding: 16px 0;
+                 span{
+                     margin-right: 15px;
+                 }               
+            }
+            tbody tr td:nth-child(n+5){
+                color: #297DE5;
+            }
+               tbody>tr:hover{
+                 background: rgba(0,0,0,.4);
+              }           
+        }            

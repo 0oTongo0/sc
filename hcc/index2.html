@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎的您的到来</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header-tt">
+			<iframe src="top-kj.html" width="100%" height="42px" frameborder="0"   scrolling="no" ></iframe>
+		</div>
+		<!--幻灯片-->
+		<div style="width: 1200px; margin: 0 auto;">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/br.jpg" alt="" style="width: 100%;" /></div>
+					<div class="swiper-slide"><img src="images/br2.jpg" alt="" style="width: 100%;" /></div>
+					<div class="swiper-slide"><img src="images/br3.jpg" alt="" style="width: 100%;" /></div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev swiper-button-white"></div> <!-- 白色 -->
+				<div class="swiper-button-next swiper-button-black"></div> <!-- 黑色 -->
+			</div>
+		</div>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				el: '.swiper-pagination',
+				pagination: ".swiper-pagination",
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+				paginationClickable :true,
+				prevButton:'.swiper-button-prev',
+				nextButton:'.swiper-button-next',
+			})
+		</script>
+		<!--主体-->
+		<div class="section clearfix">
+			<!--主体底部-->
+			<div class="section-left clearfix">
+				<!--个人中心-->
+				<div class="section-left-main fl_lt">
+					<p>
+						<span>个人中心</span>
+					</p>
+					<ul class="section-left-main-nav">
+					<span class="section-left-main-text">欢迎您的到来，今天又是美好的一天~</span>						
+						<li>
+							<strong>会员名:</strong><span>张三</span>
+						</li>
+						<li>
+							<strong>等级:</strong><span>白银</span>
+						</li>	
+						<li>
+							<strong>金额:</strong><span>999</span>
+						</li>						
+						<li>
+							<strong>注册时间:</strong><span>2018.1.1</span>
+						</li>						
+						<li>
+							<strong>上次登录:</strong><span>深圳</span>
+						</li>
+						<li>
+							<strong>登录时间:</strong><span>2018.2.2</span>
+						</li>							
+					</ul>
+				</div>
+				<!--每日必看-->
+				<div class="section-left-main fl_rt">
+					<p>
+						<span>每日必看</span>
+					</p>
+					<div class="section-right-text" id="box">
+						<ul class="section-right-text-nav">
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">	
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>
+							<li class="clearfix">
+								<a href="" target="_blank">我的我的我的我的我的对我的我的我</a>
+								<span class="fl_rt">2017/01/01</span>
+							</li>							
+						</ul>
+					</div>					
+				</div>
+			</div>
+			<!--主体头部-->
+			<div class="section-top">
+				<p>
+					<span>资料管理</span>
+				</p>
+				<ul class="clearfix section-top-nav">
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/mm.jpg"/>
+							<span>修改密码</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/zz.png"/>
+							<span>转账中心</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/tx.png"/>
+							<span>财务中心</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/gx.png"/>
+							<span>推荐关系</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/niews.png"/>
+							<span>新闻</span>
+						</a>
+					</li>					
+				</ul>
+			</div>		
+				<script type="text/javascript">
+					function AutoScroll(obj) {
+					    $(obj).find("ul:first").animate({
+					        marginTop: "-30px"
+					    },
+					    500,
+					    function() {
+					        $(this).css({
+					            marginTop: "0px"
+					        }).find("li:first").appendTo(this);
+					    });
+					}
+					$(document).ready(function() {
+						var timer=null;
+						timer = setInterval('AutoScroll("#box")', 1600)
+					    $("#box").hover(function(){
+					    	 clearInterval(timer); 
+			//		    	 console.log("wd")
+					    },function(){
+					    	timer = setInterval('AutoScroll("#box")', 1600);
+					    })
+					})
+				</script>					
+			</div>
+		</div>
+		<!--回到頂部-->
+		<div id="top">
+			回到<br/>
+			顶部
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<p>版权归属</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+		    $(window).on('scroll', function () {
+		    	if($(window).scrollTop()>30){
+		    		$("#top").show();
+		    	}else{
+		    		$("#top").hide();
+		    	}
+		    })
+		    $("#top").click(function () {
+		        $('body,html').animate({ scrollTop: 0 }, 200);
+		        return false;
+		 });
+		});
+	</script>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>虚拟币行情</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		#form tr>td{
+				text-align: right;
+			}
+	</style>
+	<body>
+		<div class="section">
+			<p class="section-top">当前位置：虚拟币交易 >> 虚拟币行情</p>
+			<div class="section-table">
+				<table class="table table-striped table-bordered table-hover">
+				  <caption>虚拟币行情</caption>
+				  <thead>
+				    <tr>
+				      <th>
+						<input type="checkbox" id="qb"/>
+						<label for="qb">全部</label>
+				      </th>
+				      <th>
+				      	期数
+				      </th>
+				      <th>
+				      	开盘价
+				      </th>
+				      <th>
+				      	收盘价
+				      </th>	
+				      <th>
+						最高价
+				      </th>
+				      <th>
+				      	最低价
+				      </th>
+				      <th>
+				      	现价
+				      </th>
+				      <th>
+				      	交易数量
+				      </th>	
+				      <th>
+						时间
+				      </th>		
+				      <th>
+				      	操作
+				      </th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>
+				      	<input type="checkbox" name="" id="" value="" />
+				      </td>
+				      <td>
+				      	0
+				      </td>
+				      <td>
+				      	cn555
+				      </td>
+				      <td>
+				      	11
+				      </td>	
+				      <td>
+				      	0
+				      </td>
+				      <td>
+				      	cn555
+				      </td>
+				      <td>
+				      	11
+				      </td>	
+				      <td>
+				      	cn555
+				      </td>
+				      <td>
+				      	11
+				      </td>					      
+				     <td>
+						<button class="btn btn-info">修改</button>	
+						<button class="btn btn-warning">删除</button>
+						<button class="btn btn-default">排列所选</button>
+						<button class="btn btn-danger">删除所选</button>
+				      </td>		
+				    </tr>
+				  </tbody>
+				</table>
+				
+			</div>
+			<!--分页-->
+			<div class="section-footer">
+				<ul class="pagination">
+				    <li><a href="#">&laquo;</a></li>
+				    <li><a href="#">首页</a></li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li><a href="#">尾页</a></li>
+				    <li><a href="#">&raquo;</a></li>
+				    <li style="line-height: 34px;margin-left: 10px;">
+				    	<label>跳转</label>
+				    	<select>
+				    		<option>1</option>
+				    	</select>
+				    </li>
+				</ul>
+			</div>
+			<div class="section-table" style="height: auto;">
+				<form id="form">
+					<table class="table table-striped table-bordered ">
+					  <caption>行情管理</caption>
+					  <tbody>
+					    <tr>
+					      <td>
+					      	期数：
+					      </td>
+					      <td>
+					      	<em>
+					      		<input type="text" name="" id="" value="" />
+					      	</em>
+					      </td>		
+					    </tr>
+					    <tr>
+					      <td>
+					      	开盘价：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" name="" id="" value="" />
+					      	</em>
+					      </td>		
+					    </tr>
+					    <tr>
+					      <td>
+					      	收盘价：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>
+					    <tr>
+					      <td>
+					      	最高价：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>
+						<tr>
+					      <td>
+					      	最低价：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>
+						<tr>
+					      <td>
+					      	现价：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>	
+						<tr>
+					      <td>
+					      	交易数量：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>	
+						<tr>
+					      <td>
+					      	时间：
+					      </td>
+					      <td>
+					      	<em>
+								<input type="text" />
+					      	</em>
+					      </td>		
+					    </tr>						    
+					 	 <tr>
+					      <td>
+					      	<input type="submit" name="" id="" value="提交" class="btn btn-info"/>
+					      </td>
+					      <td>
+					      	<em>
+								<input type="reset" class="btn btn-warning"/>
+					      	</em>
+					      </td>		
+					    </tr>
+					  </tbody>
+					</table>	
+				</form>
+			</div>	
+		</div>
+	</body>
+</html>
+
+
+

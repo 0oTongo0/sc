@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body{
+    background: url(../img/logbg.jpg);
+}
+.top{
+    width: 100%;
+    .top-log{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .nav{
+        margin-top: 50px;
+        li{
+            margin-left: 10px;
+            font-size: 0;
+            a{
+                color: #fff;
+                font-size: 14px;
+                padding: 2px;
+                .icon{
+                    margin-left: 5px;
+                }
+                &:hover{
+                    color: red;
+                }
+            }
+            &.can-mg{
+                margin-left: 50px;
+            }
+        }
+    }
+}
+.main{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+    box-shadow:0px 6px 6px 1px rgba(0,0,0,0.4);
+    p{
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: green;
+    }
+    .inp{
+        width: 200px;
+        text-align: center; 
+        margin: 0 auto;    
+        .text,.pass{
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            width: 200px;
+            line-height: 40px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }   
+        span{
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            text-align: left;
+            height: 25px;
+            line-height: 25px;
+            color: red;
+        }
+    }
+    #sub{
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        width: 100px;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-left: 50px;
+        border-radius: 6px;
+        color: green;
+        &:hover{
+            background-color: green;
+            color: #fff;
+        }
+    }
+    .link{
+        color: #333;
+       display: inline-block;
+       vertical-align: top;
+       font-size: 14px;
+       float: right;
+       margin-right: 50px;
+       margin-top: 20px;
+       &:hover{
+           color: red;
+           text-decoration: underline;
+       }
+    }
+}
+.footer{
+    width: 100%;
+    background: url(../img/m-bg.png);
+    .footer-text{
+        width: 1000px;
+        line-height: 60px;
+        margin: 0 auto;
+        margin-top: 150px;
+        color: #fff;
+    }
+}

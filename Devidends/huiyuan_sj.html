@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>会员升级</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<style type="text/css">
+				.section-main-right-top #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width:198px;
+					/* fallback */
+					color: #999;
+					/* # of chars */
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 3s steps(30,end),/* # of steps = # of chars */
+						 blink-caret .5s step-end infinite alternate;
+				}
+					@keyframes typing {
+						from {
+						width:0;
+					}
+					}@keyframes blink-caret {
+						50% {
+						border-color:transparent;
+					}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="section-top clearfix">
+			<h1 class="fl_lt section-top-left">
+				LOG
+			</h1>
+			<div class="fl_rt section-top-right">
+				<span class="section-top-right-cn">
+					<img src="img/cn.gif"/>
+					中文
+				</span>
+				<span class="section-top-right-en">
+					<img src="img/en.gif"/>
+					英文
+				</span>
+			</div>
+		</div>
+		<!--中间的部分-->
+		<div class="section-main clearfix">
+			<!--左边框架导航-->
+			<div class="fl_lt section-main-left">
+				<iframe width="100%" id="iframeid"frameborder="0"  name="right" scrolling="no"  src="kj_left.html" height="900px"></iframe>
+			</div>
+			<!--右边内容-->
+			<div class="fl_lt section-main-right">			
+				<div class="section-main-right-top">
+					<span id="hh">您还要<strong>红包</strong>没有领取哦！</span>
+					<a href="" class="section-main-right-top-link">点击领取</a>
+				</div>
+				<div class="section-right-brand">
+					<p class="section-right-brand-text">
+						<span>会员升级</span>
+					</p>
+					<form action="" method="post">
+						<div class="form-main">
+							<label>现在级别:</label>
+							<span style="color: red;">111</span>
+						</div>
+						<div class="form-main" id="on">
+							<label>升级级别:</label>
+							<select name="">
+								<option value="">请选择</option>
+							</select>
+						</div>
+						<input type="submit" value="提交" id="sub" class="btn btn-info"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer2">
+			<p>版权说明</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+	//	验证码
+		var wait=60;  
+		function time(o) {  
+		        if (wait == 0) {  
+		            o.removeAttribute("disabled");            
+		            o.value="免费获取验证码";  
+		            wait = 60;  
+		        } else {  
+		            o.setAttribute("disabled", true);  
+		            o.value="重新发送(" + wait + ")";  
+		            wait--;  
+		            setTimeout(function() {  
+		                time(o)  
+		            },  
+		            1000)  
+		        }  
+		    }  
+		$("#btn").click(function(){
+			time(this)
+		})
+		})	
+	</script>
+</html>
+
+
+
+

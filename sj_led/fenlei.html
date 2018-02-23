@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>搜索分类</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sousuo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<form class="clearfix">
+		<header class="header">
+				<div class="clearfix form">
+					<div class="input-text fl_lt">
+						<input type="text" id="sousuo" placeholder="搜索商品" value=""/>
+						<input type="button" id="but"></input>  <!--隐藏的小×-->
+					</div>
+					<input type="submit" name="" id="" value="搜索" class="lab fl_lt"/>
+				</div>
+		</header>
+		<section class="mian clearfix">
+			<div class="left fl_lt">
+				<ul class="tab_menu">
+					<li class="on">1</li>
+					<li>2</li>
+				</ul>
+			</div>
+			<div class="right fl_rt"> 
+				<div class="one">
+				<!--上面的一部分-->
+				<ul class="top clearfix">
+					<p class="link clearfix">
+						<a href="#">标题<span class="but fl_rt"></span></a>
+					</p>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/gs.png" alt="" />
+							<span>介绍</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+						<img src="images/gs.png" alt="" />
+							<span>介绍</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/gs.png" alt="" />
+							<span>介绍</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							<img src="images/gs.png" alt="" />
+							<span>介绍</span>
+						</a>
+					</li>
+				</ul>
+				</div>
+				<!--第二个家居生活-->
+				<div class="two hide">
+					<ul class="top clearfix">
+						<p class="link clearfix">
+							<a href="#">标题<span class="but fl_rt"></span></a>
+						</p>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/jf.png"/>
+								<span>介绍</span>
+							</a>
+						</li>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/jf.png"/>
+								<span>介绍</span>
+							</a>
+						</li>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/jf.png"/>
+								<span>介绍</span>
+							</a>
+						</li>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/jf.png"/>
+								<span>介绍</span>
+							</a>
+						</li>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/jf.png"/>
+								<span>介绍</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</section>
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/h_index.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_sc.png"/>
+							<span>我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/hong_fl.png"/>
+							<span class="on">商品分类</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<img src="images/top2.png"/>
+							<span>回到顶部</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->		
+	</form> 
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#sousuo").focus(function(){
+			  $(".lab").animate({marginLeft:"0.05rem"},500);
+			  $(".input-text").css("width","3rem");
+			});
+			$('#sousuo').bind('input propertychange', function(){
+				var wd = $("#sousuo").val();
+				if(wd != ""){
+					$(".lab").addClass("col");
+					$("#but").show(500);
+				}else{
+					$("#but").hide(500);
+					$(".lab").removeClass("col");
+				}	
+			})
+			$("#sousuo").focusout(function(){
+			  $("#but").hide(500);
+			  $(".lab").animate({marginLeft:"0.2rem"},500)
+			  $(".input-text").css("width","3.5rem")
+			});
+			$("#but").click(function(){
+				$("#sousuo").val("")
+				$("#but").hide(500);
+				$(".lab").removeClass("col");
+			})
+			$(".lab").click(function(){
+				$(".input-text").css("width","3.5rem")
+				$("#but").hide(500);
+			})
+			$('.tab_menu li').click(function(){  
+		    	var wd = $(this).index();
+		        $(".tab_menu li").eq(wd).addClass("on bp").siblings().removeClass("on bp");
+		        $('.right>div').eq(wd).removeClass("hide").siblings().addClass("hide");  
+		  });
+		})
+	</script>	
+</html>

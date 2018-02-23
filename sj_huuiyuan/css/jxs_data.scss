@@ -1,0 +1,98 @@
+@charset "UTF-8";
+$yc:#fcebd7;
+$bgc:#FFF8EE;
+$gc:#BD9F7B;
+$gc1:#7b9cbd;
+$rem:20;
+body{
+    background-color: #fff8eeb8;
+     font-size: 9/$rem+rem;
+}
+input{
+    line-height: 20/$rem+rem;
+    margin-left: 5/$rem+rem;
+}
+select{
+    margin-left: 5/$rem+rem;
+}
+textarea{
+    width: 200/$rem+rem;
+    height: 100/$rem+rem;
+}
+th,td{
+    text-align: center;
+    font-size: 9/$rem+rem;
+}
+.sub{
+     padding: 2/$rem+rem;
+     width: 80/$rem+rem;
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+    border-radius: 4px;
+    margin-left: 20%;
+    font-size: 9/$rem+rem;
+}
+.pagination-sm>li>a, .pagination-sm>li>span{
+    font-size: 9/$rem+rem;
+}
+//主体
+.section{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10/$rem+rem;
+//  右边
+    .section-right{
+        width: 100%;
+        padding-bottom: 40/$rem+rem;
+        .section-right-main{
+            width: 100%;
+            font-size: 13/$rem+rem;
+            p{
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                span{
+                    display: block;
+                    border-bottom: 2px solid $gc;
+                    width: 100%;
+                    text-align: center;
+                    text-align: center;
+                    margin-bottom: -1px;
+                    font-weight: 700;
+                    color: $gc;
+                }
+            }
+          .section-right-account{
+            width: 100%;
+            margin-bottom: 10/$rem+rem;
+            p{
+                background-color: #efefef;
+                line-height: 18/$rem+rem;
+                color: #0D195D;
+                font-weight: 700;
+                font-size: 11/$rem+rem;
+                padding-left: 10/$rem+rem;
+            }
+        }
+        .section-right-main{
+            width: 100%;
+            font-size: 9/$rem+rem;
+            i{
+                display: inline-block;
+                width: 95/$rem+rem;
+                background-color: #efefef;
+                font-style: normal;
+                color: #888;
+                text-align: right;
+                margin-bottom: 1px;
+                line-height: 30/$rem+rem;
+                margin-top: 1px;
+                font-size: 8/$rem+rem;
+            }
+            span{
+                margin-left: 10/$rem+rem;
+            }
+        }
+        }
+    }
+}

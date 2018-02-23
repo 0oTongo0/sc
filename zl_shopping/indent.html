@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单/个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--头部-->
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<!--右侧固定热卖+购物车-->
+		<link rel="stylesheet" type="text/css" href="css/right-seller.css" />
+		<!--底部-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<!--log-->
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/personal.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text"/>
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--LOG加搜索-->
+		<div class="search">
+			<div class="search-mian clearfix">
+				<h1 class="search-mian-log fl_lt">
+					<a href="">众联商城</a>
+				</h1>
+				<div class="search-mian-right fl_lt">
+					<input type="text" class="seek" placeholder="请输入您想要的宝贝"/>
+					<input type="submit" class="sub"/>
+					<div class="search-mian-right-footer">
+						<ul class="clearfix">
+							<li class="fl_lt">
+								<a href="">电脑白拿</a>
+							</li>
+							<li class="fl_lt">
+								<a href="">9.9元起</a>
+							</li>
+							<li  class="fl_lt">
+								<a href="">手机0元</a>
+							</li>
+							<li  class="fl_lt">
+								<a href="">满400积分送</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航最大的-->
+		<div class="section-nav">
+			<div class="clearfix section-nav-main">
+				<!--左边分类-->
+				<div class="fl_lt section-nav-left">
+					<span class="classify">全部分类</span>
+						<ul class="section-nav-left-next">
+							<li>
+								<span>左1标题</span>
+								<a href="">左1</a>
+								<i class="ioc"></i>	
+							</li>
+							<li>
+								<span>左2标题</span>
+								<a href="">左2</a>
+								<i class="ioc"></i>
+							</li>
+							<li>
+								<span>左3标题</span>
+								<a href="">左3</a>
+								<i class="ioc"></i>
+							</li>
+						</ul>
+						<!--子集右边-->
+						<div class="next-right">
+							<div class="next-right-next hide">
+								<a href="">111</a>
+							</div>
+							<div class="next-right-next hide">
+								<a href="">222</a>
+							</div>
+							<div class="next-right-next hide">
+								<a href="">333</a>
+							</div>							
+						</div>
+				</div>
+				<!--右边导航-->
+				<div class="fl_lt section-nav-right">
+					<ul class="clearfix">
+						<li class="fl_lt"><a href="">1</a></li>
+						<li class="fl_lt"><a href="">1</a></li>
+						<li class="fl_lt"><a href="">1</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--导航end-->	
+		<!--主体-->
+		<div class="main clearfix">
+			<!--左边-->
+			<div class="fl_lt main-left">
+				<p>个人中心</p>
+				<ul class="main-left-nav">
+					<!--当前页面添加on-->
+					<li>
+						<a href="">账户信息<i class="ico"></i></a>
+					</li>
+					<li>
+						<a href="">账户安全<i class="ico"></i></a>
+					</li>
+					<li>
+						<a href="" class="on">我的订单<i class="ico"></i></a>
+					</li>		
+					<li>
+						<a href="">收货地址<i class="ico"></i></a>
+					</li>	
+					<li>
+						<a href="">收藏商品<i class="ico"></i></a>
+					</li>	
+					<li>
+						<a href="">收藏店铺<i class="ico"></i></a>
+					</li>
+					<li>
+						<a href="">我的积分<i class="ico"></i></a>
+					</li>	
+					<li>
+						<a href="" >优惠券<i class="ico"></i></a>
+					</li>
+					<li>
+						<a href="">购买咨询<i class="ico"></i></a>
+					</li>	
+					<li>
+						<a href="">商品评价<i class="ico"></i></a>
+					</li>
+					<li>
+						<a href="">售后服务<i class="ico"></i></a>
+					</li>					
+				</ul>
+			</div>
+			<!--左边end-->
+			<!--右边-->
+			<!--个人中心-->
+			<div class="fl_rt main-right">
+				<p>我的订单</p>
+				<div class="advisory">
+					<table class="indent-tab">
+						<thead>
+							<tr>
+								<th>订单信息</th>
+								<th>收货人</th>
+								<th>订单金额</th>
+								<th>时间</th>
+								<th>订单状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="6">
+									订单编号:<span>1111111</span>
+									<span>小哥的店铺</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<img src="images/04.jpg"/>
+								</td>
+								<td>张三</td>
+								<td>555</td>
+								<td>201180101</td>
+								<td>取消</td>
+								<td><a href="">查看</a></td>
+							</tr>
+							<tr>
+								<td colspan="6">
+									订单编号:<span>1111111</span>
+									<span>小哥的店铺</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="clearfix">
+									<img src="images/04.jpg"/>
+								</td>
+								<td>张三</td>
+								<td>555</td>
+								<td>201180101</td>
+								<td>取消</td>
+								<td><a href="">查看</a></td>
+							</tr>							
+						</tbody>
+					</table>
+					<div class="advisory-footer">
+						共有<b>1</b>条记录<span>1</span>/1<a>上一页</a><a>下一页</a>
+					</div>
+				</div>			
+			</div>
+			<!--右边end-->
+		</div>
+		<!--主体end-->
+		<!--底部-->
+		<div class="footer">
+			<!--4个图标-->
+			<div class="footer-top">
+				<ul class="footer-top-mian clearfix">
+					<li>
+						品类齐全，轻松购物
+					</li>
+					<li>
+						多仓直发，级速配送
+					</li>
+					<li>
+						正品行货，精致服务
+					</li>
+					<li>
+						天天低价，畅选无忧
+					</li>
+				</ul>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center clearfix">
+				<div class="footer-center-nav">
+					<h5>注销说明</h5>
+					<ul>
+						<li>
+							<a href="">优惠券</a>
+						</li>
+						<li>
+							<a href="">促销活动</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>付款方式</h5>
+					<ul>
+						<li>
+							<a href="">货到付款</a>
+						</li>
+						<li>
+							<a href="">在线支付</a>
+						</li>						
+					</ul>
+				</div>
+				<!--一个地图-->
+				<div class="footer_map">
+					<p>众联自营覆盖区县</p>
+					<div>
+						众联已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。
+					</div>
+				</div>				
+			</div>
+			<!--版权说明-->
+			<div class="footer_fot">
+				<ul class="clearfix">
+					<li>
+					<a href="">
+						联系我们
+					</a>
+					</li>
+					<li>
+					<a href="">
+						关于我们
+					</a>
+					</li>					
+				</ul>
+				<p>版权所有&copy;2018</p>
+				<div>
+					<a href=""><img src="images/gs.gif"/></a>
+				</div>
+			</div>
+		</div>
+		<!--版权说明end-->
+		<!--右边定位条-->
+		<div class="right-nav">
+			<div title="个人中心">
+				<a href="">
+					<img src="images/个人.png"/>
+					<span href="">个人中心</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="购物车">
+				<a href="">
+					<img src="images/购物车空.png"/>
+					<span href="">购物车</span>
+					<strong class="ico"></strong>
+					<i>1</i>
+				</a>
+			</div>
+			<div title="收藏">
+				<a href="">
+					<img src="images/sc.png"/>
+					<span href="">收藏</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>			
+			<div title="回到底部" id="top">
+				<a>
+					<img src="images/top2.png"/>
+					<span>回到顶部</span>
+					<strong class="ico"></strong>	
+				</a>
+			</div>
+		</div>
+		<!--右边定位条end-->		
+	</body>
+</html>
+
+
+
+
+

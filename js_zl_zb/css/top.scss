@@ -1,0 +1,108 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+//  background: #ccc;
+    font-size: 0.4rem;
+}
+$yc:#297de5;
+//头部
+.header{
+    width: 100%;
+    height: 90/$rc+rem;
+    padding: 10/$rc+rem 40/$rc+rem;
+    background: #fff;
+    display: flex;
+    .header-left{
+        width: 55/$rc+rem;
+        img{
+            display: block;
+            width: 100%;
+            margin: 5/$rc+rem auto 0;
+        }
+    }
+    .header-center{
+        flex: 1;
+        text-align: center;
+        font-size: 36/$rc+rem;
+        line-height: 75/$rc+rem;
+    }
+    .header-right{
+        width: 44/$rc+rem;
+        height: 37/$rc+rem;
+        background: url(../images/菜单.png)no-repeat;
+        background-size: contain;
+        margin-top: 20/$rc+rem;
+    }
+//  右侧隐藏导航
+    .herder-nav{
+        width: 280/$rc+rem;
+        background: #fff;
+        top: 90/$rc+rem;
+        position: fixed;
+        right: 0;
+        z-index: 99;
+        box-shadow:1px 0px 2px #ebebeb;
+        display: none;
+        .herder-nav-parent{
+            width: 100%;   
+            &>li{
+                position: relative;
+                text-align: center;
+                a{
+                    display: block;
+                    font-size: 30/$rc+rem;
+                    line-height: 74/$rc+rem;
+                    color: #282828;
+                    position: relative;
+                    z-index: 999; 
+//                  border-bottom: 1px solid #eee;
+                    .ico{
+                        display: inline-block;
+                        position: absolute;
+                        top:50%;
+                        right: 9%;
+                        margin-top: -8/$rc+rem;
+                        border-color:#dadada  transparent transparent;
+                        border-style:solid dashed dashed;
+                        border-width:10/$rc+rem 10/$rc+rem 0;
+                        transition: transform 0.2s ease-in;
+                    }
+                    .on{
+                        transform: rotate(180deg);
+                    }
+                }
+                .yes{
+                    box-shadow: 0px 1px 2px #ccc;
+                }
+//              子集
+                .herder-nav-next{
+                    width: 100%;
+                    display: none;
+                    li{
+                        width: 100%;
+                        a{
+                            display: block;
+                            color: #282828;
+                            font-size: 23/$rc+rem;
+                            padding-left: 30/$rc+rem;
+                            background: rgba(0,0,0,0.06);
+                        }
+                    }
+                }
+            }
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                position: fixed;
+                 bottom: 110/$rc+rem;
+                top: 114/$rc+rem;
+                background: #fff;
+                z-index: 10;
+            }
+        }
+    }
+}

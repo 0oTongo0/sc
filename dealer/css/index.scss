@@ -1,0 +1,360 @@
+@charset "UTF-8";
+$yc:#EE0000;
+body{
+    background-color: #f7f7f7;
+}
+//头部
+.header-top{
+    width: 960px;
+    margin: 0 auto;
+    h1{
+        color: $yc;
+        text-shadow: 2px 2px 1px #333;
+        letter-spacing: 2px;
+        line-height: 80px;
+    }
+    .header-top-nav{
+        width: 960px;
+        margin: 0 auto;
+        .header-top-nav-ul{
+            width: 100%;
+            display: flex;
+            border-radius: 4px;
+//          border: 1px solid $yc;
+            background-color: $yc;
+            justify-content: space-between;
+            &>li{
+                flex: 1;
+                text-align: center;
+                transition: all 0.3s;
+                position: relative;
+                &>a{
+                    display: block;
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 40px;
+                    width: 100%;
+                    transition: all 0.5s;   
+                }
+                .header-top-nav-next{
+                    width: 100%;
+                    position: absolute;
+                    display: none;
+                    z-index: 99;
+                    li{
+                        width: 100%;
+                        transition: all 0.3s;
+                        background-color: #FFE4C4;
+                        border-bottom: 1px dashed #F7F7F7;
+                        a{
+                            display: block;
+                            color: #333;
+                            font-size: 12px;
+                            line-height: 30px;
+                            width: 100%;
+                            transition: all 0.3s;    
+                        }
+                        &:hover{
+                            background-color: #FFA500;
+                        }
+                        &:hover a{
+                            color: #fff;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                            border-bottom-right-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                    }
+                }
+                &:hover{
+                    background-color: #fff;
+                }
+                 &:hover >a{
+                     color: $yc;
+                     font-weight: 700;
+                 }
+                 &:hover .header-top-nav-next{
+                     display: block;
+                 }
+            }
+        }
+    }
+    .fixed{
+        position: fixed;
+        width: 960px;
+        margin: 0 auto;
+        top: 0;
+    }
+}
+//广告
+.banner{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+//主体
+.section{
+    width: 960px;
+    margin: 0 auto; 
+    margin-top: 15px;
+    background-color: #fff;
+//  主体左边
+    .section-left{
+        width: 255px;
+        .section-left-file{
+            width: 100%;
+            .section-left-file-text{
+                background-color: $yc;
+                line-height: 40px;
+                text-indent: 20px;
+                color: #fff;
+                margin-bottom: 5px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                box-shadow: 1px 1px 4px #333333;
+                margin-top: 20px;
+            }
+            .section-left-file-mc{
+                background-color: #FFE4C4;
+                letter-spacing: 1px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;    
+                box-shadow: -1px -1px 2px #ccc inset;             
+                .section-left-file-mc-xq{
+                    padding: 20px;
+                    font-size: 14px;
+                     i{
+                      line-height: 30px;
+                     font-style: normal;
+                    }
+                    span{
+                        font-weight: 700;
+                    }
+                    strong{
+                        display: block;
+                        line-height: 20px;
+                        color: red;
+                    }
+                }
+            }
+        }
+        .section-left-data{
+            width: 100%;
+            .section-left-data-text{
+                background-color: $yc;
+                line-height: 40px;
+                text-indent: 20px;
+                color: #fff;
+                margin-bottom: 5px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                box-shadow: 1px 1px 4px #333333;
+                margin-top: 20px;
+            }
+            .section-left-data-mc{
+                background-color: #FFE4C4;
+                letter-spacing: 1px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;   
+                box-shadow: -1px -1px 2px #ccc inset;             
+                .section-left-data-mc-xq{
+                    padding: 20px;
+                    font-size: 14px;
+                     i{
+                      line-height: 30px;
+                     font-style: normal;
+                        a{
+                            color: #464646;
+                            transition: all 0.3s;
+                            font-weight: 500;
+                        }
+                        &:hover a{
+                            color: $yc;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+//      公司公告
+        .section-left-box{
+            width: 100%;
+            .section-left-box-text{
+                background-color: $yc;
+                line-height: 40px;
+                text-indent: 20px;
+                color: #fff;
+                margin-bottom: 5px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                box-shadow: 1px 1px 4px #333333;
+                margin-top: 20px;
+            }
+            #box{
+                background-color: #FFE4C4;
+                letter-spacing: 1px;
+                height: 195px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;  
+                box-shadow: -1px -1px 2px #ccc inset;   
+                padding-bottom: 20px;
+                overflow: hidden;
+                li{
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-left: 20px;
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        width: 6px;
+                        height: 6px;
+                        background: url(../images/li_ico.jpg)no-repeat;
+                        background-size: 100%;
+                    }
+                    a{
+                        color: #333333;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                    &:hover a{
+                        color: $yc;
+                        text-decoration: underline;
+                    }
+                } 
+            }
+            
+        }
+    } 
+}
+//  主体右边
+    .section-right{
+        margin-top: 20px;
+        width: 705px;
+        padding-left: 25px;
+//      品牌介绍
+        .section-right-brand{
+            width: 100%;
+            .section-right-brand-text{
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                span{
+                    display: block;
+                    color: $yc;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    width: 80px;
+                    border-bottom: 2px solid $yc;
+                    margin-bottom: -1px;
+                }
+            }
+            .section-right-brand-main{
+                width: 100%;
+                padding: 10px;
+                img{
+                    display: block;
+                    margin-right: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }
+        }
+//      新闻
+        .section-right-new{
+            width: 100%;
+            margin-top: 10px;
+            padding-bottom: 50px;
+            .section-right-new-text{
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                span{
+                    display: inline-block;
+                    *display: inline;
+                    zoom: 1;
+                    color: $yc;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    width: 80px;
+                    border-bottom: 2px solid $yc;
+                    margin-bottom: -1px;
+                }
+                .section-right-new-link{
+                    color: #999;
+                    line-height: 42px;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+            .section-right-new-nav{
+                width: 100%;
+                li{
+                    width: 330px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    line-height: 30px;
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        width: 6px;
+                        height: 6px;
+                        background: url(../images/li_ico.jpg)no-repeat;
+                        background-size: 100%;
+                    }
+                    a{
+                        color: #333;
+                        font-size: 14px;
+                        transition: all 0.3;
+                    }
+                    &:hover a{
+                        font-weight: 700;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+//回到頂部
+#top{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    background-color: $yc;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: none;
+    &:hover{
+         background-color: rgba(0,0,0,0.7);
+    }
+}
+//底部
+.footer{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    margin-top: 20px;
+    p{
+        width: 960px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        line-height: 35px;
+    }
+}

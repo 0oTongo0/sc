@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎您的到来</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<style type="text/css">
+				.gonggao{
+					width: 1200px;
+					margin: 0 auto;
+					text-align: center;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+				.gonggao #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width: 700px;
+					margin: 0 auto;
+					color: red;
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 5s steps(30,end) infinite,/* # of steps = # of chars */
+						 blink-caret 5s step-end infinite alternate;
+				}
+					@keyframes typing {
+						from {
+						width:0;
+					}
+					}@keyframes blink-caret {
+						50% {
+						border-color:transparent;
+					}
+				}
+		</style>
+	<body>
+		<!--头部-->
+		<div class="header navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" id="navbar-brand"><img src="images/log.png" class="img-responsive" alt="log" /></a>
+				</div>
+				<div class=" header-nav collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav_top fl_lt nav navbar-nav row" id="nav">
+						<li>
+							<a href="#">首页 <i class="ink"></i></a>
+						</li>
+						<li>
+							<a href="#">个人资料 <i class="ink"></i></a>
+						</li>
+						<li>
+							<a href="#">转账中心 <i class="ink"></i></a>
+						</li>
+						<li>
+							<a href="#">财务明细 <i class="ink"></i></a>
+
+						</li>
+						<li>
+							<a href="#">报单中心 <i class="ink"></i></a>
+
+						</li>
+						<li>
+							<a href="#">购物商场 <i class="ink"></i></a>
+
+						</li>
+						<li>
+							<a href="#">帮助中心 <i class="ink"></i></a>
+
+						</li>
+						<li>
+							<a href="#">邮件中心 <i class="ink"></i><strong>0</strong></a>
+						</li>
+						<li>
+							<a href="#">新闻中心 <i class="ink"></i></a>
+						</li>							
+						<li>
+							<a href="#">安全退出 <i class="ink"></i></a>
+
+						</li>
+						<i id="line" class="hidden-xs"></i>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/b1.jpg"/>
+						<!--<div class="carousel-caption">标题 1</div>-->
+					</div>
+					<div class="item">
+						<img src="images/b2.jpg"/>
+						<!--<div class="carousel-caption">标题 2</div>-->
+					</div>
+					<div class="item">
+						<img src="images/b3.jpg"/>
+						<!--<div class="carousel-caption">标题 3</div>-->
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next">&rsaquo;</a>
+			</div>		
+		<!--公告-->
+		<div class="gonggao">
+			<p id="hh">
+				<img src="images/lb.gif"/>波茨再次“回家” 蓝海桌球挑战赛、大师赛不
+			</p>
+		</div>
+		<!--主题-->
+		<div class="section-main clearfix">
+			<div class="mian fl_lt">
+				<ul class="mian-nav clearfix">
+					<div class="mian-nav-gr">
+						<p>个人中心</p>
+						<div class="mian-nav-gr-zt">尊敬的会员欢迎您的到来~</div>
+						<div class="mian-nav-gr-nr">
+							<span>会员ID:</span><i>112</i><br>
+							<span>会员账号:</span><i>ASD121</i><br>
+							<span>电话:</span><i>5211534</i><br>
+							<span>姓名:</span><i>证xx</i><br>
+							<span>注册时间:</span><i>2017.11.1</i><br>
+							<span>手机号:</span><i>1544171146</i>
+						</div>
+						<img src="images/zs.png" class="mian-nav-dw"/>
+					</div>
+					<div class="mian-nav-gr mian-nav-gr-xw">
+						<p>最新商品价格<img src="images/new.gif" alt="" /></p>
+							<ul class="mian-nav-gr-xw-nav">
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮
+
+</a>
+									<span class="fl_rt col">$2222</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮
+
+</a>
+									<span class="fl_rt col">$2222</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮</a>
+									<span class="fl_rt col">$2222</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮</a>
+									<span class="fl_rt col">$2222</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮</a>
+									<span class="fl_rt col">$2222</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮</a>
+									<span class="fl_rt col">$2222</span>
+								</li>	
+								<li class="clearfix">
+										<a href="" target="_blank" class="new">【买4斤送4斤】新鲜水果升森水果芒果8斤 黄青皮芒果批发包邮</a>
+										<span class="fl_rt col">$2222</span>
+									</li>									
+								</ul>
+					</div>					
+					<div class="mian-nav-gr mian-nav-gr-xw">
+						<p>每日新闻</p>
+						<div id="box">
+							<ul class="mian-nav-gr-xw-nav">
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>
+								<li class="clearfix">
+									<a href="" target="_blank">波茨再次“回家” 蓝海桌球挑战赛、大师赛不</a>
+									<span class="fl_rt">2017/01/01</span>
+								</li>							
+							</ul>
+						</div>
+					</div>					
+				<script type="text/javascript">
+					function AutoScroll(obj) {
+					    $(obj).find("ul:first").animate({
+					        marginTop: "-30px"
+					    },
+					    500,
+					    function() {
+					        $(this).css({
+					            marginTop: "0px"
+					        }).find("li:first").appendTo(this);
+					    });
+					}
+					$(document).ready(function() {
+						var timer=null;
+						timer = setInterval('AutoScroll("#box")', 1600)
+					    $("#box").hover(function(){
+					    	 clearInterval(timer); 
+			//		    	 console.log("wd")
+					    },function(){
+					    	timer = setInterval('AutoScroll("#box")', 1600);
+					    })
+					})
+				</script>
+				</ul>
+			</div>
+			<div class="section-main-right fl_lt">
+				<!--个人资料-->
+				<div class="section-right-main">
+					<p>
+						<span>个人资料</span>
+					</p>
+						<ul class="clearfix section-right-text-nav">
+							<li class="fl_lt">
+								<a href=""><img src="images/xg.jpg" />
+									<p>资料修改</p>
+								</a>
+							</li>
+							<li class="fl_lt">
+								<a href=""><img src="images/mm.jpg" />
+									<p>密码修改</p>
+								</a>
+							</li>
+							<li class="fl_lt">
+								<a href=""><img src="images/zz.png" />
+									<p>转换</p>
+								</a>
+							</li>
+							<li class="fl_lt">
+								<a href=""><img src="images/tx.png" />
+									<p>提现</p>
+								</a>
+							</li>
+						</ul>
+				</div>
+				<!--邮件-->
+				<div class="section-right-main" style="margin-top: 10px;">
+					<p>
+						<span>邮件</span>
+					</p>
+					<ul class="clearfix" id="nav1">
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/k1.jpg"/>
+								<span>发送邮件</span>
+							</a>
+						</li>
+						<li class="fl_lt">
+							<a href="">
+								<img src="images/s.jpg"/>
+								<span>查看邮箱</span>
+							</a>
+
+						</li>
+					</ul>
+				</div>
+
+				<!--商品-->
+				<div class="section-right-main" style="margin-top: 10px;">
+					<p>
+						<span>商品</span>
+					</p>
+					<div class="clearfix section-right-main-sp" >
+							<span class="fl_lt up" title="上一页"><img src="images/ll.png"/></span>
+							<div class="fl_lt section-right-main-sp-nav" >
+								<ul class="section-right-main-sp-navcenter clearfix">
+									<li class="fl_lt">
+										<a href=""><img src="images/dd.jpg" title="aaaaaaaaaaa"/></a>
+									</li>
+									<li class="fl_lt">
+										<a href=""><img src="images/dd.jpg" title="aaaaaaaaaaa"/></a>
+									</li>	
+									<li class="fl_lt">
+										<a href=""><img src="images/dd.jpg" title="aaaaaaaaaaa"/></a>
+									</li>
+									<li class="fl_lt">
+										<a href=""><img src="images/dd.jpg" title="aaaaaaaaaaa"/></a>
+									</li>	
+									<li class="fl_lt">
+										<a href=""><img src="images/11.jpg" title="aaaaaaaaaaa"/></a>
+									</li>
+									<li class="fl_lt">
+										<a href=""><img src="images/11.jpg" title="aaaaaaaaaaa"/></a>
+									</li>										
+								</ul>
+							</div>
+							<span class="fl_lt next" title="下一页"><img src="images/rr.png"/></span>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<!--底部-->
+		<div class="foot-down">
+			<p>版权所有</p>
+		</div>
+		<!--回到顶部-->
+		<div id="back-top">
+			top
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$(".nav_top>li>a").mouseenter(function() {
+				$(this).children(".ink").addClass("animate");
+				$(this).parent().siblings().children().children(".ink").removeClass("animate");
+			})
+			var page = 0;
+			var stop = true;
+			var time;
+
+			$('#myCarousel').carousel({
+			    interval: 4000
+			})
+			$(window).on('scroll', function() {
+				if($(window).scrollTop() > 30) {
+					$("#back-top").show();
+				} else {
+					$("#back-top").hide();
+				}
+			})
+			$("#back-top").click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 200);
+			});
+//			底部轮播
+			var list = $(".section-right-main-sp-navcenter").children().length;
+			var prev = $(".up"); //获取左边按钮
+			var next = $(".next"); //获取右边按钮
+			var num = list * 191 + 4.5; //获取设置完后的宽度
+			var listWidth = parseInt($(".section-right-main-sp-nav").css("width")); //获取大盒子的宽度
+			var reduce = 786 - num; //差值
+			var index = 0; //作为序列号，用于存储点击次数
+			var move = 0; //作为存储具体移动的值
+			prev.click(function() {
+				if(!$(".section-right-main-sp-navcenter").is(":animated")) {
+					if(num < listWidth || num == listWidth) {
+						return false;
+					} else if(parseInt($(".section-right-main-sp-navcenter").css("left")) == 0 || parseInt($(".section-right-main-sp-navcenter").css("left")) > 0) {
+						return false;
+					} else {
+						index--;
+						about(index);
+					}
+				} else {}
+			});
+			next.click(function() {
+				if(!$(".section-right-main-sp-navcenter").is(":animated")) { //防止用户连续点击造成的错误
+					if(num < listWidth || num == listWidth) {
+						return false;
+					} else if(parseInt($(".section-right-main-sp-navcenter").css("left")) == reduce || parseInt($(".section-right-main-sp-navcenter").css("left")) < reduce) {
+						return false;
+					} else {
+						index++;
+						about(index);
+					}
+				} else {}
+			});
+
+			function about(index) {
+				move = index * 194.5;
+				$(".section-right-main-sp-navcenter").animate({
+					"left": -move
+				}, 300);
+			}
+		})
+	</script>
+
+</html>

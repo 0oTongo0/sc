@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<title>信用转账</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/fenye.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tab.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="header-log">
+			<div class="log">
+				<!--log-->
+				<h1>
+					<a href=""></a>
+				</h1>
+				<div class="log-right">
+					<img src="images/fl.png" />
+				</div>
+				<!--右侧隐藏导航-->
+				<div class="herder-nav">
+					<ul class="herder-nav-parent">
+						<!--有子集的添加 ICO-->				
+						<li>
+							<a href="">回到首页</a>
+						</li>
+						<li>
+							<a href="javascript:;">资料管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">我的资料</a>
+								</li>
+								<li>
+									<a href="">资料修改</a>
+								</li>
+								<li>
+									<a href="">账号修改</a>
+								</li>
+								<li>
+									<a href="">密码修改</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">业务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">推荐关系</a>
+								</li>
+								<li>
+									<a href="">业务分布</a>
+								</li>
+								<li>
+									<a href="">会员升级</a>
+								</li>
+							</ul>
+						</li>						
+						<li>
+							<a href="javascript:;">现金管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">信用转账</a>
+								</li>
+								<li>
+									<a href="">申请提款</a>
+								</li>
+								<li>
+									<a href="">公司账号</a>
+								</li>
+								<li>
+									<a href="">在线支付</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">财务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">积分币</a>
+								</li>
+								<li>
+									<a href="">奖金币</a>
+								</li>
+								<li>
+									<a href="">预存币</a>
+								</li>
+								<li>
+									<a href="">货币转换</a>
+								</li>
+								<li>
+									<a href="">汇账管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">商城中心</a>
+						</li>
+						<li>
+							<a href="">站内邮件</a>
+						</li>
+						<li>
+							<a href="javascript:;">新闻中心 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">最新公告</a>
+								</li>
+								<li>
+									<a href="">公司新闻</a>
+								</li>	
+							</ul>							
+						</li>
+					</ul>
+				</div>				
+			</div>
+		</header>
+		<!--中间开始-->
+		<section class="section">	
+			<!--有表单添加.form-->
+			<!--账号余额-->
+			<div class="section-main">
+				<p class="section-main-top clearfix"><img src="images/我的资料_03.png" /><span>账号余额</span><a href="javascript:;" class="xiala"><img src="images/下拉三角.png"/></a></p>
+				<ul class="section-main-nav data_amend form">
+					<p>
+						<label>积分币账号:</label><span>11</span>
+					</p>
+					<p>
+						<label>奖金账户:</label><span>00</span>
+					</p>
+				</ul>
+			</div>
+			<!--转账-->
+			<div class="section-main">
+				<p class="section-main-top clearfix"><img src="images/我的资料_03.png" /><span>转账</span><a href="javascript:;" class="xiala"><img src="images/下拉三角.png"/></a></p>
+				<div class="section-main-nav data_amend form">
+					<p>
+						<label>账户类型:</label><input type="text" />
+					</p>
+					<p>
+						<label>接受账户:</label><input type="text" />
+					</p>
+					<p>
+						<label>金额:</label>
+						<input type="text" />
+					</p>
+					<p>
+						<label>二级密码:</label>
+						<input type="password" />
+					</p>
+					<p>
+						<input type="submit" value="提交" class="sub"/>
+					</p>					
+				</div>
+			</div>
+			<!--表格-->
+			<div class="section-tab">
+				<table class="tab-main">
+					<thead>
+						<tr>
+							<th>序列</th>
+							<th>申请金额</th>
+							<th>申请账号</th>
+							<th>状态</th>
+							<th>时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+						<!--分页-->
+                <ul class="fenye">
+                    <li class="fenye-left">
+                        <a href="javascript:;">上一页</a>
+                    </li>
+                    <li class="fenye-center">
+                        <select class="fenye-center-sel">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                    </li>
+                    <li class="fenye-right ">
+                        <a href="javascript:;" class="">下一页</a>
+                    </li>
+                </ul>
+			<!--分页end-->				
+		</section>
+		<!--中间开始end-->
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/h_index.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_sc.png"/>
+							<span>我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_fl.png"/>
+							<span>商品分类</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<img src="images/top2.png"/>
+							<span>回到顶部</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->			
+	</body>
+</html>

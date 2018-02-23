@@ -1,0 +1,57 @@
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  font-size: 0.4rem;
+  background: url(../images/beijin.png) no-repeat fixed;
+  background-size: 100% 100%; }
+
+.section {
+  width: 100%;
+  padding-bottom: 0.55rem; }
+  .section .section-data {
+    width: 100%; }
+    .section .section-data > p {
+      width: 92%;
+      margin: 0.05rem auto;
+      padding-left: 0.275rem;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 0.1rem;
+      box-shadow: 1px 1px 3px #9a8163; }
+      .section .section-data > p span, .section .section-data > p strong {
+        display: inline-block;
+        vertical-align: middle; }
+      .section .section-data > p span {
+        width: 1.25rem;
+        line-height: 0.25rem;
+        color: #464646;
+        font-size: 0.125rem;
+        margin-right: 0.05rem;
+        text-align: right;
+        padding-right: 0.05rem;
+        letter-spacing: 1px;
+        font-weight: 600; }
+      .section .section-data > p strong {
+        font-size: 0.17rem;
+        color: #297de5; }
+  .section .tab-main tbody td:nth-child(n+5) {
+    color: #297de5; }
+
+#header {
+  margin: 0.1rem 0;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.05rem 0; }
+
+#header .swiper-slide {
+  padding: 0.04rem 0.2rem;
+  width: auto;
+  font-size: 0.125rem;
+  color: #999;
+  margin-left: 0.05rem; }
+
+#header .on {
+  background: #f4f4f4;
+  border-radius: 0.05rem;
+  color: #464646; }
+
+/*# sourceMappingURL=recherge.css.map */

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/specia.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/discount.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/particulars.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="hotel clearfix">
+			<div class="hotel-left fl_lt">
+				<div class="hotel-left-top">店家名</div>
+				<div class="hotel-left-site">
+					地址:111111111111111111111111111
+				</div>
+				<div class="hotel-left-site">
+					电话:111111
+				</div>
+				<div class="hotel-left-site">
+					营业时间:1111
+				</div>
+			</div>
+			<div class="fl_rt section-content-left">
+				<div class="section-content-left-top">
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+				</div>
+				<!--下面的滑块-->
+				<div class="section-content-left-footer clearfix">
+					<p class="fl_lt up">
+						<img src="images/ll.png" />
+					</p>
+					<div class="section-content-left-footer-nav fl_lt">
+						<ul class="section-content-left-footer-center " id="pic">
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+						</ul>
+					</div>
+					<p class="fl_rt next">
+						<img src="images/rr.png" />
+					</p>
+				</div>
+			</div>			
+		</div>
+		<!--主要内容-->
+		<div class="mian">
+			<h2>商家优惠促销</h2>
+			<div class="mian-discount">
+				<ul class="mian-discount-nav clearfix">
+					<li>
+						<!--左-->
+						<div class="mian-discount-nav-left">
+							<img src="images/14.jpg"/>
+						</div>
+						<!--中-->
+						<div class="mian-discount-nav-center">
+							<div class="mian-discount-nav-center-top">
+								<span>￥100</span>
+								<strong>门店价33</strong>
+							</div>
+							<p class="mian-discount-nav-center-text">
+								<span>店铺名称</span>
+							</p>
+							<div class="clearfix mian-discount-nav-center-footer">
+								<b>已抢10%</b>
+								<div class="progress">
+									<span class="progress-main"></span>
+									<i class="ico"></i>
+								</div>
+							</div>
+						</div>	
+						<!--右-->
+						<div class="mian-discount-nav-right">
+							<a href="javascript:;" class="get">立即领取</a>	
+						</div>
+						<!--上下2个原-->
+						<span class="top yuan"></span>
+						<span class="bottom yuan"></span>
+						<!--点击时出现这个↓已领取-->
+						<div class="ylq">
+							<img src="images/ylq.png"/>
+						</div>						
+					</li>	
+					<!--如果判断已经抢光 给mian-discount-nav-center-top 添加on   给mian-discount-nav-righ添加yes 不要给a标签添加get类-->
+					<li>
+						<!--左-->
+						<div class="mian-discount-nav-left">
+							<img src="images/14.jpg"/>
+						</div>
+						<!--中-->
+						<div class="mian-discount-nav-center">
+							<div class="mian-discount-nav-center-top on">
+								<span>￥100</span>
+							</div>
+							<p class="mian-discount-nav-center-text">
+								<span>店铺名称</span>
+							</p>
+							<div class="clearfix mian-discount-nav-center-footer">
+								<b>已抢10%</b>
+								<div class="progress">
+									<span class="progress-main"></span>
+									<i class="ico"></i>
+								</div>
+							</div>
+						</div>	
+						<!--右-->
+						<div class="mian-discount-nav-right yes">
+							<a href="javascript:;">晚来一步</a>	
+						</div>
+						<!--上下2个原-->
+						<span class="top yuan"></span>
+						<span class="bottom yuan"></span>
+					</li>					
+				</ul>
+			</div>
+		</div>	
+		<!--领取成功弹框-->
+		<div class="pop">
+				<img src="images/gou.png"/>
+				<span>领取成功</span>
+		</div>		
+	</body>
+</html>

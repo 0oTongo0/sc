@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>大佬的管理系统</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/kj_left.css" />
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header-top clearfix">
+			<h1 class="fl_lt">log</h1>
+			<div class="fl_rt header-top-left">
+				<p>
+					<i class="glyphicon glyphicon-user"></i>
+					<span>欢迎您:</span>
+					<strong>111</strong>
+				</p>
+				<div>
+					<ol class="breadcrumb header-top-left-ol">
+						<li>
+							<a href="#">返回首页</a>
+						</li>
+						<li>
+							<a href="#">帮助中心</a>
+						</li>
+						<li>
+							<a href="">安全退出</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="clearfix mian">
+			<!--左边-->
+			<div class="fl_lt nav-left" id="menu">
+				<p class="nav-left-top">大佬的系统</p>
+				<ul class="nav-left-fj" id="tree_root">
+					<li>
+						<span class="tree2">客户管理<b class="Off"></b></span>
+						<ul class="nav-left-ez">
+							<li>
+								<a href="right2.html" target="right">今日新增</a>
+							</li>
+							<li>
+								<a href="">今日新增</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span class="tree2">提款申请<b class="Off"></b></span>
+						<ul class="nav-left-ez">
+							<li>
+								<a href="">1</a>
+							</li>
+							<li>
+								<a href="">2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--<!--右边-->
+			<div class="fl_lt nav-ringt">
+				 <div style="padding-bottom: 20px;">
+				 	<iframe width="100%" id="iframeid" onload="Javascript:SetCwinHeight()" frameborder="0" src="right.html" name="right" scrolling="no" height="1250px"></iframe>
+				 </div>
+			</div>
+		</div>
+		<!--<div class="wd">
+			<span>了解更多</span>
+		</div>-->
+	</body>
+	<script type="text/javascript">
+		$(function(){
+				function setTreeStyle(obj){
+				var objStyle = obj.children("b");
+				var objList = obj.siblings("ul");
+				if(objList.length == 1){
+					var style = objStyle.attr("class");
+					objStyle.attr("class","On2Off");
+					setTimeout(
+						function(){
+							if(style == "Off"){
+								objList.parent().siblings("li").children("span").children(".On").each(function(){
+									setTreeStyle($(this).parent());	
+								});
+								var H = objList.innerHeight()
+								objList.css({display:"block",height:"0"});
+								objList.animate({height:H},300,function(){$(this).css({height:"auto"});});
+								objStyle.attr("class","On");
+							}
+							else if(style == "On"){
+								objList.find("li").children("span").children(".On").each(function(){
+									setTreeStyle($(this).parent());	
+								});
+								var H = objList.innerHeight()
+								objList.animate({height:0},300,function(){$(this).css({height:"auto",display:"none"})});
+								objStyle.attr("class","Off");
+							}
+						},
+						42
+					);
+				}
+			}
+			$("#tree_root").find("li").children("span").click(function(){
+				setTreeStyle($(this));
+			});
+		})			
+	</script>
+	<script type="text/javascript">
+	function SetCwinHeight()
+	{
+	    var iframeid=document.getElementById("iframeid");
+	    if (document.getElementById)
+	    {
+	        if (iframeid && !window.opera)
+	        {
+	            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+	                iframeid.height = iframeid.contentDocument.body.offsetHeight;
+	            }
+	            else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+	            {
+	                iframeid.height = iframeid.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+	}
+	
+	</script>
+</html>

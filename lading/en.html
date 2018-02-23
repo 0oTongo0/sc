@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员平台</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/new.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="top clearfix">
+			<div class="top-log row">
+				<div class="col-sm-5">
+					<img src="img/download.png"/>
+				</div>
+				<ul class=" nav col-sm-7">
+					<li class="fl_lt">
+						<a href="javascript:;">The current location：</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">Home>></a>
+					</li>
+					<li class="fl_lt">
+						<a href="">Member login</a>
+					</li>
+					<li class="fl_lt can-mg">
+						<a href="new.html">
+							<i class="icon"><img src="img/cn.gif"/></i>
+							Chinese
+						</a>
+					</li>
+						<li class="fl_lt">
+						<a href="">
+							<i class="icon"><img src="img/en.gif"/></i>
+							English
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<form action="" method="post">
+				<p>Member login</p>
+				<div class="inp">
+					<input type="text" name="" id="name" value="" placeholder="Member name" class="text"/>
+					<span id="name-s"></span>
+				</div>
+				<div class="inp">
+					<input type="password" name="" id="password" value="" placeholder="password" class="pass"/>
+					<span></span>
+				</div>
+				<div>
+					<input type="submit" value="Login" id="sub"/>		
+					<a href="" class="link">Forgot password?registered</a>
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<div class="footer-text">
+				Copyright：Membership management
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#password").focus(function(){
+				if($("#name").val() == ""){
+					$("#name-s").text("请输入会员名");
+					$("#name-s").css("color","red").css("font-size","12px")
+				}else{
+					$("#name-s").text("")
+				}
+			})
+			$("#name").blur(function(){
+				if($("#name").val() != ""){
+					$("#name-s").text("")
+				}
+			})
+		})
+	</script>
+</html>

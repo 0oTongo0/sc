@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员平台</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/new.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="top clearfix">
+			<div class="top-log row">
+				<div class="col-sm-5">
+					<img src="img/download.png"/>
+				</div>
+				<ul class=" nav col-sm-7">
+					<li class="fl_lt">
+						<a href="javascript:;">当前位置</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">首页>></a>
+					</li>
+					<li class="fl_lt">
+						<a href="">会员登录</a>
+					</li>
+					<li class="fl_lt can-mg">
+						<a href="">
+							<i class="icon"><img src="img/cn.gif"/></i>
+							中文
+						</a>
+					</li>
+						<li class="fl_lt">
+						<a href="en.html">
+							<i class="icon"><img src="img/en.gif"/></i>
+							英文
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<form action="" method="post">
+				<p>会员登录</p>
+				<div class="inp">
+					<input type="text" name="" id="name" value="" placeholder="请输入会员名" class="text"/>
+					<span id="name-s"></span>
+				</div>
+				<div class="inp">
+					<input type="password" name="" id="password" value="" placeholder="请输入会密码" class="pass"/>
+					<span></span>
+				</div>
+				<div class="clearfix">
+					<input type="submit" value="立即登录" id="sub"/>		
+					<a href="" class="link">忘记密码？注册</a>
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<div class="footer-text">
+				版权所有：会员管理
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#password").focus(function(){
+				if($("#name").val() == ""){
+					$("#name-s").text("请输入会员名");
+					$("#name-s").css("color","red").css("font-size","12px")
+				}else{
+					$("#name-s").text("")
+				}
+			})
+			$("#name").blur(function(){
+				if($("#name").val() != ""){
+					$("#name-s").text("")
+				}
+			})
+		})
+	</script>
+</html>

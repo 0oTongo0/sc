@@ -1,0 +1,19 @@
+body { background-color: #efeff4; }
+
+header { width: 100%; }
+header .top { width: 100%; padding: 0.5rem; text-align: right; font-size: 0.8rem; background-color: #6899ec; color: #fff; }
+header .top .one { width: 100%; text-align: center; }
+header .top p { line-height: 1.5rem; }
+header nav { width: 100%; padding: 0.5rem; background-color: #fff; }
+header nav ul { width: 100%; font-size: 0; }
+header nav ul li { display: inline-block; width: 25%; font-size: 0.6rem; border: 1px solid #ddd; margin-left: -1px; margin-top: -1px; text-align: center; padding: 1rem 0.5rem; }
+header nav ul li a { display: block; color: #464646; }
+header nav ul li i { display: block; font-style: normal; font-size: 0.8rem; }
+
+.footer { width: 100%; position: fixed; bottom: 0; padding-top: 0.25rem; background-color: #F4F4F4; box-shadow: inset -0.05rem 0 0.4rem -0.4rem rgba(0, 0, 0, 0.2), inset 0 0.4rem 0.4rem -0.4rem rgba(0, 0, 0, 0.2); }
+.footer .footer-nav { padding: 0 1rem; display: flex; justify-content: space-around; }
+.footer .footer-nav li { text-align: center; flex: 1; }
+.footer .footer-nav li a, .footer .footer-nav li i { display: block; line-height: 1rem; font-size: 0.45rem; font-style: normal; color: #999; }
+.footer .footer-nav li i { font-size: 0.6rem; }
+
+/*# sourceMappingURL=index.css.map */

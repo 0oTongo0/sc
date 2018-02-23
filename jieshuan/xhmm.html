@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>修改密码</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/sigin.css"/>
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!--表单-->
+		<div class="centre-main">
+			<form action="" method="post" class="centre-main-form">
+				<p class="centre-main-form-top">修改密码</p>
+				<div class="centre-main-form-width xin">
+					<input type="text" id="phone" placeholder="手机号" style="color: #fff;"/>
+					<div class="centre-main-form-text" id="phone-text">
+					</div>
+				</div>				
+				<div class="centre-main-form-width">
+					<input type="password" name="" id="password" value="" placeholder="新密码" class="pt"/>
+					<div class="centre-main-form-text" id="password-text">
+					</div>
+				</div>		
+				<div class="centre-main-form-width">
+					<input type="" name="" id="yz" value="" placeholder="验证码6位数" style="color: #fff;"/>
+					<input type="button" id="btn" value="获取验证码" />
+					<div class="centre-main-form-text">
+					</div>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="submit" value="确认" id="sub" />
+				</div>
+				<div class="centre-main-form-width">
+					<a href="" class="fl_lt fp">
+						注册
+					</a>
+					<a href="" class="fl_rt fp">
+						登录
+					</a>
+				</div>
+			</form>
+		</div>
+		</div>
+			<div class="mc">
+			请检查所有的输入，都不能为空或者格式错误,谢谢~~
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			   $("#sub").bind("click",function(event){
+		         var username = $("#phone").val();  //获取元素的值
+		         var username3 = $("#password").val();
+		         var username2 = $("#yz").val();
+		         if(username=="" || username2=="" || username3=="" ||  yz == false || yz2 == false){     //判断值是否为空
+		       		$(".mc").show(100).delay(1000).hide(500);
+		       		return false;
+		  		 }else{
+		  		 	return true;
+		  		 }
+		   })
+		var yz = false;
+		var yz2 = false;
+		$('#password').focus(function(){
+			if($(this).val().length==0){
+			    $("#password-text").text("字母、数字和符号两种以上的组合，6-20个字符");
+			    $("#password-text").css("color","#fff");
+				}
+		})
+//		密码
+		$('#password').blur(function(){
+			if($(this).val().length==0){
+				$("#password-text").text("");
+				$("#password-text").css("color",'#fff');
+			}else if($(this).val().length>0 && $(this).val().length<6){
+				$("#password-text").text("长度只能在6-20个字符之间");
+				$("#password-text").css("color",'#fff');
+				 yz2 = false;
+			}else{
+				$("#password-text").text("");
+				yz2 = true;
+			}		
+		})
+			$('#phone').focus(function(){
+			if($(this).val().length==0){
+				$("#phone-text").text("验证完后，你可以使用该手机登陆和找回密码");
+				$("#phone-text").css("color","#fff");
+				}
+			})		
+		//		手机验证码查询
+		$('#phone').blur(function(){
+			var myreg = /^(((13[0-9]{1})|(17[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+			if($(this).val().length==0){
+				$("#phone-text").text("");
+				$("#phone-text").css("color",'#fff');
+			}else if(!myreg.test($("#phone").val())){
+				$("#phone-text").text("手机号格式不正确");
+				$("#phone-text").css("color",'#fff');
+				yz = false
+			}else{
+				$("#phone-text").text("");
+				yz = true;
+			}		
+		})
+			   	//	验证码
+		var wait=60;  
+		function time(o) {  
+		        if (wait == 0) {  
+		            o.removeAttribute("disabled");            
+		            o.value="免费获取验证码";  
+		            wait = 60;  
+		        } else {  
+		            o.setAttribute("disabled", true);  
+		            o.value="重新发送(" + wait + ")";  
+		            wait--;  
+		            setTimeout(function() {  
+		                time(o)  
+		            },  
+		            1000)  
+		        }  
+		    }  
+		$("#btn").click(function(){
+			time(this)
+		})
+	})	
+	</script>
+</html>
+

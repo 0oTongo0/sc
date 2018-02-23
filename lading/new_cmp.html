@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会员管理平台</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<style type="text/css">
+		.header-top,
+		.mian {
+			width: 1200px !important;
+			margin: 0 auto;
+		}
+		
+		#log {
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			background: url(img/download.png)no-repeat center center;
+			background-size: cover;
+		}
+		
+		.nav {
+			width: 1000px;
+		}
+		
+		.navbar-toggle {
+			position: fixed;
+			right: 0;
+		}
+		
+		#example-navbar-collapse {
+			padding-left: 100px;
+		}
+		/*.nav li:hover .dropdown-menu{
+			display: block;
+		}*/
+		
+		.yuyan {
+			margin-left: 100px;
+		}
+		
+		@media (max-width: 768px) {
+			.yuyan {
+				margin-left: 0;
+			}
+		}
+		
+		.yuyan-cn {
+			background: url(img/cn.png)no-repeat 0px center;
+			text-indent: 10px;
+		}
+		
+		.yuyan-en {
+			background: url(img/en.png)no-repeat 0px center;
+			text-indent: 10px;
+		}
+		
+		.main-left-top {
+			width: 100%;
+			padding-bottom: 30px;
+		}
+		
+		.main-left-top p {
+			width: 100%;
+			background-color: #ebe2c1;
+			line-height: 30px;
+			font-size: 14px;
+			font-weight: 700;
+			box-shadow: inset 2px 2px 2px #ccc;
+		}
+		
+		.main-left-top .link {
+			background-color: red;
+			color: #fff;
+			font-size: 14px;
+			padding: 0 5px;
+		}
+		
+		.main-left-top span {
+			color: #8d7009;
+			margin-left: 20px;
+		}
+		 .main-left-top  .main-left-nav { margin-top: 10px; width: 100%; background-color: #ddd; box-shadow: 0 5px 3px #666; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+		 .main-left-top  .main-left-nav li { color: #999; font-size: 12px; line-height: 20px; letter-spacing: 2px; margin-left: 30px; }
+		 .main-left-top  .main-left-nav li:before { content: ""; display: inline-block; width: 9px; height: 9px; background: url(img/yuandian.png) no-repeat; background-size: 100%; vertical-align: middle; margin-right: 10px; }
+		 .main-left-top  .main-left-nav li span { display: inline-block; margin-left: 10px; letter-spacing: 0; }
+		 .main-left-top  .main-left-nav li span.on { color: red; }
+		 .main-left-top  .main-left-nav li a { color: #999; }
+		.mian-left-footer p { width: 100%; background-color: #ebe2c1; line-height: 30px; font-size: 14px; font-weight: 700; box-shadow: inset 2px 2px 2px #ccc; }
+		.mian-left-footer p span { color: #8D7009; margin-left: 20px; }
+		 .mian-left-footer .mian-left-footer-nav {padding-bottom: 20px; }
+		.mian-left-footer .mian-left-footer-nav li {border-radius: 5px; border: 2px solid cadetblue; font-size: 0; position: relative; top: 0; transition: all 0.5s; margin-top: 10px; box-shadow: 0 3px 3px #666; padding: 0;text-align: center;}
+		.mian-left-footer .mian-left-footer-nav li img { display: block; width: 131px; margin: 0 auto; }
+		.mian-left-footer .mian-left-footer-nav li a { display: inline-block; width: 100%; background-color: cadetblue; border-top-left-radius: 5px; border-top-right-radius: 5px; text-align: center; line-height: 30px; color: #fff; font-size: 14px; }
+		.mian-left-footer .mian-left-footer-nav li:hover { border-color: #8d7009; top: -5px; }
+		.mian-left-footer .mian-left-footer-nav li:hover a {display: block; width: 100%; background-color: #8d7009; }
+		.mian-left-footer .mian-left-footer-nav li.fot { width: 310px; margin-top: 15px; }
+		.mian-left-footer .row{margin: 0;}
+        .main-center-top { width: 100%; box-shadow: 0 3px 3px #666; }
+		 .main-center-top .text { background-color: #ebe2c1; line-height: 30px; font-size: 14px; font-weight: 700; }
+		 .main-center-top .text span { color: #8d7009; margin-left: 20px; }
+		 .main-center-top .main-center-main { width: 100%; padding: 5px 10px; position: relative; }
+		.main-center-top .main-center-main .img { margin-top: 10px; }
+		 .main-center-top .main-center-main .main-center-main-rt { width: 320px; font-size: 12px; color: #999; margin-left: 20px; }
+		.main-center-top .main-center-main .main-center-main-rt-text { width: 100%; line-height: 20px; text-indent: 15px; }
+		.main-center-top .main-center-main .main-center-main-rt-text span { color: red; font-weight: 700; }
+		.main-center-top .main-center-main .but { font-weight: 700; position: absolute; display: inline-block; bottom: 5px; right: 50px; color: #8d7009; }
+ 		.main-center-top .main-center-main .but:hover { color: red; text-decoration: underline; }
+	</style>
+
+	<body>
+		<!--头部-->
+		<div class="header-top">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+		            <span class="sr-only">切换导航</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+						<a class="navbar-brand" href="#" id="log"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">首页</a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">资料管理 <b class="caret"></b></a>
+								<ul class=" dropdown-menu">
+									<li>
+										<a href="" trget="_blnk">我的资料</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">资料修改</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">账号修改</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">密码修改</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									业务管理<b class="caret"></b>
+								</a>
+								<ul class=" dropdown-menu">
+									<li>
+										<a href="" trget="_blnk">推荐关系</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">业务分布</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">会员升级</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" class="dropdown-toggle" data-toggle="dropdown">现金管理<b class="caret"></b></a>
+								<ul class=" dropdown-menu">
+									<li>
+										<a href="" trget="_blnk">信用转账</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">申请提款</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">公司账号</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">在线支付</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" class="dropdown-toggle" data-toggle="dropdown">财务管理<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="" trget="_blnk">报单账号</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">奖金账号</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">货币转换</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">汇账管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" trget="_blnk" class="dropdown-toggle" data-toggle="dropdown">站内邮件</a>
+							</li>
+							<li>
+								<a href="" trget="_blnk" class="dropdown-toggle" data-toggle="dropdown">新闻中心<b class="caret"></b></a>
+								<ul class=" dropdown-menu">
+									<li>
+										<a href="" trget="_blnk">最新公告</a>
+									</li>
+									<li>
+										<a href="" trget="_blnk">公司新闻</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="" class="dropdown-toggle" data-toggle="dropdown">安全退出</a>
+							</li>
+							<li class="yuyan">
+								<a href="" class="yuyan-cn">中文</a>
+							</li>
+							<li>
+								<a href="" class="yuyan-en">英文</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!--内容主体-->
+		<div class="mian">
+			<div class="row">
+				<!--左-->
+				<div class="col-sm-3">
+					<!--个人中心-->
+					<div style="width: 307px">
+					<div class="main-left-top">
+						<p>
+							<span>个人中心</span>
+							<a href="" class="link fl_rt" trget="_blnk">更多>></a>
+						</p>
+						<ul class="main-left-nav">
+							<li>
+								会 员 名:
+								<span>cn918919<span>
+						</li>
+						<li>
+							申购时间:
+							<span>2015/03/20</span>
+							</li>
+							<li>
+								店铺内型:
+								<span>2015/03/20</span>
+							</li>
+							<li>
+								报单账号:
+								<span class="on">2015/03/20</span>
+							</li>
+							<li>
+								奖金账号:
+								<span>2015/03/20</span>
+							</li>
+							<li>
+								上次登录:
+								<span class="on">2015/03/20</span>
+							</li>
+							<li>
+								登录时间:
+								<span>2015/03/20</span>
+							</li>
+						</ul>
+					</div>
+					</div>
+						
+					<!--会员管理-->
+					<div style="width: 307px;">
+					<div class="main-left-top">
+						<p class="clearfix">
+							<span>会员管理</span> 
+						</p>
+						<ul class="main-left-nav">
+							<li>
+								<a href="" trget="_blnk">-推荐关系</a>
+							</li>
+							<li>
+								<a href="" trget="_blnk">-业务分布</a>
+							</li>
+							<li>
+								<a href="" trget="_blnk">-会员升级</a>
+							</li>
+						</ul>
+					</div>
+					</div>
+					<div style="width: 307px;">	
+					<!--个人账号-->
+					<div class="mian-left-footer">
+						<p >
+							<span>个人账号</span> 
+						</p>
+						<div style="width: 307px;">
+							<ul class="mian-left-footer-nav row">
+								<li class="col-sm-6 col-md-6">
+									<img src="img/1.jpg" class="img-responsive"/>
+									<a href="" trget="_blnk">我的报价</a>
+								</li>
+								<li class="col-sm-6 col-md-6">
+									<img src="img/1.jpg" class="img-responsive"/>
+									<a href="" trget="_blnk">我的奖金</a>
+								</li>
+								<li class="fot col-xs-1">
+									<img src="img/1.jpg" class="img-responsive"/>
+									<a href="" trget="_blnk">活动申请</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					</div>
+				<div style="width: 307px;">
+					<div class="mian-left-footer">
+						<p class="clearfix">
+							<span>资料管理</span> 
+						</p>
+						<ul class="mian-left-footer-nav row">
+							<li class="col-sm-6 col-md-6 col-xs-6">
+								<img src="img/zj.jpg"/>
+								<a href="" trget="_blnk">我的资料</a>
+							</li>
+							<li class="col-sm-6 col-md-6 col-xs-6">
+								<img src="img/wd.jpg"/>
+								<a href="" trget="_blnk">资料修改</a>
+							</li>
+							<li class=" col-sm-6 col-md-6 col-xs-6">
+								<img src="img/beib.jpg"/>
+								<a href="" trget="_blnk">账号修改</a>
+							</li>
+							<li class=" col-sm-6 col-md-6t col-xs-6">
+								<img src="img/mima.jpg"/>
+								<a href="" trget="_blnk">密码修改</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<!--中-->
+				<div class="col-sm-6">
+				<div class="main-center-top">
+					<p class="text"><span>系统提示</span></p>
+					<div class="clearfix main-center-main">
+						<img src="img/baee.gif" class="fl_lt img"/>
+						<div class="fl_lt main-center-main-rt">
+							<div class="main-center-main-rt-text">
+								<span>尊贵的会员,上午好,欢迎您登陆系统，愿您快乐幸福每一天。</span>
+								今天是 11月8日 星期三。
+							</div>
+							<div class="main-center-main-rt-text">								
+        					客服在线服务时间：周一 ~ 周六 早上9：00 ~ 12：00 ，下午14：00~18:00，晚上18：30~20：30（北京时区），
+        					如您需要帮助，欢迎您与我们取得联系，我们将竭诚为您提供服务，同时欢迎您对我们的服务进行监督及建议，
+        					Email：wealthrec@gmail.com                
+							</div>
+							<a href="" class="but" trget="_blnk">查看详情</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!--右-->
+				<div class="col-sm-3">
+					3
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

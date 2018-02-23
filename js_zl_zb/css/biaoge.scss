@@ -1,0 +1,42 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+//  background: #ccc;
+    font-size: 0.4rem;
+}
+//表格
+.tab{
+    width: 100%;
+    color: #fff;
+    .tab-top{
+        width: 100%;
+        font-size: 27/$rc+rem;
+        text-align: center;
+        line-height: 43/$rc+rem;
+        background: rgba(0,0,0,.2);
+    }
+    .tab-main{
+        width: 100%;
+        overflow: auto;
+        table{
+            width: 100%;
+        }
+        th,td{
+            white-space: nowrap;
+            padding: 20/$rc+rem;
+            font-size: 24/$rc+rem;
+            text-align: center;
+        }
+        tbody>tr:nth-child(2n+1){
+            background: rgba(0,0,0,.2);
+        }
+        td{
+            span{
+                margin:0 6/$rc+rem;
+            }
+        }
+    }
+}

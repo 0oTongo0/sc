@@ -1,0 +1,77 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+//  background: #ccc;
+    font-size: 0.4rem;
+}
+.footer{
+    width: 100%;
+    padding:0 20/$rc+rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    .footer-nav{
+        width: 100%;
+        height: 110/$rc+rem;
+        display: flex;
+        li{
+            flex: 1;
+            text-align: center;
+            font-size: 0;
+            margin-top: 15/$rc+rem;
+            img{
+                vertical-align: middle;
+                width: 52/$rc+rem;
+                height: 52/$rc+rem;
+            }
+            span{
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 30/$rc+rem;
+                color: #333;
+            }
+            .on{
+                color: #ff7171;
+            }
+        }
+    }
+}
+//弹框
+.pop {
+    padding: 10/$rc+rem 20/$rc+rem;
+    line-height: 30/$rc+rem;
+    color: #fff;
+    font-size: 25/$rc+rem;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    display: none;
+    -webkit-animation: wd 0.8s ease-in-out;
+    animation: dk 0.8s ease-in-out;
+}
+
+@keyframes dk {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

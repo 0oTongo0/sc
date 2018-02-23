@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  background: #f6f6f4;
+  box-shadow: inset 0px -1px 2px #f3f3f1; }
+  .header .header-main {
+    width: 1200px;
+    margin: 0 auto;
+    height: 36px; }
+    .header .header-main .header-main-left {
+      color: #a9a9a9;
+      font-size: 12px;
+      line-height: 36px; }
+      .header .header-main .header-main-left label {
+        margin-left: 9px; }
+      .header .header-main .header-main-left input {
+        width: 62px;
+        border: 1px solid #a5a5a5;
+        margin-right: 22px; }
+      .header .header-main .header-main-left a {
+        margin-left: 17px;
+        border-left: 1px solid #c4c4c4;
+        padding: 0 9px;
+        color: #a9a9a9; }
+    .header .header-main .header-main-right {
+      font-size: 12px;
+      line-height: 36px; }
+      .header .header-main .header-main-right li {
+        margin-right: 32px; }
+        .header .header-main .header-main-right li a {
+          display: block;
+          color: #a9a9a9;
+          letter-spacing: 0.6px; }
+          .header .header-main .header-main-right li a span {
+            font-weight: 700;
+            color: #da2e28; }
+          .header .header-main .header-main-right li a.guc {
+            background: url(../images/购物车.png) no-repeat center left;
+            background-size: 16px 16px;
+            text-indent: 18px; }
+          .header .header-main .header-main-right li a.shouji {
+            background: url(../images/手机.png) no-repeat center left;
+            background-size: 16px 16px;
+            text-indent: 18px; }
+          .header .header-main .header-main-right li a:hover {
+            color: #da2e28; }
+
+/*# sourceMappingURL=top.css.map */

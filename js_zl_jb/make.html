@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<title>我要转让</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!--通用top-->
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		<!--表格-->
+		<link rel="stylesheet" type="text/css" href="css/biaoge.css"/>
+		<!--表单-->
+		<link rel="stylesheet" type="text/css" href="css/biaodan.css"/>
+		<!--底部-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fenye.css"/>
+		<link rel="stylesheet" type="text/css" href="css/recherge.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sell.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+			<!--头部-->
+			<header class="header">
+				<div class="header-left">
+					<img src="images/返回.png" onclick="javascript:history.back(-1);"/>
+				</div>
+				<div class="header-center">
+					我要转让
+				</div>
+				<div class="header-right">
+					
+				</div>
+				<!--右侧隐藏导航-->
+				<div class="herder-nav">
+					<ul class="herder-nav-parent">
+						<!--有子集的添加 ICO-->				
+						<li>
+							<a href="javascript:;">金宝服务 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">兑换中心</a>
+								</li>
+								<li>
+									<a href="">我的信息</a>
+								</li>	
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">交易中心 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">我要转让</a>
+								</li>
+								<li>
+									<a href="">我要够买</a>
+								</li>
+								<li>
+									<a href="">在线充值</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">众宝分红</a>
+						</li>
+						<li>
+							<a href="">提现申请</a>
+						</li>
+						<li>
+							<a href="">财务明细</a>
+						</li>
+						<li>
+							<a href="">新闻管理</a>
+						</li>
+						<li>
+							<a href="javascript:;">沟通服务 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">提交咨询</a>
+								</li>
+								<li>
+									<a href="">我的咨询</a>
+								</li>	
+							</ul>							
+						</li>
+					</ul>
+				</div>
+			</header>	
+			<section class="section">
+				<!--数据-->
+				<div class="section-data">
+					<p><span>账户金宝余额:</span><strong>00</strong></p>
+					<p><span>账户现金余额:</span><strong>00</strong></p>
+					<p><span>今日金宝单价:</span><strong>00</strong></p>
+				</div>
+				<!--表单-->
+				<div class="section-form">
+					<form action="" method="post">
+						<div class="section-form-mian"><label>转让金宝:</label><input type="text" class="sell"/></div>
+						<div class="section-form-mian"><label>金宝金额:</label><input type="text" class="unit"/></div>
+						<div class="section-form-mian"><label>转让账号:</label><input type="text" class="zhanghao"/></div>
+						<div class="section-form-mian"><label>支付密码:</label><input type="password" class="pass"/></div>
+						<div class="section-form-mian">
+							<input type="submit" value="确认" class="sub"/>
+						</div>
+					</form>
+				</div>
+				<!--表格-->
+				<div class="section-tab tab">
+					<div class="tab-main">
+						<table>
+							<thead>
+								<tr>
+									<th>流水号</th>
+									<th>交易账户</th>
+									<th>金宝数量</th>
+									<th>金额|总价</th>
+									<th>创建时间</th>
+									<th>状态</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>111111111111111111111111111</td>
+									<td>21111111111111111111111111</td>
+									<td>2</td>
+									<!--单价|数量-->
+									<td><span>1</span><span>2</span></td>
+									<td>2</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>2</td>
+								</tr>	
+							</tbody>
+						</table>
+					</div>
+			<!--分页-->
+                <ul class="fenye">
+                    <li class="fenye-left">
+                        <a href="javascript:;">上一页</a>
+                    </li>
+                    <li class="fenye-center">
+                        <select class="fenye-center-sel">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>1</option>
+                        </select>
+                    </li>
+                    <li class="fenye-right ">
+                        <a href="javascript:;" class="">下一页</a>
+                    </li>
+                </ul>
+			<!--分页end-->					
+				</div>
+			</section>
+			<!--中间end-->
+			<!--弹框-->
+			<div class="pop">
+				 
+			</div>
+			<!--弹框end-->
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/黑-首页.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/我的商城.png"/>
+							<span>我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/我的金宝.png"/>
+							<span>我的金宝</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->			
+	</body>
+</html>

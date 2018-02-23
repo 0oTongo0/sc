@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/from.css" />
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<script type="text/javascript">
+		document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+	</script>
+
+	<body>
+		<header>
+			<div class="top clearfix">
+				<span class="fl_lt one">全球净</span>
+				<span class="glyphicon glyphicon-tasks fl_rt zt" id="wd"></span>
+			</div>
+			<nav id="nav">
+				<ul class="u1">
+					<li>
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;">个人中心</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">个人资料</a>
+							</li>
+							<li>
+								<a href="">密码修改</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">现金管理</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">转账</a>
+							</li>
+							<li>
+								<a href="">提现</a>
+							</li>
+							<li>
+								<a href="">充值</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">网络关系</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">客户</a>
+							</li>
+							<li>
+								<a href="">经销商</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">业务管理</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">报单账户</a>
+							</li>
+							<li>
+								<a href="">奖金账户</a>
+							</li>
+							<li>
+								<a href="">积分账户</a>
+							</li>
+							<li>
+								<a href="">押金账户</a>
+							</li>
+							<li>
+								<a href="">营业业绩</a>
+							</li>
+							<li>
+								<a href="">水费账户</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">新闻中心</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">最新公告</a>
+							</li>
+							<li>
+								<a href="">公司新闻</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">邮件系统</a>
+					</li>
+					<li>
+						<a href="">安全退出</a>
+					</li>
+					<li>
+						<a href="">消费者</a>
+					</li>
+					<li>
+						<a href="javascript:;">商城</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">全积分区域</a>
+							</li>
+							<li>
+								<a href="">半积分区域</a>
+							</li>
+							<li>
+								<a href="">现金区域</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<p class="top">最新公告:</p>
+			<div id="box">
+				<ul class="mingdan" id="">
+					<li>
+						<a href="#" trget="_blnk">1111</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">bbbbbb</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">cccccc</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">dddddd</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">eeeeee</a>
+					</li>
+					<li>
+						<a href="#" trget="_blnk">aaaa</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">bbbbbb</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">cccccc</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">dddddd</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#wd").click(function() {
+				$("#nav").toggle(200);
+			})
+			$(".u1>li").click(function() {
+				$(this).children("#u2").toggle(200);
+				$(this).siblings().children("#u2").hide();
+			})
+		})
+		function AutoScroll(obj) {
+		    $(obj).find("ul:first").animate({
+		        marginTop: "-30px"
+		    },
+		    500,
+		    function() {
+		        $(this).css({
+		            marginTop: "0px"
+		        }).find("li:first").appendTo(this);
+		    });
+		}
+		$(document).ready(function() {
+			var timer=null;
+			timer = setInterval('AutoScroll("#box")', 1600)
+		    $("#box").hover(function(){
+		    	 clearInterval(timer); 
+//		    	 console.log("wd")
+		    },function(){
+		    	timer = setInterval('AutoScroll("#box")', 1600);
+		    })
+		 })
+	</script>
+
+</html>

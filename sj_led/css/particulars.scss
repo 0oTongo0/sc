@@ -1,0 +1,240 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+    background: #F4F4F4;
+}
+//插件
+//  广告部分
+//  .swiper-container{
+//      margin-bottom: 30/$rc+rem;;
+//  }
+    .swiper-wrapper{
+        width: 100%;
+        .swiper-slide{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 700/$rc+rem;
+            }
+        }
+    }
+    .swiper-pagination-fraction{
+        font-size: 25/$rc+rem;
+        width: 70/$rc+rem;
+        height: 70/$rc+rem;
+        line-height: 70/$rc+rem;
+        border-radius: 50%;
+        margin-left: 87%;
+        background: rgba(0,0,0,.2);
+        color: #fff;
+        bottom: 60/$rc+rem;
+    }
+//头部
+.header{
+    width: 100%;
+    padding: 10/$rc+rem 50/$rc+rem;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 1px 6/$rc+rem #ebebeb;
+    font-size: 25/$rc+rem;
+    margin-bottom: 5/$rc+rem;
+    .header-left{
+        display: inline-block;
+        width: 60/$rc+rem;
+        height: 60/$rc+rem;
+        img{
+            width: 100%;
+        }
+    }
+    .header-center{
+        flex: 1;
+        text-align: center;
+         height: 60/$rc+rem;
+         line-height: 60/$rc+rem;
+    }
+    .header-right{
+        display: inline-block;
+        width: 60/$rc+rem;
+        height: 60/$rc+rem;  
+        line-height: 60/$rc+rem;  
+        color: #333;    
+    }
+}
+//中间的内容
+.section{
+    width: 100%;
+//  文字描述
+    .particulaars{
+        width: 100%;
+        background: #fff;
+         font-size: 30/$rc+rem;
+         padding: 15/$rc+rem;
+         margin-bottom: 30/$rc+rem;
+         .particulaars-top{
+             line-height: 40/$rc+rem;
+              margin-bottom: 20/$rc+rem;
+         }
+        .particulaars-footer{        
+            margin-bottom: 20/$rc+rem;
+            span{
+                color: #ff0000;
+                font-size: 40/$rc+rem;
+            }
+        }
+    }
+//  型号
+    .model{
+        width: 100%;
+        background: #fff;
+        display: flex;  
+        padding: 0 45/$rc+rem;      
+        .model-main{
+            height: 100/$rc+rem;
+            background: #fff;  
+            width: 130/$rc+rem;
+            span{
+                display: block;
+                width: 100%;
+                font-size: 20/$rc+rem;
+                color: #888;
+                line-height: 100/$rc+rem;
+                text-align: left;
+            }
+        }
+            .model-main-center{
+                flex: 1;
+                display: block;
+                strong{
+                    display: block;
+                    font-size: 25/$rc+rem; 
+                    line-height: 100/$rc+rem;                   
+                }
+            } 
+            .model-main-right{
+                width: 32px;
+                height: 32px;
+                img{
+                    display: block;
+                    width: 100%;
+                    margin-top: 20/$rc+rem;
+                    transform: scale(0.8);
+                }
+            }       
+    }
+//  数量+购买
+    .section-footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 90/$rc+rem;
+        box-shadow: 1px 0 6/$rc+rem #dadada;
+        background: #fff;
+        display: flex;
+        padding: 0 30/$rc+rem;
+        .section-footer-left{
+//          width: 200/$rc+rem;
+            font-size: 0/$rc+rem;
+            font-weight: 700;
+            margin-top: 23/$rc+rem;
+            .minus,.add,.num{ 
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 25/$rc+rem;
+                border: 1px solid #bfbfbf;
+                width: 60/$rc+rem;
+                height: 53/$rc+rem;
+                text-align: center;
+                line-height: 53/$rc+rem;                
+            }
+            .num{
+                width: 80/$rc+rem;
+            }
+//          减加
+            .minus{
+                border-top-left-radius: 10/$rc+rem;
+                border-bottom-left-radius: 10/$rc+rem;
+            }
+            .add{
+                border-top-right-radius: 10/$rc+rem;
+                border-bottom-right-radius: 10/$rc+rem;                
+            }
+        }
+//      立即购买
+        .sub{
+            display: block;
+            width: 240/$rc+rem;
+            height: 53/$rc+rem;
+            text-align: center;
+            background: #ef4c4c;
+            color: #fff;
+            border-radius: 6/$rc+rem;
+            margin-top: 23/$rc+rem;
+            margin-left: 180/$rc+rem;
+        }
+    }
+//弹框
+    .mc{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 5;
+        display: none;
+        .pop{
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            min-height: 50%;
+            background: #fff;
+            z-index: 6;
+            font-size: 12/$rc+rem;
+            p{
+                width: 100%;
+                font-size: 30/$rc+rem;
+                line-height: 60/$rc+rem;
+                background: #F4F4F4;
+                text-align: center;
+                position: relative;
+                .del{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: inline-block;
+                    width: 60/$rc+rem;
+                    height: 60/$rc+rem;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            span{
+                display: inline-block;
+                margin: 8/$rc+rem;
+                padding: 8/$rc+rem;
+                border: 1px solid #ddd;
+            }
+            .on{
+                border-color: red;
+            }
+            .sub2{
+                position: fixed;
+                bottom: 0;
+                display: block;
+                width: 240/$rc+rem;
+                height: 80/$rc+rem;
+                text-align: center;
+                background: #ef4c4c;
+                color: #fff;
+                border-radius: 6/$rc+rem;
+                margin-top: 23/$rc+rem;
+                margin-left: 510/$rc+rem;                
+            }
+        }
+    }    
+}
+

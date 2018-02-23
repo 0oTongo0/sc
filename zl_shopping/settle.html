@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>众联商城购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--头部-->
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<!--右侧固定热卖+购物车-->
+		<link rel="stylesheet" type="text/css" href="css/right-seller.css" />
+		<!--底部-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<!--购物车+log-->
+		<link rel="stylesheet" type="text/css" href="css/guc_log.css"/>
+		<link rel="stylesheet" type="text/css" href="css/settle.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/settle.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="">
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text" />
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部end-->
+		<!--log-->
+			<div class="header-log">
+				<div class="header-log-mian clearfix">
+					<h1 class="fl_lt"><a href="">众联商城</a></h1>
+					<span class="header-log-right fl_lt">结算页</span>
+					<div class="fl_rt header-log-mian-arrange">
+						<ul class="clearfix">
+							<!--颜色变化添加on-->
+							<li>
+								<i class="ioc">1</i>
+								1.我的购物车
+							</li>
+							<li class="on">
+								<i class="ioc">2</i>
+								2.填写核对订单信息
+							</li>	
+							<li>
+								<i class="ioc">3</i>
+								3.成功提交订单
+							</li>								
+						</ul>
+					</div>					
+				</div>
+			</div>
+		<!--logend-->
+		<!--主体开始-->
+		<div class="main">
+			<h3>填写并核对信息</h3>
+			<div class="main-message">
+				<div class="main-message-top">
+					<!--收获地址-->
+					<p class="main-message-top-text clearfix"><strong class="fl_lt">收货人信息</strong><a class="fl_rt" id="increased">新增收获地址</a></p>
+					<div class="clearfix main-message-top-site">
+						<div class="fl_lt main-message-top-site-left">
+							<span>张三</span>
+							<span>深圳</span>
+						</div>
+						<div class="fl_lt main-message-top-site-right">
+							<span>张三</span>
+							<span>深圳</span>
+							<span>18层</span>
+						</div>
+					</div>
+				</div>
+				<div class="main-message-top">
+					<!--支付方式-->
+					<p class="main-message-top-text"><strong>支付方式</strong></p>
+					<div class="main-message-top-way">
+						<!--点击时添加on-->
+						<span class="on">在线支付</span>
+						<span>线下支付</span>
+					</div>
+				</div>
+				<div class="main-message-top-inventory">
+					<p class="main-message-top-inventory-text clearfix"><strong class="fl_lt">送货清单</strong><a href="" class="fl_rt">返回修改购物车</a></p>
+					<!--商品详情-->
+					<div class="clearfix main-message-top-inventory-details">
+						<p class="main-message-top-inventory-details_name">商家:李四</p>
+						<div>
+							<img src="images/bx.jpg" class="fl_lt main-message-top-inventory-details_imgs"/>
+							<div class="fl_lt main-message-top-inventory-details_text">
+								这东西可以的很强势。
+							</div>
+							<div class="fl_lt main-message-top-inventory-details_money">
+								<strong>￥888</strong>
+								&times;<span>1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--优惠券和积分-->
+				<div class="discount">
+					<p>使用优惠券/积分抵用</p>
+					<!--2个tab-->
+					<ul class="clearfix discount-top">
+						<!--点击添加on-->
+						<li class="fl_lt on">
+							优惠券
+						</li>
+						<li class="fl_lt ">
+							积分
+						</li>
+					</ul>
+					<!--底部大的2个切换的内容-->
+					<div class="discount-footer">
+						<!--hide隐藏 tab点击发生的事件-->
+						<!--优惠券-->
+						<div class="discount-footer_coupon tab ">
+							<span>
+								优惠券
+							</span>
+							<strong>15</strong>元
+							<input type="checkbox" name="" id="" value="" class="che"/>
+						</div>
+						<!--优惠券end-->
+						<!--积分-->
+						<div class="discount-footer_integral tab hide">
+							<span>本账户共999积分，本次使用抵用</span>
+							<input type="text" class="text"/>
+							￥<strong>100</strong>
+						</div>
+						<!--积分end-->
+					</div>
+					<!--抵现↓-->
+					<div class="discount-dix">
+						金额抵现￥<span class="span">111</span>
+					</div>
+					<!--总金额↓-->
+					<div class="discount-sum">
+						应付总额(包邮)
+						<strong>￥888</strong>
+					</div>
+					<input type="submit"  value="提交订单" class="sub"/>
+				</div>
+			<h4></h4>
+		</div>
+	</div>
+		<!--主体end-->
+	<!--蒙城弹框 form表单-->
+	<div class="matte">
+		<div class="matte-main">
+			<p>[ 提示：根据快递实名制要求，收件人姓名必须与身份证的真实姓名保持一致! ]</p>
+			<div>
+				<label>身份证:</label>
+				<input type="text"  placeholder="请填写身份证号码"/>
+				<!--提示类hint-->
+				<div class="hint">
+					
+				</div>
+			</div>
+			<div>
+				<label>收件人:</label>
+				<input type="text"  placeholder="请填写收件人姓名"/>
+				<div class="hint">
+					
+				</div>				
+			</div>	
+			<div>
+				<label>收获地址:</label>
+				<select class="selsect1">
+					<option>所属省份</option>
+				</select>
+				<select>
+					<option>所属城市</option>
+				</select>	
+				<select>
+					<option>所属地区</option>
+				</select>
+				<div class="hint">
+					
+				</div>				
+			</div>	
+			<div>
+				<label>详细地址:</label>
+				<input type="text" placeholder="街道名称/村组，单位，房号"/>
+				<div class="hint">
+					
+				</div>				
+			</div>
+			<div>
+				<label>手机号:</label>
+				<input type="text" placeholder="常用手机号"/>
+				<div class="hint">
+					
+				</div>				
+			</div>
+			<div>
+				<label>邮政编码:</label>
+				<input type="text" placeholder="非必填" />
+				<div class="hint">
+					
+				</div>				
+			</div>
+			<p>
+				<button class="but">保存</button>
+				<a href="javascript:;" class="cancel">取消</a>
+			</p>
+			<a class="del">
+				<img src="images/del.png"/>
+			</a>
+		</div>
+	</div>
+	<!--蒙城弹框 form表单end-->		
+		<!--底部-->
+		<div class="footer">
+			<!--4个图标-->
+			<div class="footer-top">
+				<ul class="footer-top-mian clearfix">
+					<li>
+						品类齐全，轻松购物
+					</li>
+					<li>
+						多仓直发，级速配送
+					</li>
+					<li>
+						正品行货，精致服务
+					</li>
+					<li>
+						天天低价，畅选无忧
+					</li>
+				</ul>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center clearfix">
+				<div class="footer-center-nav">
+					<h5>注销说明</h5>
+					<ul>
+						<li>
+							<a href="">优惠券</a>
+						</li>
+						<li>
+							<a href="">促销活动</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>付款方式</h5>
+					<ul>
+						<li>
+							<a href="">货到付款</a>
+						</li>
+						<li>
+							<a href="">在线支付</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--版权说明-->
+			<div class="footer_fot">
+				<ul class="clearfix">
+					<li>
+						<a href="">
+							联系我们
+						</a>
+					</li>
+					<li>
+						<a href="">
+							关于我们
+						</a>
+					</li>
+				</ul>
+				<p>版权所有&copy;2018</p>
+				<div>
+					<a href=""><img src="images/gs.gif" /></a>
+				</div>
+			</div>
+		</div>
+		<!--版权说明end-->
+		<!--右边定位条-->
+		<div class="right-nav">
+			<div title="个人中心">
+				<a href="">
+					<img src="images/个人.png" />
+					<span href="">个人中心</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="购物车">
+				<a href="">
+					<img src="images/购物车空.png" />
+					<span href="">购物车</span>
+					<strong class="ico"></strong>
+					<i>1</i>
+				</a>
+			</div>
+			<div title="收藏">
+				<a href="">
+					<img src="images/sc.png" />
+					<span href="">收藏</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="回到底部" id="top">
+				<a>
+					<img src="images/top2.png" />
+					<span>回到顶部</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+		</div>
+		<!--右边定位条end-->		
+		</form>
+	</body>
+</html>

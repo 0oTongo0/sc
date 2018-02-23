@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/from.css" />
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+			<style type="text/css">
+				.section-main-right-top #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width:198px;
+					/* fallback */
+					color: #999;
+					/* # of chars */
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 3s steps(30,end),/* # of steps = # of chars */
+						 blink-caret .5s step-end infinite alternate;
+				}
+					@keyframes typing {
+						from {
+						width:0;
+					}
+					}@keyframes blink-caret {
+						50% {
+						border-color:transparent;
+					}
+		</style>
+	<script type="text/javascript">
+		document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+	</script>
+
+	<body>
+		<header>
+			<div class="top clearfix">
+				<span class="fl_lt one">log</span>
+				<span class="cn">中文</span>
+				<span class="en">英文</span>				
+				<span class="glyphicon glyphicon-tasks fl_rt zt" id="wd"></span>
+			</div>
+			<nav id="nav">
+				<ul class="u1">
+					<li>
+						<a href="javascript:;">资料中心</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">资料修改</a>
+							</li>
+							<li>
+								<a href="">密码修改</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">业务管理</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">推荐关系</a>
+							</li>
+							<li>
+								<a href="">业务分布</a>
+							</li>
+							<li>
+								<a href="">会员升级</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">现金管理</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">转账</a>
+							</li>
+							<li>
+								<a href="">申请提款</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">财务管理</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">现金钱包</a>
+							</li>
+							<li>
+								<a href="">电子钱包</a>
+							</li>
+							<li>
+								<a href="">商务中心</a>
+							</li>
+							<li>
+								<a href="">财富宝</a>
+							</li>
+							<li>
+								<a href="">上市基金分红</a>
+							</li>
+							<li>
+								<a href="">在线充值</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;">站内邮寄</a>
+					</li>
+					<li>
+						<a href="javascript:;">新闻中心</a>
+						<b class="caret"></b>
+						<ul id="u2">
+							<li>
+								<a href="">最新公告</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">安全退出</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+				<div class="section-main-right-top">
+					<span id="hh">您还要<strong>红包</strong>没有领取哦！</span>
+					<a href="" class="section-main-right-top-link">点击领取</a>
+				</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#wd").click(function() {
+				$("#nav").toggle(200);
+			})
+			$(".u1>li").click(function() {
+				$(this).children("#u2").toggle(200);
+				$(this).siblings().children("#u2").hide();
+			})
+			
+		})
+		function AutoScroll(obj) {
+		    $(obj).find("ul:first").animate({
+		        marginTop: "-30px"
+		    },
+		    500,
+		    function() {
+		        $(this).css({
+		            marginTop: "0px"
+		        }).find("li:first").appendTo(this);
+		    });
+		}
+		$(document).ready(function() {
+			var timer=null;
+			timer = setInterval('AutoScroll("#box")', 1600)
+		    $("#box").hover(function(){
+		    	 clearInterval(timer); 
+//		    	 console.log("wd")
+		    },function(){
+		    	timer = setInterval('AutoScroll("#box")', 1600);
+		    })
+		 })
+	</script>
+
+</html>

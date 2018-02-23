@@ -1,0 +1,169 @@
+@charset "UTF-8";
+$yc:#ea5150;
+.header{
+    width: 100%;
+    background: #f6f6f4;
+    box-shadow:inset 0px -1px 2px #f3f3f1;
+    .header-main{
+        width: 1200px;
+        margin: 0 auto;
+        height: 36px;
+//      左
+        .header-main-left{
+            color: #a9a9a9;
+            font-size: 12px;
+            line-height: 36px;
+            label{
+                margin-left: 9px;
+            }
+            input{  
+                width: 62px;
+                border: 1px solid #a5a5a5;
+                margin-right: 22px;
+            }
+            a{
+                margin-left: 17px;
+                border-left: 1px solid #c4c4c4;
+                padding: 0 9px;
+                color: #a9a9a9;
+            }
+        }
+//      右
+        .header-main-right{
+            font-size: 12px;
+            line-height: 36px;
+            li{
+                margin-right: 32px;
+                a{
+                    display: block;
+                    color: #a9a9a9;
+                    letter-spacing: 0.6px;
+
+                     span{
+                         font-weight: 700;
+                         color: #da2e28;
+                    }
+                    &.jiaoyi{
+                        background: url(../images/交易.png)no-repeat center left;
+                        background-size: 16px 16px;  
+                        text-indent: 18px;                      
+                    }
+                    &.shouji{
+                        background: url(../images/手机.png) no-repeat center left;
+                        background-size: 16px 16px;  
+                        text-indent: 18px;                        
+                    }
+                    &:hover{
+                        color: #da2e28;
+                    }
+                }
+            }
+        }
+    }
+}
+//log+搜索
+.section-log{
+    width: 1200px;
+//  margin: 6px auto 16px;
+//  左
+    .section-log-left{
+        width: 288px;
+        height: 78px;
+        margin-right: 70px;
+        a{
+            display: block;
+            height: 78px;
+            text-indent: -9999px;
+            background: url(../images/logo.png)no-repeat;
+        }
+    }
+//  中
+    .section-log-center{
+        width: 300px;
+        margin-top: 23px;
+        li{
+            width: 33.3333%;
+            text-align: center;
+            float: left;
+            line-height: 46px;
+            position: relative;
+            a{
+                display: block;
+                font-size: 16px;
+                color: #484848;
+                font-weight: 500;           
+            }
+            &:before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background: $yc;
+                bottom: -6px;
+                left: 0;
+                transition: all 0.3s ease-in-out;
+                visibility: hidden;
+                opacity: 0;
+            }
+            &:hover::before{
+                bottom: 0;
+                visibility: inherit;
+                opacity: 1;                
+            }
+            &:hover a{
+                color: $yc;
+            }
+        }
+    }
+//  右
+    .section-log-right{
+        width: 350px;
+        position: relative;
+        margin-top: 25px;
+        .text{
+            width: 348px;
+            line-height: 34px;
+            border: 1px solid #888;
+            padding-left: 10px;
+        }
+        .sub{
+            position: absolute;
+            background: url(../images/放大镜.png)no-repeat;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+            right: 2px;
+            top: 0;
+        }
+    }
+//  标题
+    .section-log-biaoti{
+       padding-top: 33px; 
+       margin-right: 50px;
+    }
+    .section-log-right2{
+        padding-top: 33px;
+        margin-left: 50px;
+    }
+}
+.top{
+    position: fixed;
+    display: none;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    right: 10px;
+    bottom: 200px;
+    background:rgba(0,0,0,0.5);
+    cursor: pointer;
+    &:hover{
+        background: $yc;
+    }
+}
+.personal .personal-mian .personal-mian-left .personal-mian-left-nav li.on{
+    a{
+        color: $yc;
+    }
+}
+

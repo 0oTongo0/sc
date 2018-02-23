@@ -1,0 +1,485 @@
+@charset "UTF-8";
+$yc:#ebe2c1;
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.top{
+    width: 1280px;
+    margin: 0 auto;
+    background:url(../img/logbg.jpg);
+    padding: 20px 0;
+    h1{
+        width: 110px;
+        margin: 0 50px;
+        a{
+            display: block;
+            width: 110px;
+            height: 120px;
+            text-indent: -9999px;
+            background: url(../img/log.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+    .top-nav{
+        margin-top: 20px;
+        .nav-li{
+            margin: 3px;
+            text-indent: 15px;
+            position: relative;
+            a{
+                color: #fff;
+                font-size: 14px;
+                transition: all 0.2s;
+            }
+            &:nth-child(2) i{
+                background-position: -26px center;
+            }
+            &:nth-child(3) i{
+                background-position: -52px center;
+            }
+            &:nth-child(4) i{
+                background-position: -78px center;
+            }
+            &:nth-child(5) i{
+                background-position: -104px center;
+            }
+            &:nth-child(6) i{
+                background-position: -128px center;
+            }            
+            &:nth-child(7) i{
+                background-position: -156px center;
+            }
+            &:nth-child(8) i{
+                background-position: -182px center;
+            }         
+            i{
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../img/sprite.png);
+                width: 26px;
+                height: 40px;
+            }
+            &:hover >a{
+                color: #333;
+                font-weight: 700;
+            }
+            &:hover .fils{
+                display: block;
+            }
+            .fils{
+                display: none;
+                position: absolute;
+                top: 35px;
+                background-color: #F4F4F4;
+                li{
+                    &:last-child{
+                        border: none;
+                    }
+                    &:hover a{
+                        text-decoration: underline;
+                        color: red;
+                    }
+                    a{
+                        color: #333;
+                        font-size: 14;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .fixed{
+        position: fixed;
+        background-color: $yc;
+        top:0;
+        width: 1280px;
+        z-index: 9999;
+        left: 50%;
+        margin-left: -640px;
+        margin-top: 0;
+        padding-left: 200px;
+    }
+    .right{
+        margin-right: 50px;
+        color: #fff;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+        .right-cn{
+            display: inline-block;
+            margin-right: 10px;
+            background: url(../img/cn.png)no-repeat;
+            text-indent: 25px;
+        }
+        .right-en{
+            display: inline-block;
+            margin-right: 10px;
+            background: url(../img/en.png)no-repeat;
+            text-indent: 25px; 
+        }
+    }
+}
+.main{
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .main-left{
+        width: 320px;
+        .main-left-top{
+            width: 100%;
+            padding-bottom: 30px;
+            p{
+                width: 100%;
+                background-color: $yc;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: inset 2px 2px 2px #ccc;
+                .link{
+                    background-color: red;
+                    color: #fff;
+                    font-size: 14px;
+                    padding: 0 5px;
+                }
+                span{
+                    color: #8d7009;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .main-left-nav{
+            margin-top: 10px;
+            width: 100%;
+            background-color: #ddd;
+            box-shadow: 0 5px 3px #666;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            li{
+                color: #999;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 2px;
+                margin-left: 30px;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 9px;
+                    height: 9px;
+                    background: url(../img/yuandian.png)no-repeat;
+                    background-size: 100%;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                span{
+                    display: inline-block;
+                    margin-left: 10px;
+                    letter-spacing: 0;
+                    &.on{
+                        color: red;
+                    }
+                }
+                a{
+                    color: #999;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+//      个人账号
+        .mian-left-footer{
+            width: 100%;
+            p{
+                width: 100%;
+                background-color: $yc;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: inset 2px 2px 2px #ccc;
+                    span{
+                    color: #8D7009;
+                    margin-left: 20px;
+                }
+            }
+            .mian-left-footer-nav{
+                width: 100%;
+                padding-bottom: 20px;
+                li{
+                    width: 150px;
+                    border-radius: 5px;
+                    border: 2px solid cadetblue;
+                    font-size: 0;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.5s;
+                    margin: 0 5px;
+                    margin-top: 10px;
+                    box-shadow: 0 3px 3px #666;
+                    img{
+                        display: block;
+                        width: 131px;
+                        margin: 0 auto; 
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        background-color: cadetblue;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                    &:hover{
+                       border-color: #8d7009; 
+                       top: -5px;
+                    }
+                    &:hover a{
+                        background-color: #8d7009;
+                    }
+                    &.fot{
+                        width: 310px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+//  中间的部分
+    .main-center{
+        width: 580px;
+        margin-left: 20px;
+        .main-center-top{
+            width: 100%;
+            box-shadow: 0 3px 3px #666;
+            .text{
+                background-color: $yc;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 700;
+                span{
+                    color: #8d7009;
+                    margin-left: 20px;
+                }
+            }
+            .main-center-main{
+                width: 100%;
+                padding: 5px 10px;
+                position: relative;
+                .img{
+                    margin-top: 10px;
+                }
+                .main-center-main-rt{
+                    width: 320px;
+                    font-size: 12px;
+                    color: #999;
+                    margin-left: 20px;
+                }
+                .main-center-main-rt-text{
+                    width: 100%;
+                    line-height: 20px;
+                    text-indent: 15px;
+                    span{
+                        color: red;
+                        font-weight: 700;
+                    }
+                }
+                .but{
+                    font-weight: 700;
+                    position: absolute;
+                    display: inline-block;
+                    bottom: 5px;
+                    right: 50px;
+                    color: #8d7009;
+                    &:hover{
+                        color: red;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+//      我的收益
+        .main-center-footer{
+            width: 100%;
+            margin-top: 30px;
+            p{
+                width: 100%;
+                background-color: $yc;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: inset 2px 2px 2px #ccc;
+                    span{
+                    color: #8d7009;
+                    margin-left: 20px;
+                }
+            }
+            .mian-left-footer-nav{
+                width: 100%;
+                padding-bottom: 20px;
+                li{
+                    width: 31.3333%;
+                    border-radius: 5px;
+                    border: 2px solid cadetblue;
+                    font-size: 0;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.5s;
+                    margin: 0 5px;
+                    margin-top: 10px;
+                    box-shadow: 0 3px 3px #666;
+                    img{
+                        display: block;
+                        width: 131px;
+                        margin: 0 auto; 
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        margin-top: 20px;
+                        background-color: cadetblue;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        text-align: center;
+                        line-height: 20px;
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                    &:hover{
+                       border-color: #8d7009; 
+                       top: -5px;
+                    }
+                    &:hover a{
+                        background-color: #8d7009;
+                    }
+                    &.fot{
+                        width: 310px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+//      公告
+        .main-center-gg{
+            width: 100%;
+            margin-top: 10px;
+            p{
+                width: 100%;
+                background-color: $yc;
+                line-height: 30px;
+                font-size: 14px;
+                font-weight: 700;
+                box-shadow: inset 2px 2px 2px #ccc;
+                    span{
+                    color: #8d7009;
+                    margin-left: 20px;
+                }
+            }
+            ul{
+                width: 100%;
+                background: url(../img/bg1.jpg)no-repeat;
+                background-size: 100%;
+                margin-top: 20px;
+                padding-bottom: 20px;
+                li{
+                    margin-left: 33px;
+                    margin-top: 20px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 5px;;
+                        color: #8d7009;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//右边
+.mian-right{
+    width: 320px;
+    margin-left: 20px;
+    p{
+        width: 100%;
+        background-color: $yc;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: inset 2px 2px 2px #ccc;
+        span{
+            color: #8d7009;
+            margin-left: 20px;
+        }
+    }
+    #box{
+        overflow: hidden;
+        width: 100%;
+        height: 500px;
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                line-height: 30px;
+                border-bottom: 1px dashed #ededed;
+                padding-left: 10px;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    width: 9px;
+                    height: 9px;
+                    background: url(../img/yuandian.png)no-repeat;
+                    background-size: 100%;
+                    vertical-align: middle;
+                    margin-right: 10px
+                }
+                a{
+                    color: #999;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .advertising{
+        width: 100%;
+        margin-top: 65px;
+    }
+}
+//底部
+.footer{
+    width: 100%;
+    background-color: #F4F4F4;
+    .footer-text{
+        width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+        span{
+            font-size: 14px;
+            color: #999;
+        }
+    }
+}
+#top{
+    width: 50px;
+    position: fixed;
+    right: 3px;
+    bottom: 60px;
+    background-color: #999;
+    text-align: center;
+    color: #FFFFFF;
+    cursor:pointer;
+    display: none;
+    &:hover{
+        background: red;
+    }
+}

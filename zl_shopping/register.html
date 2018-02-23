@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>众联商城登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<style>
+		body{
+			background: #eaeaea;
+		}
+		.section-form{
+			overflow: hidden;
+		}
+		.section-form-right{
+			position: absolute;
+			animation: wd 0.8s ease-in-out;
+			right: 352px;
+		}
+		.form-img{
+			position: relative;
+			left: 0px;
+			animation: nd 0.8s ease-in-out;
+		}
+		@keyframes wd{
+			0%{
+				right: 0px;
+				visibility: hidden;
+				opacity: 0;				
+			}
+			100%{
+				right: 352px;
+				visibility: visible;
+				opacity: 1;					
+				}
+		}
+		@keyframes nd{
+			0%{
+				left: -616px;
+				visibility: hidden;
+				opacity: 0;				
+			}
+			100%{
+				left: 0px;
+				visibility: visible;
+				opacity: 1;					
+				}
+		}		
+	</style>
+	<body>
+		<form action="">
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text"/>
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部end-->
+		<!--log部分-->
+		<div class="section-log">
+				<div class="section-log-mian clearfix	">
+					<h1 class="fl_lt"><a href="">众联商城</a></h1>
+					<span class="section-log-right fl_lt">欢迎登录</span>
+				</div>
+		</div>
+		<!--logend-->
+		<!--主体登录开始-->
+		<div class="section-form">
+			<div class="section-form-mian clearfix">
+				<img src="images/denglu_bg.png" class="form-img fl_lt"/>
+				<div class="section-form-right fl_rt">
+					<h3>账户登录</h3>
+					<input type="text" placeholder="手机号/用户名" class="iup"/>
+					<input type="password" placeholder="密码" class="iup"/>
+					<!--底部链接-->
+					<div class="fomt-footer">
+						<a href="" class="pass">忘记密码</a>
+				<!--		<a href="" class="sinin">免费注册</a>-->
+					</div>
+					<input type="submit"  value="登录" class="sub"/>
+				</div>
+			</div>
+		</div>
+		</form>
+		<!--底部-->
+		<div class="footer">
+			<!--4个图标-->
+			<div class="footer-top">
+				<ul class="footer-top-mian clearfix">
+					<li>
+						品类齐全，轻松购物
+					</li>
+					<li>
+						多仓直发，级速配送
+					</li>
+					<li>
+						正品行货，精致服务
+					</li>
+					<li>
+						天天低价，畅选无忧
+					</li>
+				</ul>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center clearfix">
+				<div class="footer-center-nav">
+					<h5>注销说明</h5>
+					<ul>
+						<li>
+							<a href="">优惠券</a>
+						</li>
+						<li>
+							<a href="">促销活动</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>付款方式</h5>
+					<ul>
+						<li>
+							<a href="">货到付款</a>
+						</li>
+						<li>
+							<a href="">在线支付</a>
+						</li>						
+					</ul>
+				</div>	
+				<!--一个地图-->
+				<div class="footer_map">
+					<p>众联自营覆盖区县</p>
+					<div>
+						众联已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。
+					</div>
+				</div>
+			</div>
+			<!--版权说明-->
+			<div class="footer_fot">
+				<ul class="clearfix">
+					<li>
+					<a href="">
+						联系我们
+					</a>
+					</li>
+					<li>
+					<a href="">
+						关于我们
+					</a>
+					</li>					
+				</ul>
+				<p>版权所有&copy;2018</p>
+				<div>
+					<a href=""><img src="images/gs.gif"/></a>
+				</div>
+			</div>
+		</div>
+		<!--版权说明end-->
+	</body>
+</html>

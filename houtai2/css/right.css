@@ -1,0 +1,113 @@
+td, th {
+  text-align: center; }
+
+tr {
+  line-height: 25px; }
+
+.table > thead > tr > th {
+  vertical-align: middle; }
+
+.table > tbody > tr > td {
+  vertical-align: middle; }
+
+.pagination {
+  margin: 3px; }
+
+.section-table th, td {
+  font-size: 12px; }
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 2px; }
+
+textarea {
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 150px; }
+
+input {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  vertical-align: middle; }
+
+input[type="checkbox"] {
+  margin: 0; }
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0; }
+
+.section {
+  width: 100%; }
+  .section .section-top {
+    width: 100%;
+    padding-left: 50px;
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #d9edf7;
+    color: red; }
+  .section .section-cz {
+    width: 100%;
+    padding-left: 100px;
+    background-color: #f4f4f4;
+    line-height: 25px; }
+    .section .section-cz a {
+      margin-left: 6px;
+      margin-right: 6px; }
+  .section .section-zs {
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 0;
+    margin-top: 10px; }
+    .section .section-zs span, .section .section-zs strong {
+      display: inline-block;
+      *display: initial;
+      zoom: 1;
+      width: 100px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      line-height: 25px; }
+    .section .section-zs strong {
+      color: red;
+      text-align: left; }
+  .section .section-cx {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    .section .section-cx input {
+      width: 6%;
+      border: 1px solid #ddd;
+      margin: 0 3px; }
+    .section .section-cx label {
+      display: inline-block;
+      margin: 0 3px; }
+  .section .section-table {
+    width: 100%;
+    margin-top: 20px;
+    height: 600px;
+    overflow: auto; }
+    .section .section-table table {
+      width: 100%; }
+      .section .section-table table caption {
+        text-align: center;
+        width: 100%;
+        background-color: #307ecc;
+        font-weight: 700;
+        color: #fff; }
+      .section .section-table table .f4 {
+        color: #999; }
+      .section .section-table table a {
+        margin: 0 3px; }
+      .section .section-table table em {
+        display: block;
+        text-align: left;
+        font-style: normal; }
+  .section .section-footer {
+    width: 100%;
+    text-align: right;
+    padding-right: 50px; }
+
+/*# sourceMappingURL=right.css.map */

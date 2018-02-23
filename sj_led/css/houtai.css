@@ -1,0 +1,61 @@
+		.form-mian{
+			width: 500px;
+			margin: 50px auto;
+		}
+		.form-mian>p{
+			line-height: 35px;
+		}
+		.form-mian>div{
+			margin-bottom: 10px;
+		}
+		.form-mian>div>label{
+			display: inline-block;
+			vertical-align: middle;
+			width: 100px;
+			text-align: right;
+			height: 40px;
+			line-height: 40px;
+			color: #464646;
+			font-size: 14px;
+		}
+		.form-mian>div>p{
+			text-align: center;
+			padding: 10px;
+			background: #F4F4F4;
+			font-size: 14px;
+		}
+		.form-mian>div>input,select,textarea{
+			display: inline-block;
+			vertical-align: middle;
+			width: 300px;
+			border: 1px solid #ddd;	
+			line-height: 35px;
+			margin: 0 6px;
+			border-radius: 4px;
+		}
+		.form-mian>div>textarea{
+			height: 300px;
+			padding: 10px;
+		}
+		.form-mian>div>input{
+			padding-left: 10px;
+		}
+		.form-mian>div>input:focus{
+			border-color: red;
+		}
+		.form-mian>div>select{
+			padding: 1.2% 0;
+		}
+		.form-mian>div .top{
+			vertical-align: top;
+		}
+		.form-mian>div .sub{
+			background: #2c6180;
+			margin-left: 110px;
+			border-color: #2c6180;
+			color: #fff;
+			cursor: pointer;
+		}
+		.form-mian>div .sub:hover{
+			background: #4d90b7;
+		}

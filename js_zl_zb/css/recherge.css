@@ -1,0 +1,53 @@
+@charset "UTF-8";
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  font-size: 0.4rem;
+  background: url(../images/手机背景.jpg) no-repeat fixed;
+  background-size: 100% 100%; }
+
+.section {
+  width: 100%;
+  padding-bottom: 0.55rem; }
+  .section .section-data {
+    width: 100%; }
+    .section .section-data > p {
+      width: 100%;
+      padding-left: 0.38rem;
+      background: rgba(0, 0, 0, 0.2);
+      margin-bottom: 0.05rem; }
+      .section .section-data > p span, .section .section-data > p strong {
+        display: inline-block;
+        vertical-align: middle; }
+      .section .section-data > p span {
+        width: 1.45rem;
+        line-height: 0.25rem;
+        color: #fff;
+        font-size: 0.125rem;
+        margin-right: 0.05rem;
+        text-align: right;
+        padding-right: 0.05rem;
+        letter-spacing: 1px; }
+      .section .section-data > p strong {
+        font-size: 0.17rem;
+        color: #297de5; }
+  .section .tab-main tbody td:nth-child(n+5) {
+    color: #297de5; }
+
+#header {
+  margin: 0.1rem 0; }
+
+#header .swiper-slide {
+  padding: 0.04rem 0.2rem;
+  width: auto;
+  font-size: 0.125rem;
+  color: #fff;
+  margin-left: 0.05rem; }
+
+#header .on {
+  background: #f4f4f4;
+  border-radius: 0.05rem;
+  color: #464646; }
+
+/*# sourceMappingURL=recherge.css.map */

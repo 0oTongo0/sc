@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提现</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuti.css"/>
+	</head>
+	<style type="text/css">
+		form {
+			padding: 50px 0;
+		}
+     .section-right-account { width: 100%; margin-bottom: 10px; }
+     .section-right-account p { background-color: #efefef; line-height: 35px; color: #0D195D; font-weight: 700; font-size: 14px; padding-left: 20px; }
+     .section-right-main { width: 100%; font-size: 12px; }
+   	 .section-right-main i { display: inline-block; width: 200px; background-color: #efefef; font-style: normal; color: #888; padding-left: 50px; text-align: right; margin-bottom: 1px; line-height: 30px; margin-top: 1px; }
+     .section-right-main span { margin-left: 10px; color: red;}
+      .section-right-main input{
+      	border: 1px solid #ddd;
+      	line-height: 25px;
+      	margin-left: 10px;
+      }
+     #submit{
+       	display: inline-block;
+       	width: 80px;
+       	margin-left: 120px;
+       	line-height: 40px;
+       	border-radius: 6px;
+       	background-color: #6899ec;
+       	color: #fff;
+       }
+	</style>
+	<body>
+		<div class="top">
+			<iframe width="100%" id="iframeid" onload="Javascript:SetCwinHeight()" frameborder="0" src="top.html"  scrolling="no"></iframe>
+		</div>
+		<div class="section clearfix">
+			<div class="fl_lt section-left">
+				<iframe width="100%" id="iframeid2" onload="Javascript:left()" frameborder="0" src="zuo.html"  scrolling="no" height="702px"></iframe>
+			</div>
+			<div class="fl_lt section-right">
+				<p class="section-right-top">申请提现</p>
+				<form action="">
+					<div class="section-right-account">
+						<p>提现受理时间：每周一至五（确认后，提现金额将会在五个工作日到账）；提现金额最低为100.</p>
+						<div class="section-right-main">
+							<i>账户类型:</i><span>1</span><br/>
+							<i>余额:</i><span>2</span><br/>
+							<i>支付宝名:</i><span>3</span><br/>
+							<i>支付宝账号:</i><span>4</span><br/>
+							<i>金额:</i><input type="text" name="" id="" value="" /><br/>
+							<i>密码:</i><input type="password" /><br/>
+						</div>
+					</div>
+					<input type="submit" name="" id="submit" value="提交" />
+				</form>
+		<table class="table table-hover  table-bordered" style="text-align: center;">
+		  <thead >
+		    <tr>
+		      <th>11111111111</th>
+		      <th>2111111111</th>
+		      <th>3111111111</th>
+		      <th>4111111111</th>
+		      <th>5111111111</th>
+		      <th>611111111111</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>1</td>
+		      <td>2</td>
+		      <td>3</td>
+		      <td>4</td>
+		      <td>5</td>
+		      <td>
+				6
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+			</div>
+		</div>
+		<div class="footer">
+			<p>版权问题</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+	function SetCwinHeight()
+	{
+	    var iframeid=document.getElementById("iframeid");
+	    if (document.getElementById)
+	    {
+	        if (iframeid && !window.opera)
+	        {
+	            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+	                iframeid.height = iframeid.contentDocument.body.offsetHeight;
+	            }
+	            else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+	            {
+	                iframeid.height = iframeid.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+	}
+	</script>
+</html>
+
+</html>
+
+

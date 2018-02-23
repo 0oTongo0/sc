@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopping.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header-top">
+			<img src="images/gwc_top.jpg" />
+			<!--<form action="" method="post">
+				<p class="header-top-bg clearfix">
+					<input type="text" name="" id="" value="" class="fl_lt" placeholder="请输入你想要的宝贝" />
+					<input type="submit" value="搜索" class="fl_rt" />
+				</p>
+			</form>-->
+		</div>
+		<div class="section-accounts table-responsive">
+			<p class="section-accounts-top">
+				<span style="color: #333;">全部商品</span>1
+			</p>
+			<div class="section-accounts-center table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>选择</th>
+							<th>商品信息</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>金额</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="list">
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">111</em>
+							</td>
+							<td>
+								<span class=" minus">-</span>
+								<span class=" input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class=" plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">111</em>
+							</td>
+							<td>
+								<span class="minus">-</span>
+								<span class="input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class="plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox" name="" id="" value="" class="GoodsCheck" />
+							</td>
+							<td>
+								<img src="images/bx.jpg" class="fl_lt" />
+								<p class="fl_lt table-name">商品名字</p>
+								<p class="fl_rt table-xq">
+									商品详情
+								</p>
+							</td>
+							<td>
+								￥<em class="GoodsPrice">111</em>
+							</td>
+							<td>
+								<span class="minus">-</span>
+								<span class="input"><input type="" name="" id="" value="1" class="num am-num-text" /></span>
+								<span class="plus">+</span>
+							</td>
+							<td>
+								￥<strong class="ShopTotal">111</strong>
+							</td>
+							<td>
+								<a href="javascript:;" class="delete">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="clearfix section-accounts-footer">
+					<div class="fl_lt section-accounts-footer-left">
+						<input type="checkbox" name="" value="" id="all" />
+						<label for="all" style="cursor: pointer;">全选</label>
+						<!--<input type="button" id="selectAll" class="section-accounts-footer-left-but" value="全选" style="background:#e83838;"/>-->
+						<input type="button" id="del" value="全部清空" class="section-accounts-footer-left-but"/>
+					</div>
+					<div class="fl_rt clearfix">
+						<div class="fl_lt text">
+							已选商品<strong id="jianshu">0</strong>件
+						</div>
+						<div class="fl_lt text">
+							合计:<strong id="AllTotal">0</strong>
+						</div>
+						<div class="fl_lt text bg">
+							<a href="" id="bg_link" style="background:#d41c1c; background-image:linear-gradient(to right, #f7325d 20%, #ff432c 80%);">
+								去结算
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--//弹框提示-->
+				<!--<div class="number">
+					请输入纯数字
+				</div>-->
+				<!--//弹框提示-->
+				<!--最大的蒙城-->
+				<!--<div class="pop">
+					<div class="pop-mian">
+						<div class="pop-top clearfix">
+							<b id="del" class="fl_rt" class="del">&times;</b>
+						</div>
+						<!--内容-->
+						<!--<div class="pop-fot">
+							<p>是否删除商品？</p>
+							<div class="pop-fot-cik">
+								<a href="javascript:;" class="pop-fot-cik-left">确定</a>
+								<span  class="pop-fot-cik-right">取消</span>
+							</div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<!--底部-->
+		<div class="foot-down">
+			<p>版权所有</p>
+		</div>
+		<!--回到顶部-->
+		<div id="back-top">
+			top
+		</div>
+		<!--返回首页-->
+		<a href="" class="return_index">
+			首页
+		</a>
+	</body>
+	<script>
+		$(function() {
+			//点击隐藏
+			$(".pop-fot-cik-right").click(function(){			
+				$(".pop").hide();
+				return false;
+			})
+			$(".pop-fot-cik-left").click(function(){			
+				alert("wd")
+				return false;
+			})			
+			$(".del").click(function(){
+				alert("wd")
+			})			
+			//回到顶部
+			$(window).on('scroll', function() {
+				if($(window).scrollTop() > 30) {
+					$("#back-top").show();
+				} else {
+					$("#back-top").hide();
+				}
+			})
+			$("#back-top").click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 200);
+			});			
+			//加的效果
+			$(".plus").click(function() {
+				var n = $(this).siblings(".input").children(".num").val();
+				var num = parseInt(n) + 1;
+				if(num == 0) {
+					return;
+				}
+				$(this).siblings(".input").children(".num").val(num);
+				if($(this).parents("#list tr").find(".GoodsCheck").is(":checked")) {
+					TotalPrice()
+				} else {
+					var num1 = parseInt($(this).parents("#list tr").find(".am-num-text").val()); //得到商品的数量 
+					var price = parseFloat($(this).parents("#list tr").find(".GoodsPrice").text()); //得到商品的单价 
+					var nide = num1 * price;
+					$(this).parents("#list tr").find(".ShopTotal").text(nide.toFixed(2))
+				}
+			});
+			//减的效果
+			$(".minus").click(function() {
+				var n = $(this).siblings(".input").children(".num").val();
+				var num = parseInt(n) - 1;
+				if(num == 0) {
+					return
+				}
+				$(this).siblings(".input").children(".num").val(num);
+				if($(this).parents("#list tr").find(".GoodsCheck").is(":checked")) {
+					TotalPrice()
+				} else {
+					var num1 = parseInt($(this).parents("#list tr").find(".am-num-text").val()); //得到商品的数量 
+					var price = parseFloat($(this).parents("#list tr").find(".GoodsPrice").text()); //得到商品的单价 
+					var nide = num1 * price;
+					$(this).parents("#list tr").find(".ShopTotal").text(nide.toFixed(2))
+				}
+			});
+			//点击选中
+			$("#list .GoodsCheck:checkbox").click(function() {
+				if($(this).is(":checked")) {
+					$(this).parents("tr").css("background", "#f3fbfe");
+				} else {
+					$(this).parents("tr").css("background", "#F4F4F4")
+				}
+				TotalPrice()
+				allchk()
+			});
+			//勾选全选  
+			$("#all").change(function() {
+				if(this.checked) {
+					$("table tr td input[type=checkbox]").prop("checked", true);
+					TotalPrice()
+				} else {
+					$("table tr td input[type=checkbox]").prop("checked", false);
+					$("#jianshu").text(0)
+				}
+			//调用背景函数 下面
+				Bg();				
+			});
+			//是否全选
+			function allchk() {
+				var chk = 0;
+				var chknum = $("#list :checkbox").size(); //选项总个数的数量 
+				$("#list :checkbox").each(function() {
+					if($(this).prop("checked") == true) {
+						chk++;
+					}
+				});
+				if(chknum == chk) { //全选
+					$("#all").prop("checked", true);
+				} else { //不全选
+					$("#all").prop("checked", false);
+				}
+			}
+			function TotalPrice() {
+				var shul=0;
+				var allprice = 0; //总价 
+				$("#list tr").each(function() { //循环每个店铺 
+					var oprice = 0; //店铺总价 
+					$(this).find(".GoodsCheck").each(function() { //循环店铺里面的商品 
+						if($(this).is(":checked")) { //如果该商品被选中 
+							var num = parseInt($(this).parents("#list tr").find(".am-num-text").val()); //得到商品的数量 
+							var price = parseFloat($(this).parents("#list tr").find(".GoodsPrice").text()); //得到商品的单价 
+							shul += num;   //总数量个数
+							var zs = parseInt(num)+parseInt(shul)
+							var total = price * num; //计算单个商品的总价 
+							oprice += total; //计算该店铺的总价 
+							 $("#jianshu").text(shul)
+						}
+						$(this).closest("#list tr").find(".ShopTotal").text(oprice.toFixed(2)); //显示被选中商品的店铺总价 						
+					});
+					var oneprice = parseFloat($(this).find(".ShopTotal").text()); //得到每个店铺的总价 
+					allprice += oneprice; //计算所有店铺的总价 
+				});
+				$("#AllTotal").text(allprice.toFixed(2)); //输出全部总价 				
+			}
+			//	背景颜色切换函数
+			function Bg() {
+				$("#list td input:checkbox").each(function() {
+					if($(this).prop("checked") == true) {
+						$(this).parents("tr").css({
+							"background-color": "#f3fbfe"
+						});
+					} else {
+						$(this).parents("tr").css({
+							"background-color": "#f4f4f4"
+						});
+					}
+				});
+			}
+			//删除
+			$(".delete").each(function(){
+				$(this).click(function(){
+//					$(".pop").show();
+					var num = parseInt($(this).parents("#list tr").find(".am-num-text").val()); //得到商品的数量 
+					var price = parseFloat($(this).parents("#list tr").find(".GoodsPrice").text()); //得到商品的单价 
+					var total = price * num; //计算单个商品的总价 
+					var zs =  parseInt($("#jianshu").text());  //当前总个数
+					var qs =  parseInt($("#AllTotal").text()); //当前总钱数
+					var chaji;   //定义个数差级
+					var chaji2;   //定义钱数差级	
+					if(confirm("是否删除!!")){
+						$(this).parents('tr:first').remove();	
+					}else{
+						return false;
+					}
+					if($(this).parent().parent().find("td:eq(0) input").is(":checked")){
+							chaji = zs-num;
+							chaji2 = qs-total;
+						$("#jianshu").text(chaji)
+						$("#AllTotal").text(chaji2)
+					}				
+				})
+			})
+			//全部删除
+			$("#del").click(function() {
+				if(confirm("是否全部删除!!")){
+						$("#list").children('tr').remove();							
+						$("#jianshu").text(0)
+						$("#AllTotal").text(0)
+					}else{
+						return false;
+					}
+			})
+			//输入时金额的变化
+			$(".num").each(function() {
+				$(this).bind('input propertychange', function() {
+//					alert("wd")
+					var count = parseInt($(this).val()) 
+					var num = parseInt($(this).parents("#list tr").find(".am-num-text").val()); //得到商品的数量 
+					var price = parseFloat($(this).parents("#list tr").find(".GoodsPrice").text()); //得到商品的单价 
+					var total = price * num; //计算单个商品的总价 
+					$(this).parents("#list tr").find(".ShopTotal").text(total.toFixed(2))
+					TotalPrice()
+					if( isNaN(count)){
+			            alert("请输入纯数字！");
+			            return false;
+			       }
+				})
+			})
+		})
+	</script>
+</html>

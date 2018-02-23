@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+	<body>
+		<!--最大的框-->
+		<div class="subject">
+			<!--头部-->		
+			<div class="herder-top">
+				<h1>
+					<a href="">汇查查</a>
+				</h1>
+				<div class="herder-top-right">
+					<img src="images/fenlei.png" id="fenl"/>
+				</div>
+				<!--隐藏的导航栏-->
+				<div class="herder-top-nav">
+					<ul >
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">推荐中心</a>
+						</li>
+						<li>
+							<a href="">个人中心</a>
+						</li>
+						<li>
+							<a href="">提款</a>
+						</li>						
+						<li>
+							<a href="">财务中心</a>
+						</li>
+						<li>
+							<a href="">转账中心</a>
+						</li>	
+						<li>
+							<a href="">修改密码</a>
+						</li>	
+						<li>
+							<a href="">安全退出</a>
+						</li>						
+					</ul>
+				</div>
+				<!--导航栏end-->
+			</div>
+			<!--头部end-->
+			<!--主体-->
+			<div class="section-mian">
+				<!--主体广告插件-->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/br.jpg" alt="" style="width: 100%;height: 6rem;" /></div>
+						<div class="swiper-slide"><img src="images/br2.jpg" alt="" style="width: 100%;height: 6rem;" /></div>
+						<div class="swiper-slide"><img src="images/br3.jpg" style="width: 100%;height: 6rem;" /></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<script>
+					var mySwiper = new Swiper('.swiper-container', {
+						pagination: ".swiper-pagination",
+						autoplay: 2000,
+						autoplayDisableOnInteraction: false,
+					})
+				</script>
+				<!--主题广告end-->
+				<!--内容来了↓-->
+				<div class="section-mian-center">
+					<!--公告↓-->
+					<div class="section-mian-center-top">
+						<span class="section-mian-center-top-left">
+							公告
+						</span>
+						<div class="section-mian-center-top-gg" id="box">
+							<ul class="section-right-text-nav">
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>
+								<li  >
+									<a href=""  >我的我的我的我的我的对我的我的我</a>
+									 
+								</li>							
+							</ul>
+						</div>
+						<a href="" class="section-mian-center-top-right">
+							更多
+						</a>
+						<script type="text/javascript">
+							function AutoScroll(obj) {
+							    $(obj).find("ul:first").animate({
+							        marginTop: "-1rem"
+							    },
+							    500,
+							    function() {
+							        $(this).css({
+							            marginTop: "0px"
+							        }).find("li:first").appendTo(this);
+							    });
+							}
+							$(document).ready(function() {
+								var timer=null;
+								timer = setInterval('AutoScroll("#box")', 1600)
+							    $("#box").hover(function(){
+							    	 clearInterval(timer); 
+					//		    	 console.log("wd")
+							    },function(){
+							    	timer = setInterval('AutoScroll("#box")', 1600);
+							    })
+							})
+						</script>	
+					</div>
+					<!--公告end-->
+					<!--个人中心-->
+					<div class="section-mian-center-nav">
+						<p>个人中心</p>
+						<ul class="clearfix section-mian-center-nav-geren">
+							<li class="fl_lt">
+								会员名:<span>张三</span>
+							</li>
+							<li class="fl_lt">
+								等级:<span>青铜</span>
+							</li>
+							<li class="fl_lt">
+								金额:<span>111</span>
+							</li>
+							<li class="fl_lt">	
+								注册时间:<span>20170212</span>
+							</li>
+							<li class="fl_lt">	
+								上次登录:<span>20170212</span>
+							</li>	
+							<li class="fl_lt">	
+								登录时间:<span>20170212</span>
+							</li>		
+							
+						</ul>
+					</div>
+				</div>
+				<!--内容end-->
+			</div>
+			<!--底部-->
+			<div class="section-footer">	
+				<ul class="section-footer-nav">
+					<li>
+						<a href="">
+							<i>
+								<img src="images/jia.png"/>
+							</i>
+							<span>
+								返回首页
+							</span>
+						</a>
+					</li>
+					<li>	
+						<a href="">
+							<i>
+								<img src="images/geren.png"/>
+							</i>
+							<span>
+								个人中心
+							</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<i>
+								<img src="images/top.png"/>
+							</i>
+							<span>
+								回到顶部
+							</span>
+						</a>
+					</li>
+					<li id="sx">
+						<a href="">
+							<i>
+								<img src="images/sx2.png"/>
+							</i>
+							<span>
+								刷新
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

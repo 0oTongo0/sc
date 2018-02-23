@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>众联商城</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!--分类导航-->
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<!--头部-->
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		<!--右侧固定热卖+购物车-->
+		<link rel="stylesheet" type="text/css" href="css/right-seller.css"/>
+		<!--底部-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/particulars.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/particulars.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fadjing.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		.section-content-right-top p{
+			font-size: 13px;
+		}
+		.sales{	
+			border: 1px dotted #c9c9c9;
+			border-width: 1px 0;
+			padding: 10px 0;
+			margin: 10px 0;
+		}
+		.sales li{
+			width: 33.33%;
+			float: left;
+			text-align: center;
+			line-height:16px;
+			border-right: 1px solid #e5dfda;
+			position: relative;
+			left: -1px;
+		}
+		.sales li:last-child{
+			border: none;
+		}
+		.sales li .sales_label{
+			color: #999;
+			height: 16px;
+			line-height: 16px;
+			font-size: 12px;
+			margin-right: 2px;
+		}
+		.sales li .sales_numeber{
+			font-size: 12px;
+			color: #FF0036;
+			line-height: 16px;
+			font-weight: 700;
+		}
+		.sales li .col{
+			color: #280;
+		}
+		/*价格部分*/
+		.section-content-right-center{
+			width: 100%;
+			background: #e9e9e9;
+			padding: 6px;
+			font-size: 12px;
+		}
+		.section-content-right-center .price{
+			display: inline-block;
+			width: 70px;
+			text-align: left;
+			color: #999;
+		}
+		.section-content-right-center del{
+			font-size: 14px;
+		}
+		.section-content-right-center .money{
+			color: #FF0036;
+			font-size: 30px;
+		}
+		.section-content-right-center .money:first-letter{
+			font-size: 12px;
+		}
+		.section-content-right-center .bg{
+			margin-left: 5px;
+			line-height: 18px;
+			color: #fff;
+			padding: 3px 8px;
+			border-radius: 2px;
+			background: #f47a86;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 10px;
+		}
+		.section-content .section-content-right .section-content-right-sl ul li:hover{
+			border-color:#e3101e;
+		}
+		.section-content-left-top{
+			position: relative;
+		}
+		/*滑块*/
+		.magnifier-mask{
+			position: absolute;
+			background: #000;
+			opacity: 0.2;
+			width: 200px;
+			height: 200px;
+		}
+		/*大图*/
+		#magnifier-Big{
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			top: -1px;
+			left: 400px;
+			border: 1px solid #eee;
+			overflow: hidden;
+			zoom: 1;
+			z-index: 999999;
+		}
+		#magnifier-Big>img{
+			position: absolute;
+			width: 800px;
+			height: 800px;
+			margin-left: 0;
+			margin-top: 0;
+			z-index: 99999;
+		}
+	</style>
+	<body>
+	<form action="">
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text"/>
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--LOG加搜索-->
+		<div class="search">
+			<div class="search-mian clearfix">
+				<h1 class="search-mian-log fl_lt">
+					<a href="">众联商城</a>
+				</h1>
+				<div class="search-mian-right fl_lt">
+					<input type="text" class="seek" placeholder="请输入您想要的宝贝"/>
+					<input type="submit" class="sub"/>
+					<div class="search-mian-right-footer">
+						<ul class="clearfix">
+							<li class="fl_lt">
+								<a href="">电脑白拿</a>
+							</li>
+							<li class="fl_lt">
+								<a href="">9.9元起</a>
+							</li>
+							<li  class="fl_lt">
+								<a href="">手机0元</a>
+							</li>
+							<li  class="fl_lt">
+								<a href="">满400积分送</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航最大的-->
+		<div class="section-nav">
+			<div class="clearfix section-nav-main">
+				<!--左边分类-->
+				<div class="fl_lt section-nav-left">
+					<span class="classify">全部分类</span>
+						<ul class="section-nav-left-next">
+							<li>
+								<span>左1标题</span>
+								<a href="">左1</a>
+								<i class="ioc"></i>	
+							</li>
+							<li>
+								<span>左2标题</span>
+								<a href="">左2</a>
+								<i class="ioc"></i>
+							</li>
+							<li>
+								<span>左3标题</span>
+								<a href="">左3</a>
+								<i class="ioc"></i>
+							</li>
+						</ul>
+						<!--子集右边-->
+						<div class="next-right">
+							<div class="next-right-next hide">
+								<a href="">111</a>
+							</div>
+							<div class="next-right-next hide">
+								<a href="">222</a>
+							</div>
+							<div class="next-right-next hide">
+								<a href="">333</a>
+							</div>							
+						</div>
+				</div>
+				<!--右边导航-->
+				<div class="fl_lt section-nav-right">
+					<ul class="clearfix">
+						<li class="fl_lt"><a href="">1</a></li>
+						<li class="fl_lt"><a href="">1</a></li>
+						<li class="fl_lt"><a href="">1</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<!--主体内容-->
+		<div class="section-content clearfix">
+			<div class="fl_lt section-content-left">
+				<div class="section-content-left-top">
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<img src="images/ba.jpg" />
+					<img src="images/dd.jpg" />
+					<!--滑块-->
+					<div class="magnifier-mask" style="display: none; left: 78.5px; top: 200px;">
+						
+					</div>
+					
+					<div class="magnifier-Big" id="magnifier-Big">
+						<img src="images/04.jpg"/>
+					</div>
+				</div>
+				<!--下面的滑块-->
+				<div class="section-content-left-footer clearfix">
+					<p class="fl_lt up">
+						<img src="images/ll.png" />
+					</p>
+					<div class="section-content-left-footer-nav fl_lt">
+						<ul class="section-content-left-footer-center " id="pic">
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+							<li>
+								<img src="images/bx.jpg" />
+							</li>
+						</ul>
+					</div>
+					<p class="fl_rt next">
+						<img src="images/rr.png" />
+					</p>
+				</div>
+				<p class="sc">
+					<img src="images/sc2.png"/>
+					<span>收藏商品</span>
+				</p>
+			</div>
+			<div class="section-content-right fl_lt">
+				<h2 class="section-content-right-top">1111111111111111111111111 <p>小标题</p></h2>
+				<div class="section-content-right-center">
+					<p><span class="price">价格</span><del>￥111</del></p>		
+					<p><span class="price">促销价</span><strong class="money">￥666</strong><span class="bg">折合单价 ¥12.00</span></p>
+				</div>
+				<!--销量+评价-->
+				<ul class="sales clearfix">
+					<li>
+						<span class="sales_label">销量</span><span class="sales_numeber">1</span>
+					</li>
+					<li>
+						<span class="sales_label">累计评价</span><span class="sales_numeber">2</span>
+					</li>
+					<li>
+						<span class="sales_label">增送积分</span><span class="sales_numeber col">33</span>
+					</li>
+				</ul>
+				<div class="section-content-right-gg clearfix">
+					<span class="gg fl_lt">
+						规格
+					</span>
+					<div class="gg-right fl_lt">
+						<!--选中时添加on-->
+						<span class="link on">
+							1个
+						</span>
+						<span class="link">
+							2个
+						</span>
+					</div>
+				</div>
+				<div class="section-content-right-sl clearfix">
+					<span class="fl_lt">数量</span>
+					<ul class="fl_lt clearfix">
+						<li class="fl_lt minus" style="background: #fff;">-</li>
+						<input type="text" value="1" class="num" />
+						<li class="fl_lt plus" style="background: #fff;">+</li>
+					</ul>
+					<span class="fl_lt">
+						库存35件
+					</span>
+				</div>
+				<div class="section-content-right-guc">
+					<button class="ljgm">立即购买</button>
+					<button class="gwc">加入购物车</button>
+				</div>
+			</div>
+		</div>
+		<!--商品详情+评论-->
+			<div class="details">
+				<div>
+					<div class="details-nav">
+						<ul class="clearfix tab_menu">
+							<!--点击添加.on-->
+							<li class="on">
+								商品详情
+								<i></i>
+							</li>
+							<li>
+								商品评价
+								<span>000</span>
+								<i></i>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_box">
+						<div class="tab_box_li">
+							<div class="tab_box_li_top">
+								<span style="width: 33.333%;">产地:地球</span>
+								<span style="width: 33.333%;">品牌:不知道啊</span>
+								<span style="width: 32.333%;">单号:0001</span>
+								<span style="width: 33.333%;">品牌:不知道啊</span>
+								<span style="width: 33.333%;">品牌:不知道啊</span>
+								<span style="width: 33.333%;">品牌:不知道啊</span>
+							</div>
+							<img src="images/xq.jpg"/>
+						</div>
+						<!--评论区域↓-->
+						<div class="tab_box_li hide">
+							<div class="pinjia-top clearfix">
+								<p class="fl_lt">
+									<span>50%</span><br/>
+									好评价
+								</p>
+								<div class="pinjia-top-right">
+									<a href="javascript:;">
+										好评
+										<span>11</span>
+									</a>
+									<a href="javascript:;">
+										差评
+										<span>22</span>
+									</a>
+									<a href="javascript:;">
+										中评
+										<span>333</span>
+									</a>
+								</div>
+							</div>
+							<div class="pinjia-footer">
+								<div class="pinjia-footer-mian clearfix">
+									<!--左-->
+									<div class="pinjia-footer-left fl_lt">
+										<p>这个东西可以哦</p>
+										<span>2020.0.0</span>
+									</div>
+									<!--中-->
+									<div class="pinjia-footer-center fl_lt">
+										<p>类型</p>
+									</div>
+									<!--右-->
+									<div class="pinjia-footer-right fl_lt">
+										<p>张三</p>
+									</div>
+								</div>
+							</div>
+							<!--底部分页-->
+							<div class="footer-paging">
+								<div class="footer-paging-main">
+									<ul class="footer-paging-main-nav clearfix">
+										<!--上下椭圆的类.yes 点击时.link-->
+										<li>
+											<a href="" class="yes">上一页</a>
+										</li>
+										<li>
+											<a href="" class="link">1</a>
+										</li>
+										<li>
+											<a href="">2</a>
+										</li>					
+										<li>
+											<a href="" class="yes">下一页</a>
+										</li>					
+									</ul>
+								</div>
+							</div>
+							<!--分页结束-->							
+						</div>						
+					</div>
+				</div>
+			</div>
+		<!--商品详情+评论end-->		
+		<!--主体end-->
+		<!--底部-->
+		<div class="footer">
+			<!--4个图标-->
+			<div class="footer-top">
+				<ul class="footer-top-mian clearfix">
+					<li>
+						品类齐全，轻松购物
+					</li>
+					<li>
+						多仓直发，级速配送
+					</li>
+					<li>
+						正品行货，精致服务
+					</li>
+					<li>
+						天天低价，畅选无忧
+					</li>
+				</ul>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center clearfix">
+				<div class="footer-center-nav">
+					<h5>注销说明</h5>
+					<ul>
+						<li>
+							<a href="">优惠券</a>
+						</li>
+						<li>
+							<a href="">促销活动</a>
+						</li>						
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>付款方式</h5>
+					<ul>
+						<li>
+							<a href="">货到付款</a>
+						</li>
+						<li>
+							<a href="">在线支付</a>
+						</li>						
+					</ul>
+				</div>
+				<!--一个地图-->
+				<div class="footer_map">
+					<p>众联自营覆盖区县</p>
+					<div>
+						众联已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。
+					</div>
+				</div>				
+			</div>
+			<!--版权说明-->
+			<div class="footer_fot">
+				<ul class="clearfix">
+					<li>
+					<a href="">
+						联系我们
+					</a>
+					</li>
+					<li>
+					<a href="">
+						关于我们
+					</a>
+					</li>					
+				</ul>
+				<p>版权所有&copy;2018</p>
+				<div>
+					<a href=""><img src="images/gs.gif"/></a>
+				</div>
+			</div>
+		</div>
+		<!--版权说明end-->
+		<!--右边定位条-->
+		<div class="right-nav">
+			<div title="个人中心">
+				<a href="">
+					<img src="images/个人.png"/>
+					<span href="">个人中心</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>
+			<div title="购物车">
+				<a href="">
+					<img src="images/购物车空.png"/>
+					<span href="">购物车</span>
+					<strong class="ico"></strong>
+					<i>1</i>
+				</a>
+			</div>
+			<div title="收藏">
+				<a href="">
+					<img src="images/sc.png"/>
+					<span href="">收藏</span>
+					<strong class="ico"></strong>
+				</a>
+			</div>			
+			<div title="回到底部" id="top">
+				<a>
+					<img src="images/top2.png"/>
+					<span>回到顶部</span>
+					<strong class="ico"></strong>	
+				</a>
+			</div>
+		</div>
+		<!--右边定位条end-->
+		<!--右边热卖商品-->
+		<div class="right-seller">
+			<p>
+				热卖/最新
+				<img src="images/hot.gif"/>
+			</p>
+			<!--图片+文字的盒子-->
+			<div class="right-seller-main">
+				<a href="">
+					<div class="right-seller-imgs">
+						<img src="images/04.jpg"/>
+					</div>
+					<div class="right-seller-price">
+						<span>￥999</span>
+						<b>销量:666</b>
+					</div>	
+				</a>
+			</div>
+			<!--图片+文字的盒子-->
+			<div class="right-seller-main">
+				<a href="">
+					<div class="right-seller-imgs">
+						<img src="images/04.jpg"/>
+					</div>
+					<div class="right-seller-price">
+						<span>￥999</span>
+						<b>销量:666</b>
+					</div>	
+				</a>
+			</div>			
+		</div>
+		<!--右边热卖商品end-->		
+	</form>	
+	</body>
+	<script>
+		$(function(){
+				//放大镜部分
+				$.fn.magnifying = function(){
+					var that = $(this),
+					$imgCon = that.find(".section-content-left-top"),//正常图片的容器
+					$Img = $imgCon.find("img"),//正常图片，还有放大图片他们的集合
+					$Drag = that.find(".magnifier-mask"),//滑块
+					$show = that.find(".magnifier-Big"),//放大镜显示区域
+					$showImg = $show.find("img"),//放大镜图片
+					$ImgList = that.find(".section-content-left-footer-center >li > img"),//小图片列表
+					multiple = $show.width() / $Drag.width();					
+					$imgCon.mousemove(function(e){
+						$Drag.css("display", "block");
+						$show.css("display", "block");
+						
+						var iX = e.pageX - $(this).offset().left - $Drag.width()/2,
+						iY = e.pageY - $(this).offset().top - $Drag.height()/2,
+						MaxX = $imgCon.width() - $Drag.width(),
+						MaxY = $imgCon.height() - $Drag.height();
+						
+						iX = iX > 0 ? iX:0;
+						iX = iX < MaxX ? iX : MaxX;
+						iY = iY > 0 ? iY:0;
+						iY = iY < MaxY ? iY : MaxY;
+						$Drag.css({left:iX+"px", top:iY+"px"});
+						$showImg.css({marginLeft:-multiple*iX + "px", marginTop:-multiple * iY + "px"});
+					});
+					
+					$imgCon.mouseout(function(){
+						$Drag.css("display", "none");
+						$show.css("display", "none");
+					});
+					
+					$ImgList.mouseover(function(){
+						var NowSrc = $(this).data('bigimg');
+						$Img.attr("src", NowSrc);
+						$(this).parent().addClass("active").siblings().removeClass("active");
+					});
+				}
+				$(".section-content-left").magnifying();
+			
+		})
+	</script>
+</html>

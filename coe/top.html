@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎您的到来</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<div class="header navbar navbar-default" role="navigation">
+				<div class="container-fluid"> 
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" id="navbar-brand">log</a>
+				</div>
+			<nav class=" header-nav collapse navbar-collapse" id="example-navbar-collapse">
+<!--				 	<h1 class="fl_lt">LOG</h1>-->
+			        <ul class="nav_top fl_lt nav navbar-nav row" id="nav">
+			            <li><a href="#">个人资料</a></li>
+			            <li><a href="#">我的交易</a></li>
+			            <li><a href="#">我的收益</a></li>
+			            <li><a href="#">邀请有奖</a></li>
+			            <li><a href="#">我的团队</a></li>
+			            <li><a href="#">联系客服</a></li>
+			            <li><a href="#">在线充值</a></li>
+			            <li><a href="#">申请提现</a></li>
+			            <li><a href="#">帮助中心</a></li>
+			            <li><a href="#">安全退出</a></li>
+			            <i id="line" class="hidden-xs"></i>
+			        </ul>
+			</nav>
+		</div>
+	</body>
+	<script>
+        $(function(){                  	
+            $('#nav li').hover(function(){
+                l=$('#nav li').width(); 
+                m=$(this).index(); 
+                $('#line').css({'width':l,'left':l*m});
+            });
+        });
+    </script>
+</html>

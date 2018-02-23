@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>系统</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+	</head>
+	<style type="text/css">
+				body{
+			background: rgba(255,255,255,0.5);
+		}
+		input{
+			width: 60px;
+		}
+		button{
+			margin-left: 10px;
+		}
+		label{
+			font-size: 12px;
+		}
+		input{
+			margin: 0 3px;
+		}
+		th{
+			text-align: center;
+		}
+		td{
+			text-align: center;
+		}
+		caption{
+			font-weight: 700;
+		}
+		.btn{
+			margin: 0;
+		}
+	</style>
+	<body>
+	<div style="position: relative; width: 100%; padding: 20px;">
+		<div class="top">当前位置：系统管理 >> 财务管理 >> 财务明细</div>
+				<form action="" method="post">
+				<label>父级ID：</label>
+				<input type="" name="" id="" value="" required/>
+				<label>类别：</label>
+				<select>
+					<option>1</option>
+				</select>	
+				<label>中文菜单名：</label>
+				<input type="text" required/>
+				<label>繁体菜单名：</label>
+				<input type="text" required/>
+				<label>英文菜单名：</label>
+				<input type="text" required/>
+				<label>备注</label>
+				<input type="text" required/>
+				<label>状态</label>
+				<select>
+					<option>1</option>
+				</select>	
+				<label>路径</label>
+				<input type="text" required/>
+					<input type="submit" value="搜索"  class="btn btn-primary"/>
+				</form>		
+		<table class="table table-hover" style="text-align: center;">
+		  <caption style="text-align: center;">内容列表</caption>
+		  <thead>
+		    <tr>
+		      <th>id</th>
+		      <th>父级ID</th>
+		      <th>类型</th>
+		      <th>菜单名</th>
+		      <th>备注</th>
+		      <th>路径</th>
+		      <th>操作</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>4</td>
+		      <td>5</td>
+		      <td>6</td>
+		      <td>4</td>
+		      <td>5</td>
+		      <td>6</td>
+		      <td>
+		      	<button class="btn btn-primary btn-xs">修改</button>
+		      	<button class="btn btn-danger btn-xs">删除</button>
+		      	<button class="btn btn-warning btn-xs">关闭</button>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+		<ul class="pagination" style="position: absolute; bottom: -20px; left: 50%;margin-bottom: 20px;">
+		    <li><a href="#">&laquo;</a></li>
+		    <li ><a href="#">当前页面<span style="color: red;">1</span></a></li>
+		    <li class="active"><a href="#">1</a></li>
+		    <li ><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li><a href="#">&raquo;</a></li>
+		    <li><a href="#">跳转</a></li>
+		    <li>
+		    	<select style="height: 34px;border: 1px solid #ddd;margin-left: -1px;">
+		    	<option>1</option>
+		    </select></li>
+		</ul>
+	</div>
+	</body>
+</html>
+
+

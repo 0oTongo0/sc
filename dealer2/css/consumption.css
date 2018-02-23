@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "    line-height: ": expected expression (e.g. 1px, bold), was ";"
+        on line 13 of consumption.scss
+
+8:     background-size: 100%;
+9:     font-size: 14px;
+10: }
+11: input{
+12:     margin-left: 10px;
+13:     line-height: ;
+14: }
+15: .header-top{
+16:     width: 100%;
+17:         h1{
+18:             width: 1200px;
+
+Backtrace:
+consumption.scss:13
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/script/parser.rb:724:in `assert_expr'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:988:in `value!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
+C:/Ruby23-x64/bin/scss:22:in `load'
+C:/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    line-height: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 13 of consumption.scss\A \A 8:     background-size: 100%;\A 9:     font-size: 14px;\A 10: }\A 11: input{\A 12:     margin-left: 10px;\A 13:     line-height: ;\A 14: }\A 15: .header-top{\A 16:     width: 100%;\A 17:         h1{\A 18:             width: 1200px;"; }

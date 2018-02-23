@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>众联商城登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/top.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		.mc{
+			position: absolute;
+		    display: none;
+		    width: 300px;
+		    line-height: 50px;
+		    text-align: center;
+		    background-color: #fff;
+		    color: red;
+		    border-radius: 4px;
+		    top: 20%;
+		    left: 50%;
+		    margin-left: -150px;
+		    -webkit-animation: wd 0.8s ease-in-out;
+		    animation: dk 0.8s ease-in-out;
+		}
+	</style>	
+	<body>
+		<form action="">
+		<!--头部-->
+		<div class="header">
+			<div class="header-main clearfix">
+				<div class="header-main-left fl_lt">
+					<label>区域:</label>
+					<input type="text"/>
+					<span>
+						Hi,小伙子
+					</span>
+					<a href="">
+						退出
+					</a>
+				</div>
+				<ul class="header-main-right fl_rt clearfix">
+					<li class="fl_lt">
+						<a href="">
+							众宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							金宝管理
+						</a>
+					</li>					
+					<li class="fl_lt">
+						<a href="">
+							我的订单
+							<span>1</span>
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="guc">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="" class="shouji">
+							手机端
+						</a>
+					</li>
+					<li class="fl_lt">
+						<a href="">
+							我的收藏
+							<span>1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部end-->
+		<!--log部分-->
+		<div class="section-log">
+				<div class="section-log-mian clearfix	">
+					<h1 class="fl_lt"><a href="">众宝管理</a></h1>
+					<span class="section-log-right fl_lt">欢迎登录</span>
+					<img src="img/标语.png"/>
+				</div>
+		</div>
+		<!--logend-->
+		<!--主体登录开始-->
+		<div class="section-form">
+			<div class="section-form-mian clearfix">
+				<img src="img/jinb.png" class="form-img fl_lt"/>
+				<div class="section-form-right fl_rt">
+					<h3>账户登录</h3>
+					<input type="text" placeholder="手机号/用户名" class="iup text"/>
+					<input type="password" placeholder="密码" class="iup password"/>
+					<div class="yz">	
+						<input type="text" placeholder="验证码" class="iup pt"/>
+						<img src="images/gs.gif" alt="" />
+					</div>
+					
+					<!--底部链接-->
+					<div class="fomt-footer">
+						<a href="" class="pass">忘记密码</a>
+					<!--	<a href="" class="sinin">免费注册</a>-->
+					</div>
+					<input type="submit"  value="登录" class="sub"/>
+				</div>
+			</div>
+		</div>
+		</form>
+		<div class="zl_footer">
+			<div class="footer-main clearfix">
+			<div class="footer_left fl_lt">
+				<img src="img/111.png"/>
+			</div>
+			<!--导航主体-->
+			<div class="footer-center fl_lt">
+				<div class="footer-center-nav">
+					<h5>帮助中心</h5>
+					<ul>
+						<li>
+							<a href="">积分细则</a>
+						</li>
+						<li>
+							<a href="">众宝细则</a>
+						</li>	
+						<li>
+							<a href="">兑换说明</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>新手指南</h5>
+					<ul>
+						<li>
+							<a href="">市场分析</a>
+						</li>
+						<li>
+							<a href="">名称解释</a>
+						</li>		
+						<li>
+							<a href="">财富宝典</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-center-nav">
+					<h5>联系我们</h5>
+					<ul>
+						<li>
+							<a href="">邮件我们</a>
+						</li>
+						<li>
+							<a href="">友情链接</a>
+						</li>		
+						<li>
+							<a href="">网站地图</a>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="mc">
+				请检查所有的输入，都不能为空,谢谢~~
+			</div>			
+			<div class="footer_right fl_lt">
+				<img src="img/4.jpg"/>
+			</div>
+			</div>
+		</div>
+			<!--版权-->
+			<div class="footer-fot">
+				<p>互联网违法和不良信息举报电话:0571-81683755</p>
+				<p>版权说明&copy众联商城2018</p>
+			</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			   $(".sub").bind("click",function(event){
+		         var username = $(".text").val();  //获取元素的值
+		         var username2 = $(".password").val();
+		         var username3 = $(".pt").val();
+		         if(username=="" || username2=="" || username3==""){   //判断值是否为空	         	
+		       		$(".mc").show().delay(1000).hide(300);
+		       		return false;
+		  		 }else{
+		  		 	return true;
+		  		 }
+		   })
+	})	
+	</script>	
+</html>

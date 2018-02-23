@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>左边的导航</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/kj_left.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		#menu .nav-left-fj {
+			overflow: hidden;
+		}
+		
+		#menu .nav-left-fj li b {
+			font-weight: normal;
+			position: relative;
+			padding-left: 16px;
+		}
+		
+		#menu .nav-left-fj li b:before {
+			display: block;
+			font-size: 0;
+			top: 5px;
+			left: 0;
+			content: "";
+			width: 10px;
+			height: 10px;
+			margin-left: 10px;
+			border: solid 1px transparent;
+			transform: rotate(135deg);
+			-o-transform: rotate(135deg);
+			-ms-transform: rotate(135deg);
+			-moz-transform: rotate(135deg);
+			-webkit-transform: rotate(135deg);
+			position: absolute;
+		}
+		
+		#menu .nav-left-fj li .On:before{
+			top: 3px;
+			border-bottom-color: #333;
+			border-right-color: #333;
+			transform: rotate(-135deg);
+			-o-transform: rotate(-135deg);
+			-ms-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+		}
+		
+		#menu .nav-left-fj li .Off:before {
+			top: 5px;
+			border-top-color: #333;
+			border-right-color: #333;
+		}
+	</style>
+	<body>
+		<div class="left-nav" id="menu">
+			<p class="left-nav-top">
+				<span>
+					欢迎您的到来~~
+				</span>
+			</p>
+			<ul class="left-nav-noe" id="tree_root">
+				<li>
+					<span class="tree2">资料管理<b class="Off"></b></span>
+					<ul class="left-nav-noe-hide">
+						<li>
+							<a href="">资料修改</a>
+						</li>
+						<li>
+							<a href="">密码修改</a>
+						</li>
+					</ul>
+					<i></i>
+				</li>
+				<li>
+					<span class="tree2">业务管理<b class="Off"></b></span>
+					<ul class="left-nav-noe-hide">
+						<li>
+							<a href="">推荐关系</a>
+						</li>
+						<li>
+							<a href="">业务分布</a>
+						</li>
+						<li>
+							<a href="">会员升级</a>
+						</li>						
+					</ul>	
+					<i></i>
+				</li>
+				<li>
+					<span class="tree2">现金管理<b class="Off"></b></span>
+					<ul class="left-nav-noe-hide">
+						<li>
+							<a href="">转账</a>
+						</li>
+						<li>
+							<a href="">申请提款</a>
+						</li>					
+					</ul>
+					<i></i>
+				</li>
+				<li>
+					<span class="tree2">财务管理<b class="Off"></b></span>
+					<ul class="left-nav-noe-hide">
+						<li>
+							<a href="">现金钱包</a>
+						</li>
+						<li>
+							<a href="">电子钱包</a>
+						</li>	
+						<li>
+							<a href="">商务中心</a>
+						</li>		
+						<li>
+							<a href="">财富宝</a>
+						</li>
+						<li>
+							<a href="">上市基金分红</a>
+						</li>
+						<li>
+							<a href="">在线充值</a>
+						</li>	
+					</ul>
+					<i></i>
+				</li>
+				<li>
+					<span class="tree2"><a href="">站内邮件</a><b class="Off"></b><strong>7</strong></span>
+					<i></i>
+				</li>				
+				<li>
+					<span class="tree2">新闻中心<b class="Off"></b></span>
+						<ul class="left-nav-noe-hide">
+							<li>
+								<a href="">最新公告</a>
+							</li>	
+						</ul>
+					<i></i>
+				</li>
+				<li>
+					<a href="">安全退出</a>
+					<i></i>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+				function setTreeStyle(obj){
+				var objStyle = obj.children("b");
+				var objList = obj.siblings("ul");
+				if(objList.length == 1){
+					var style = objStyle.attr("class");
+					objStyle.attr("class","On2Off");
+					setTimeout(
+						function(){
+							if(style == "Off"){
+								objList.parent().siblings("li").children("span").children(".On").each(function(){
+									setTreeStyle($(this).parent());	
+								});
+								var H = objList.innerHeight()
+								objList.css({display:"block",height:"0"});
+								objList.animate({height:H},300,function(){$(this).css({height:"auto"});});
+								objStyle.attr("class","On");
+							}
+							else if(style == "On"){
+								objList.find("li").children("span").children(".On").each(function(){
+									setTreeStyle($(this).parent());	
+								});
+								var H = objList.innerHeight()
+								objList.animate({height:0},300,function(){$(this).css({height:"auto",display:"none"})});
+								objStyle.attr("class","Off");
+							}
+						},
+						42
+					);
+				}
+			}
+			$("#tree_root").find("li").children("span").click(function(){
+				setTreeStyle($(this));
+			});
+		})			
+	</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.mian{
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			background-color: rgba(255,0,0,1.75);
+			position: relative;
+			display: none;
+		}
+		span{
+			display: inline-block;
+			width: 60px;
+			height: 40px;
+			background-color: #ccc;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 14px;
+			margin-left: -30px;
+			margin-top: -20px;
+			text-align: center;
+			line-height: 40px;
+		}
+		i{
+			display: inherit;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #ccc;
+			font-style: normal;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<div id="dw">点我</div>
+		<div class="mian">
+			<span>没有数据</span>
+			<i id="ioc">x</i>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#dw").click(function(){
+				$(".mian").show(200)
+			})
+			$("#ioc").click(function(){
+				$(".mian").hide(200)
+			})
+		})
+	</script>
+</html>

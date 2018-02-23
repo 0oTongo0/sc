@@ -1,0 +1,131 @@
+@charset "UTF-8";
+//修改bootstrap样式
+td,th{
+    text-align: center;
+}
+tr{
+    line-height: 25px;
+}
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+.pagination{
+    margin: 3px;
+}
+textarea{
+    border: 1px solid #ddd;
+    width: 300px;
+    height: 150px;
+}
+input{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+input[type="checkbox"]{
+    margin: 0;
+}
+label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+$topyc:#d9edf7;
+$topyzyc:#3a87ad;
+$caption:#307ecc;
+.section{
+    width: 100%;
+    .section-top{
+        width: 100%;
+        padding-left: 50px;
+        line-height: 35px;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: $topyc;
+        color: $topyzyc;
+    }
+    .section-cz{
+        width: 100%;
+        padding-left: 100px;
+        background-color: #f4f4f4;
+        line-height: 25px;
+        a{
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+//  总数
+    .section-zs{
+        width: 100%;
+        text-align: center;
+        line-height: 35px;
+        font-size: 0;
+        margin-top: 10px;
+        span,strong{
+            display: inline-block;
+            *display: initial;
+            zoom: 1;
+            width: 100px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        strong{
+            color: red;
+            text-align: left;
+        }
+    }
+//  查询
+    .section-cx{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        input{
+            width: 6%;
+            border: 1px solid #ddd;
+            margin: 0 3px;
+        }
+        label{
+            display: inline-block;
+            margin: 0 3px;
+        }
+    }
+//  表格
+    .section-table{
+        width: 100%;
+        margin-top: 20px;
+        height: 600px;
+        overflow: auto;
+        table{
+            width: 100%;
+            caption{
+                text-align: center;
+                width: 100%;
+                background-color:$caption ;
+                font-weight: 700;
+                color: #fff;
+            }
+            .f4{
+                color: #999;
+            }
+            a{
+                margin: 0 3px;
+            }
+            em{
+                display: block;
+                text-align: left;
+                font-style: normal;
+            }
+        }
+    }
+//  分页
+    .section-footer{
+        width: 100%;
+        text-align: right;
+        padding-right: 50px;
+    }
+}

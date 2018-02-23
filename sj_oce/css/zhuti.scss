@@ -1,0 +1,220 @@
+@charset "UTF-8";
+$rem:20;
+body{
+    background-color: #F4F4F4;
+}
+    .section-right{
+        width: 100%;
+        padding: 10/$rem+rem;
+        font-size: 12/$rem+rem;
+        padding-bottom: 40/$rem+rem;
+        strong{
+            font-size: 12/$rem+rem;
+        }
+        .section-right-top,{
+            width: 100%;
+            text-align: center;
+            background-color: #6899ec;
+            line-height: 30/$rem+rem;
+            font-size: 12/$rem+rem;
+        }
+            .top1-mian{
+                width: 100%;
+                margin-top: 20/$rem+rem;
+                .top1-left{
+                    width: 50%;
+                    text-align: center;
+                    background-color: #05B6A3;
+                    line-height: 30/$rem+rem;
+                    color: #fff;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+                .top1-right{
+                    width: 50%;
+                    text-align: center;
+                    background-color: #F4F4F4; 
+                    line-height: 30/$rem+rem;  
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;                 
+                }
+            }
+            a{
+                display: block;
+                font-size: 14/$rem+rem;
+            }
+            .panel-body{
+                color: #006600;
+                p{
+                    line-height: 30/$rem+rem;
+                }
+                img{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10/$rem+rem ;
+                }
+            }
+//       商城
+        .section-right-img{
+            width: 100%;
+            padding: 10/$rem+rem;
+            border-bottom: 1px solid #E0E0E0;
+            position: relative;
+            p{
+                line-height: 30/$rem+rem;
+                font-size: 12/$rem+rem;
+            }
+            .section-right-img-link{
+                display: block;
+                color: #fff;
+                margin-top: 0px;
+                display: block;
+                position: absolute;
+                right: 10/$rem+rem;
+                top: 50%;
+                margin-top: -15/$rem+rem;
+                font-size: 12/$rem+rem;
+                padding: 5/$rem+rem;
+                background-color: #6899ec;
+                border: 0px solid #fff;
+                border-radius: 4/$rem+rem;
+            }
+            img{
+                width: 80/$rem+rem;
+                height: 80/$rem+rem;
+                display: block;
+                margin-right: 5/$rem+rem;
+            }
+        }
+        //      个人
+            form {
+                width: 100%;
+                padding: 0 20/$rem+rem;
+                margin: 20/$rem+rem auto;
+                .form-main {
+                    width: 100%;
+                    line-height: 25/$rem+rem;
+                    //                  position: relative;
+                    z-index: 1;
+                    label {
+                        display: inline-block;
+                        width: 80/$rem+rem;
+                        text-align: right;
+                        font-size: 9/$rem+rem;
+                        margin-right: 10px;
+                    }
+                    input,select {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 100/$rem+rem;
+                        border: 1px solid #ccc;
+                        line-height: 20/$rem+rem;
+                        border-radius: 2/$rem+rem;
+                        font-size: 9/$rem+rem;
+                        padding-left: 5/$rem+rem;
+                    }
+                    select{
+                        padding-bottom: 5/$rem+rem;
+                        option{
+                            display: inline-block;
+                            width: 50%;
+                        }
+                    }
+                    span {
+                        font-size: 9/$rem+rem;
+                        margin-left: 6/$rem+rem;
+                        color: red;
+                    }
+                    &:nth-child(1) {
+                        &:after {
+                            content: " ";
+                        }
+                    }
+                    &:after {
+                        content: "*";
+                        color: red;
+                        vertical-align: middle;
+                    }
+                }
+                .form-main-textarea {
+                    width: 100%;
+                    line-height: 35px;
+                    //                  position: relative;
+                    z-index: 1;
+                    label {
+                        display: inline-block;
+                        width: 80px;
+                        text-align: right;
+                        font-size: 12/$rem+rem;
+                        margin-right: 10px;
+                    }
+                    textarea {
+                        width: 500px;
+                        height: 100px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 25px;
+                    }
+                }
+                #sub {
+                    display: block;
+                    margin-top: 50/$rem+rem;
+                    width: 80/$rem+rem;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    line-height: 18/$rem+rem;
+                    margin-left: 20%;
+                    cursor: pointer;
+                    font-size: 12/$rem+rem;
+                    margin-bottom: 20/$rem+rem;
+                }
+            }
+                        //          会员资料
+            .section-right-account {
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                p {
+                    background-color: #ddd;
+                    line-height: 30/$rem+rem;
+                    color: #0D195D;
+                    font-weight: 700;
+                    font-size: 12/$rem+rem;
+                    padding-left: 20/$rem+rem;
+                }
+                .section-right-main {
+                    width: 100%;
+                    font-size: 12$rem+rem;
+                    i {
+                        display: inline-block;
+                        width: 50%;
+                        background-color: #ddd;
+                        font-style: normal;
+                        color: #888;
+                        padding-left: 50/$rem+rem;
+                        text-align: right;
+                        margin-bottom: 1px;
+                        line-height: 30/$rem+rem;
+                        margin-top: 1px;
+                        font-size: 9/$rem+rem;
+                    }
+                    span {
+                        margin-left: 5%;
+                    }
+                    input{
+                        width: 48%;
+                        line-height: 25/$rem+rem;
+                        padding-left: 5/$rem+rem;
+                        border: 1px solid #ddd;
+                        margin-left: 2%;
+                        font-size: 9/$rem+rem;
+                    }
+                }
+                .submit{
+                    margin-top: 10/$rem+rem;
+                    width: 120/$rem+rem;
+                    margin-left: 30%;
+                    font-size: 12/$rem+rem;
+                 }
+            }
+    }

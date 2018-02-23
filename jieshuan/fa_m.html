@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>邮件中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="kindeditor-4.1.7/kindeditor-min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<style type="text/css">
+				.gonggao{
+					width: 1200px;
+					margin: 0 auto;
+					text-align: center;
+				}
+				.gonggao #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width: 700px;
+					margin: 0 auto;
+					color: red;
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 5s steps(30,end) infinite,/* # of steps = # of chars */
+						 blink-caret 5s step-end infinite alternate;
+				}
+
+				.mian_kj{
+					width: 1200px;
+					margin: 0 auto;
+				}
+				textarea{
+					width: 300px;
+					height: 150px;
+				}
+								   .section-cx {
+					    width: 100%;
+					    text-align: center;
+					    margin-top: 10px; }
+					   .section-cx input {
+					      width: 12%;
+					      border: 1px solid #ddd;
+					      margin: 0 3px; }
+					    .section-cx label {
+					      display: inline-block;
+					      margin: 0 3px; }
+		</style>
+				<script>
+        var aa;
+        KindEditor.ready(function (K) {
+            aa = K.create('textarea[name="nr"]', {
+                uploadJson: 'kindeditor-4.1.7/asp.net/upload_json.ashx',
+                fileManagerJson: 'kindeditor-4.1.7/asp.net/file_manager_json.ashx',
+                allowFileManager: true
+            });
+        })
+    </script>
+	<body>
+		<div>
+			<iframe src="top_kj.html" width="100%" height="102px;" frameborder="0"   scrolling="no"></iframe>
+		<div style="margin-top: 20px; width: 1200px; margin: 0 auto;margin-top: 10px;">
+			<img src="images/xw.jpg"/>
+		</div>
+			<div class="clearfix mian_kj">
+				<div class="fl_lt">
+					<iframe src="left_kj.html" width="350px" height="700px" frameborder="0"   scrolling="no"></iframe>
+				</div>				
+			<div class="section-main-right fl_lt">
+				<!--个人资料-->
+			<div class="section-main-right fl_lt">
+				<!--个人资料-->
+				<div class="section-right-main">
+					<p>
+						<span>邮件中心</span>
+					</p>
+								<form action="" method="post">
+					<table class="table table-striped table-bordered ">
+					  <caption>添加新闻</caption>
+					  <tbody>
+					    <tr>
+					      <td>
+					      	 语言类型：	
+					      </td>	
+					      <td>
+					      	<em>
+						      	<select name="">
+						      		<option value="">22</option>
+						      	</select>
+					      	</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 新闻分类：	
+					      </td>	
+					      <td>
+					      	<em>
+						      	<select name="">
+						      		<option value="">22</option>
+						      	</select>
+					      	</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 新闻标题：	
+					      </td>	
+					      <td>
+					      	<em>
+								<input type="text" name="" id="" value="" />
+							</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 是/否：	
+					      </td>	
+					      <td>
+					      	<em>
+								<select>
+									<option>1</option>
+								</select>
+							</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 新闻内容：	
+					      </td>	
+					      <td>
+							 <textarea name="nr" rows="" cols=""></textarea>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 简短说明：	
+					      </td>	
+					      <td>
+					      	<em>
+							 	<textarea rows="" cols=""></textarea>
+							 </em>
+					      </td>
+					    </tr>	
+					    <tr>
+					      <td>
+					      	 预览图片：	
+					      </td>	
+					      <td>
+					      	<em>
+								<input type="file" name="" id="" value="" />
+							</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 添加时间：	
+					      </td>	
+					      <td>
+					      	<em>
+								<input type="text" name="" id="" value="" onclick="WdatePicker()" data-validate="required:请输入时间"/>
+							</em>
+					      </td>
+					    </tr>
+					    <tr>
+					      <td>
+					      	 是否置顶：	
+					      </td>	
+					      <td>
+					      	<em>
+								<select>
+									<option>1</option>
+								</select>
+							</em>
+					      </td>
+					    </tr>
+					    	
+					  </tbody>
+					</table>
+					<input type="submit" name="" id="" value="添加" class="btn btn-info" style="margin-left: 45%;"/>
+				</form>
+
+
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="foot-down">
+			<p>版权所有</p>
+		</div>
+		<!--回到顶部-->
+		<div id="back-top">
+			top
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$(".nav_top>li>a").mouseenter(function() {
+				$(this).children(".ink").addClass("animate");
+				$(this).parent().siblings().children().children(".ink").removeClass("animate");
+			})
+			var page = 0;
+			var stop = true;
+			var time;
+
+			$('#myCarousel').carousel({
+			    interval: 4000
+			})
+			$(window).on('scroll', function() {
+				if($(window).scrollTop() > 30) {
+					$("#back-top").show();
+				} else {
+					$("#back-top").hide();
+				}
+			})
+			$("#back-top").click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 200);
+			});
+		})
+	</script>
+
+

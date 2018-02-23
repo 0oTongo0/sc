@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/sigin.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		.mc{
+			position: absolute;
+		    display: none;
+		    width: 300px;
+		    line-height: 50px;
+		    text-align: center;
+		    background-color: #fff;
+		    color: red;
+		    border-radius: 4px;
+		    top: 4%;
+		    left: 50%;
+		    margin-left: -150px;
+		    -webkit-animation: wd 0.8s ease-in-out;
+		    animation: dk 0.8s ease-in-out;
+		}
+	</style>
+	<body>
+		<!--表单-->
+		<form action="" method="post" >
+			<div class="centre-main">
+
+				<div class="centre-main-form">
+				<p class="centre-main-form-top">众宝登录</p>
+				<div class="centre-main-form-width">
+					<input type="text" name="" id="name" value="" placeholder="用户名" class="text" />
+					<div class="centre-main-form-text" id="name-text">
+					</div>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="password" id="password" placeholder="密码" class="password"/>
+					<div class="centre-main-form-text" id="password-text">
+					</div>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="" name="" id="yz2" value="" placeholder="图片验证码" class="pt"/>
+					<div class="dw"><img src=""  class="img-responsive"/></div>
+					<div class="centre-main-form-text">
+					</div>
+				</div>					
+				<div class="centre-main-form-width">
+					<input type="submit" value="立即登录" id="sub" class="sub"/>
+				</div>
+		
+			</div>
+				</form>
+		</div>
+		</div>
+			<div class="mc">
+			请检查所有的输入，都不能为空,谢谢~~
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			   $("#sub").bind("click",function(event){
+		         var username = $(".text").val();  //获取元素的值
+		         var username2 = $(".password").val();
+		         var username3 = $(".pt").val();
+		         if(username=="" || username2=="" || username3==""){   //判断值是否为空	         	
+		       		$(".mc").show().delay(1000).hide(300);
+		       		return false;
+		  		 }else{
+		  		 	return true;
+		  		 }
+		   })
+	})	
+	</script>
+</html>
+

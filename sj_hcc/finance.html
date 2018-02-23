@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>财务流水</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+	<body>
+		<!--最大的框-->
+		<div class="subject">
+			<!--头部-->		
+			<div class="herder-top">
+				<h1>
+					<a href="">汇查查</a>
+				</h1>
+				<div class="herder-top-right">
+					<img src="images/fenlei.png" id="fenl"/>
+				</div>
+				<!--隐藏的导航栏-->
+				<div class="herder-top-nav">
+					<ul >
+						<li>
+							<a href="">首页</a>
+						</li>
+						<li>
+							<a href="">推荐中心</a>
+						</li>
+						<li>
+							<a href="">个人中心</a>
+						</li>
+						<li>
+							<a href="">提款</a>
+						</li>						
+						<li>
+							<a href="">财务中心</a>
+						</li>
+						<li>
+							<a href="">转账中心</a>
+						</li>	
+						<li>
+							<a href="">修改密码</a>
+						</li>	
+						<li>
+							<a href="">安全退出</a>
+						</li>						
+					</ul>
+				</div>
+				<!--导航栏end-->
+			</div>
+			<!--头部end-->
+			<!--主体-->
+			<div class="section-mian">
+				<!--内容来了↓-->
+				<div class="section-mian-center">
+					<!--个人中心-->
+					<div class="section-mian-center-nav">
+						<p>推荐关系</p>
+						<form action="">
+							<div class="section-mian-center-form">
+								<div>
+									<label>时间:</label><input type="date"   />
+								</div>
+								<div>
+									<label>至:</label><input type="date"   />
+								</div>	
+								<div>
+									<input type="submit" class="sub" value="搜索"/>
+								</div>
+							</div>
+						</form>
+						<!--最大的表格↓-->
+						<div class="tab-main">
+							<table class="tab">
+								<thead>
+									<tr>
+										<td>序列</td>
+										<td>时间</td>
+										<td>会计科目</td>
+										<td>收入</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--分页-->
+						<div class="fenye">
+							<a href="javascript:;">上一页</a>
+							<select name="" class="select">
+								<option value="">1</option>
+							</select>
+							<a href="javascript:;">下一页</a>
+						</div>
+					</div>
+				</div>
+				<!--内容end-->
+			</div>
+			<!--底部-->
+			<div class="section-footer">	
+				<ul class="section-footer-nav">
+					<li>
+						<a href="">
+							<i>
+								<img src="images/jia.png"/>
+							</i>
+							<span>
+								返回首页
+							</span>
+						</a>
+					</li>
+					<li>	
+						<a href="">
+							<i>
+								<img src="images/geren.png"/>
+							</i>
+							<span>
+								个人中心
+							</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<i>
+								<img src="images/top.png"/>
+							</i>
+							<span>
+								回到顶部
+							</span>
+						</a>
+					</li>
+					<li id="sx">
+						<a href="">
+							<i>
+								<img src="images/sx2.png"/>
+							</i>
+							<span>
+								刷新
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+

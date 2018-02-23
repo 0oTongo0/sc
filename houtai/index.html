@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>大佬的管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/houtai.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<!--<style type="text/css">
+		.wd{
+			margin-top: 50px;
+			width: 100px;
+			margin: 0 auto;			
+			border: 2px solid #fff;
+			position: relative;
+			text-align: center;
+			color: gold;
+			line-height: 35px;
+			overflow: hidden;
+			letter-spacing: 3px;
+			cursor: pointer;
+		}
+		.wd:before{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: -100%;
+			top: 0;
+			transition: all 0.4s ease-in-out;
+			background: #e50000;
+			z-index: -1;
+		}
+		.wd:hover:before{
+			left: 0;
+		}
+		.wd:hover{
+			color: #fff;
+		}
+	</style>-->
+	<body>
+		<!--主体-->
+		<div class="clearfix mian">
+			<!--左边-->
+			<div class="fl_lt nav-left">
+				<ul>
+					<li>
+						<a href="javascript:;">xx系统</a>
+					</li>
+					<li>
+						<a href="">会员充值
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">提款申请
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">昨日新镇
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">财务管理
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">会员充值
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">财务流水
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">收件箱
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">留言发送
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">发件箱
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">工资汇总
+						 	<i></i>
+						</a>
+					
+					</li>
+					<li>
+						<a href="">修改密码
+						 	<i></i>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">角色管理
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">用户管理
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">新闻管理
+							<i></i>
+						</a>
+						 
+					</li>
+					<li>
+						<a href="">添加新闻
+							<i></i>
+						</a>
+						 
+					</li>
+				</ul>
+			</div>
+			<!--右边-->
+			<div class="fl_lt nav-ringt">
+				<ul class="nav-ringt-ul">
+					<li>
+						<a href="">客户管理</a>
+						<ul class="two">
+							<li>
+								<a href="mubiao.html" target="right">今日新增</a>
+							</li>
+							<li>
+								<a href="huiyuan.html" target="right">会员列表</a>
+							</li>
+							<li>
+								<a href="hmd.html" target="right">黑名单管理</a>
+							</li>
+							<li>
+								<a href="tongji.html" target="right">归属查询</a>
+							</li>
+							<li>
+								<a href="zuiri.html" target="right">昨日升级</a>
+							</li>
+							<li>
+								<a href="lvyou.html" target="right">旅游申请</a>
+							</li>
+							<li>
+								<a href="zuiri.html" target="right">昨日新增</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">网络关系</a>
+						<ul class="two">
+							<li>
+								<a href="">业务分布</a>
+							</li>
+							<li>
+								<a href="">推荐关系</a>
+							</li>
+							<li>
+								<a href="">业务分布</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">现金管理</a>
+						<ul class="two">
+							<li>
+								<a href="xianjin.html" target="right">汇账管理</a>
+							</li>
+							<li>
+								<a href="congz.html" target="right">会员充值</a>
+							</li>
+							<li>
+								<a href="tik.html" target="right">提款申请</a>
+							</li>
+							<li>
+								<a href="huiy_kk.html" target="right">会员扣款</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">财务管理</a>
+						<ul class="two">
+							<li>
+								<a href="zh_ls.html" target="right">财务流水</a>
+							</li>
+							<li>
+								<a href="yeji_lx.html" target="right">业绩核算</a>
+							</li>
+							<li>
+								<a href="huiy_yeji.html" target="right">会员业绩</a>
+							</li>
+							<li>
+								<a href="shic_hc.html" target="right">市场核查</a>
+							</li>
+							<li>
+								<a href="caiwu_mx.html" target="right">财务明显</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">留言系统</a>
+						<ul class="two">
+							<li>
+								<a href="sjx.html" target="right">收件箱</a>
+							</li>
+							<li>
+								<a href="liuy.html" target="right">留言发送</a>
+							</li>
+							<li>
+								<a href="javascript:;">手机短信</a>
+							</li>
+							<li>
+								<a href="fjx.html" target="right">发件箱</a>
+							</li>
+							<li>
+								<a href="youj.html" target="right">邮件发送</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">工资管理</a>
+						<ul class="two">
+							<li>
+								<a href="">工资汇总</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">新闻管理</a>
+						<ul class="two">
+							<li>
+								<a href="">新闻管理</a>
+							</li>
+							<li>
+								<a href="">添加新闻</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">返点管理</a>
+						<ul class="two">
+							<li>
+								<a href="">返点设置</a>
+							</li>
+							<li>
+								<a href="">返点详情</a>
+							</li>
+							<li>
+								<a href="">返点补录</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">系统配置</a>
+						<ul class="two">
+							<li>
+								<a href="">邮件配置</a>
+							</li>
+							<li>
+								<a href="">支付配置</a>
+							</li>
+							<li>
+								<a href="">银行账号</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">临时活动</a>
+						<ul class="two">
+							<li>
+								<a href="">门票活动</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">用户管理</a>
+						<ul class="two">
+							<li>
+								<a href="">用户管理</a>
+							</li>
+							<li>
+								<a href="">修改密码</a>
+							</li>
+							<li>
+								<a href="">角色管理</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">内容管理</a>
+						<ul class="two">
+							<li>
+								<a href="">内容列表</a>
+							</li>
+							<li>
+								<a href="">内容添加</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">系统日志</a>
+						<ul class="two">
+							<li>
+								<a href="">日志查看</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">数据管理</a>
+						<ul class="two">
+							<li>
+								<a href="">数据备份</a>
+							</li>
+							<li>
+								<a href="">财务类型</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">财务管理</a>
+						<ul class="two">
+							<li>
+								<a href="">拔出比率</a>
+							</li>
+							<li>
+								<a href="">总拔比率</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">菜单管理</a>
+						<ul class="two">
+							<li>
+								<a href="xitong.html" target="right">系统菜单</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">R-COIN管理</a>
+						<ul class="two">
+							<li>
+								<a href=""> R-coin锁仓 </a>
+							</li>
+							<li>
+								<a href=""> R-coin自动 </a>
+							</li>
+							<li>
+								<a href=""> R-coin行情 </a>
+							</li>
+							<li>
+								<a href="">  R-coin拆分  </a>
+							</li>
+							<li>
+								<a href="">  R-coin查询  </a>
+							</li>
+							<li>
+								<a href="">  交易记录  </a>
+							</li>
+							<li>
+								<a href=""> 委托记录  </a>
+							</li>
+							<li>
+								<a href="">  市场走势  </a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">用户退出</a>
+						<ul class="two">
+							<li>
+								<a href="">重新登录</a>
+							</li>
+							<li>
+								<a href="">安全退出</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				 <!--右边第二模块-->
+				 <div style="padding-bottom: 20px;">
+				 	<iframe width="100%" id="iframeid" onload="Javascript:SetCwinHeight()" frameborder="0" src="houtai.html" name="right" scrolling="no" height="550px"></iframe>
+				 </div>
+			</div>
+		</div>
+		<!--<div class="wd">
+			<span>了解更多</span>
+		</div>-->
+	</body>
+	<script type="text/javascript">
+	function SetCwinHeight()
+	{
+	    var iframeid=document.getElementById("iframeid");
+	    if (document.getElementById)
+	    {
+	        if (iframeid && !window.opera)
+	        {
+	            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+	                iframeid.height = iframeid.contentDocument.body.offsetHeight;
+	            }
+	            else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+	            {
+	                iframeid.height = iframeid.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+	}
+	
+	</script>
+</html>

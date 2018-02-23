@@ -1,0 +1,31 @@
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  font-size: 0.4rem; }
+
+.tab {
+  width: 100%;
+  color: #fff; }
+  .tab .tab-top {
+    width: 100%;
+    font-size: 0.135rem;
+    text-align: center;
+    line-height: 0.215rem;
+    background: rgba(0, 0, 0, 0.2); }
+  .tab .tab-main {
+    width: 100%;
+    overflow: auto; }
+    .tab .tab-main table {
+      width: 100%; }
+    .tab .tab-main th, .tab .tab-main td {
+      white-space: nowrap;
+      padding: 0.1rem;
+      font-size: 0.12rem;
+      text-align: center; }
+    .tab .tab-main tbody > tr:nth-child(2n+1) {
+      background: rgba(0, 0, 0, 0.2); }
+    .tab .tab-main td span {
+      margin: 0 0.03rem; }
+
+/*# sourceMappingURL=biaoge.css.map */

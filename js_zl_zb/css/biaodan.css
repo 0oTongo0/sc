@@ -1,0 +1,44 @@
+html {
+  font-size: calc(100vw/3.75); }
+
+body {
+  font-size: 0.4rem; }
+
+.section-form {
+  width: 100%;
+  padding: 0.09rem 0 0.09rem 0.6rem; }
+  .section-form .section-form-top {
+    text-align: center;
+    font-size: 0.1rem;
+    color: #fff; }
+  .section-form .section-form-mian {
+    width: 100%; }
+    .section-form .section-form-mian label, .section-form .section-form-mian input, .section-form .section-form-mian textarea {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0.14rem; }
+    .section-form .section-form-mian input, .section-form .section-form-mian textarea {
+      border-radius: 0.03rem;
+      background: #FFF; }
+    .section-form .section-form-mian label {
+      width: 0.65rem;
+      line-height: 0.2rem;
+      color: #fff;
+      text-align: right;
+      margin-right: 0.05rem;
+      letter-spacing: 1px; }
+    .section-form .section-form-mian input {
+      width: 1.4rem;
+      line-height: 0.23rem;
+      border: 1px solid #e6e6e6;
+      padding-left: 0.03rem; }
+    .section-form .section-form-mian .zhanghao {
+      width: 2.19rem; }
+    .section-form .section-form-mian .sub {
+      width: 0.825rem;
+      margin-left: 0.675rem;
+      background: #FF7171;
+      border-color: #FF7171;
+      color: #fff; }
+
+/*# sourceMappingURL=biaodan.css.map */

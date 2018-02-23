@@ -1,0 +1,208 @@
+			body {
+				width: 100%;
+				height: 100%;
+               background: linear-gradient(to right, rgb(32, 1, 34), rgb(111, 0, 0));
+				
+			}
+			
+			input {
+				display: block;
+				background: rgba(255, 255, 255, 0.7);
+			}
+			.log{
+				width: 1200px;
+				padding-top: 20px;
+				margin: 0 auto;
+			}
+			.log h1{
+				color: #fff;
+				text-shadow: 1px 1px red;
+				margin-left: 45%;
+			} 
+			    .section-top-right {
+        padding-right: 100px;
+        font-size: 0;
+        }
+        .section-top-right span {
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 16px;
+            background: #e77171;
+            text-decoration: none;
+            padding: 0 10px;
+            border-radius: 5px;
+            line-height: 32px;
+            margin-left: 10px;
+            color: #FFF;
+            cursor: pointer;
+        }
+  
+			.centre-main {
+				width: 100%;
+				padding-top: 120px;
+				animation: wd 0.6s ease;
+			}
+			
+			.centre-main .centre-main-form {
+				width: 660px;
+				margin: 0 auto;
+				background-color: #fff;
+				font-size: 14px;
+				padding-bottom: 50px;
+				background: rgba(255, 255, 255, 0.5);
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-top {
+				font-size: 30px;
+				text-align: center;
+				line-height: 80px;
+				color: #333;
+				margin: 0;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width {
+				width: 340px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width input {
+				display: block;
+				width: 100%;
+				height: 40px;
+				display: block;
+				width: 100%;
+				padding: 9px;
+				border: 1px solid #dcdcdc;
+				margin: 5px 0;
+				border-radius: 2px;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width input.rad {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				vertical-align: middle;
+				margin-left: 60px;
+				margin-right: 10px;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width .lab {
+				color: #999;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width .centre-main-form-text {
+				line-height: 20px;
+				font-size: 14px;
+				height: 20px;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width #verify {
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: #17b1f7;
+				line-height: 40px;
+				color: #fff;
+				padding: 0 9px;
+				z-index: 99;
+				cursor: pointer;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width .dw {
+				position: absolute;
+				right: 0;
+				top: 0;
+				line-height: 40px;
+				color: #fff;
+				z-index: 99;
+				cursor: pointer;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width #sub {
+				background: linear-gradient(to right, rgb(102, 125, 182), rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182));
+				border-color: #17b1f7;
+				margin-top: 30px;
+				color: #fff;
+				cursor: pointer;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width a {
+				display: inline-block;
+				color: #fff;
+				font-size: 12px;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width a:hover {
+				color: #333;
+			}
+			
+			.centre-main .centre-main-form .centre-main-form-width #me {
+				display: inline-block;
+				width: 20px;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			
+			.mc {
+				position: absolute;
+				display: none;
+				width: 300px;
+				line-height: 50px;
+				text-align: center;
+				background-color: #fff;
+				color: red;
+				border-radius: 4px;
+				top: 4%;
+				left: 50%;
+				margin-left: -150px;
+			}
+			
+			#btn {
+				width: 120px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				background-color: #17b1f7;
+				line-height: 40px;
+				color: #fff;
+				padding: 0 9px;
+				z-index: 99;
+				cursor: pointer;
+				text-align: center;
+				margin: 0;
+			}
+			
+			.voice {
+				width: 150px;
+				position: absolute;
+				top: 50px;
+				right: 100px;
+				font-size: 0;
+				margin-left: -5%;
+			}
+			
+			.voice span {
+				display: inline-block;
+				width: 45%;
+				margin-left: 5%;
+				line-height: 30px;
+				font-size: 14px;
+				color: #ddd;
+				text-align: center;
+				border-radius: 20%;
+				cursor: pointer;
+				transition: all 0.3s;
+			}
+			
+			@-webkit-keyframes wd {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(0.5);
+				}
+				100% {
+					transform: scale(1)
+				}
+			}

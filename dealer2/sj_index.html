@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/hy-dl.css" />
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+			 $(function(){
+				$("#butt_b").on("tap",function(){
+					var pas = $("#pass").attr("type");
+					if(pas =="password"){
+						$("#pass").attr("type","text");
+						 $("#butt_b").addClass("but");
+					}else{
+						$("#pass").attr("type","password")
+						$("#butt_b").removeClass("but");
+					}
+				})
+		     })
+		</script>
+	</head>
+	<body>
+		<section>
+			<div class="main">
+				<h1>海优世纪馆<br/>代理商家登录平台</h1>
+				<form action="" >
+					<div>
+						<label for="phone">手机号</label>
+						<input type="number" name="" id="phone" value="" placeholder="请输入手机号"/>
+					</div>
+					<div>
+						<label for="pass">密码</label>
+						<input type="password" name="" id="pass" value="" placeholder="请输入密码"/>
+						<a href="javascript:;" class="but_b" id="butt_b"></a>
+					</div>
+					<input type="submit" value="登录"/>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
+

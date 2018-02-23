@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>转账</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<style type="text/css">
+				.section-main-right-top #hh {
+					display: inline-block;
+					vertical-align: middle;
+					width:198px;
+					/* fallback */
+					color: #999;
+					/* # of chars */
+					white-space:nowrap;
+					overflow:hidden;
+					animation:typing 3s steps(30,end),/* # of steps = # of chars */
+						 blink-caret .5s step-end infinite alternate;
+				}
+					@keyframes typing {
+						from {
+						width:0;
+					}
+					}@keyframes blink-caret {
+						50% {
+						border-color:transparent;
+					}
+		</style>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="section-top clearfix">
+			<h1 class="fl_lt section-top-left">
+				LOG
+			</h1>
+			<div class="fl_rt section-top-right">
+				<span class="section-top-right-cn">
+					<img src="img/cn.gif"/>
+					中文
+				</span>
+				<span class="section-top-right-en">
+					<img src="img/en.gif"/>
+					英文
+				</span>
+			</div>
+		</div>
+		<!--中间的部分-->
+		<div class="section-main clearfix">
+			<!--左边框架导航-->
+			<div class="fl_lt section-main-left">
+				<iframe width="100%" id="iframeid"frameborder="0"  name="right" scrolling="no"  src="kj_left.html" height="900px"></iframe>
+			</div>
+			<!--右边内容-->
+			<div class="fl_lt section-main-right">			
+				<div class="section-main-right-top">
+					<span id="hh">您还要<strong>红包</strong>没有领取哦！</span>
+					<a href="" class="section-main-right-top-link">点击领取</a>
+				</div>
+				<div class="section-right-brand">
+					<p class="section-right-brand-text">
+						<span>转账</span>
+					</p>
+					<form action="" method="post">
+						<div class="form-main">
+							<label>账号类型:</label>
+							<select name="">
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="form-main">
+							<label>接受账户:</label>
+							<input type="text" name="" id="account" value="" />
+							<span id="account_text"><!--无此会员编号--></span>
+						</div>
+						<div class="form-main">
+							<label>金额:</label>
+							<input type="text" name="" id="money" value="" />
+							<span><!--不能为空--></span>
+						</div>
+						<input type="submit" value="提交" id="sub" class="btn btn-info"/>
+					</form>
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								<th>序列</th>
+								<th>转给</th>
+								<th>财会科目</th>
+								<th>金额</th>
+								<th>时间</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="fot">
+						<ul class="pagination">
+							<li><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer2">
+			<p>版权说明</p>
+		</div>
+	</body>
+</html>
+

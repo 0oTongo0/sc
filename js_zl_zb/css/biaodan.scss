@@ -1,0 +1,56 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+body{
+//  background: #ccc;
+    font-size: 0.4rem;
+}
+$yc:#297de5;
+.section-form{
+    width: 100%;
+    padding:18/$rc+rem 0 18/$rc+rem 120/$rc+rem;
+        .section-form-top{
+            text-align: center;
+            font-size: 20/$rc+rem;
+            color: #fff;
+        }    
+    .section-form-mian{
+        width: 100%;
+        label,input,textarea{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 28/$rc+rem;
+        }
+        input,textarea{
+            border-radius: 6/$rc+rem;
+            background: #FFF;
+        }
+        label{
+            width: 130/$rc+rem;
+            line-height: 40/$rc+rem;
+            color: #fff;
+            text-align: right;
+            margin-right: 10/$rc+rem; 
+            letter-spacing: 1px;          
+        }
+        input{
+            width: 280/$rc+rem;
+            line-height: 46/$rc+rem;
+            border: 1px solid #e6e6e6;
+            padding-left: 6/$rc+rem;
+        }
+        .zhanghao{
+            width: 438/$rc+rem;
+        }
+//      提交
+        .sub{
+            width: 165/$rc+rem;
+            margin-left: 135/$rc+rem;
+            background: #FF7171;
+            border-color: #FF7171;
+            color: #fff;
+        }
+    }
+}

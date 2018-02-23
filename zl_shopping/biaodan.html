@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		.form{
+			width: 500px;
+			margin: 0px auto 50px;
+			padding-left: 130px;
+			background: url(images/bg.png)no-repeat 0px top;
+			background-size: contain;
+		}
+		.form .form-mian{
+			width: 300px;
+			margin:10px 0;
+		}
+		.form label{
+			display: inline-block;
+			vertical-align: middle;
+			width: 80px;
+			text-align: right;
+			font-size: 12px;
+			line-height: 30px;
+			margin-right: 5px;
+		}
+		.form .beiz{
+			vertical-align: top;
+		}
+		.form input{
+			display: inline-block;
+			vertical-align: middle;
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			padding-left: 3px;
+		}
+		.form input:focus{
+			border-color: #E3101E;
+		}
+		.form textarea{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #ccc;
+			padding-left: 3px;
+			border-radius: 3px;
+			padding: 5px;
+		}
+		.form .sub{
+			width: 80px;
+			margin-left: 83px;
+			background: #E3101E;
+			border: 1px solid #E3101E;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			cursor: pointer;
+			
+		}
+		.form .sub:hover{
+			background: #E5313A;
+		}
+/*弹框*/
+.number{
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            padding: 3px 6px;
+            margin-right: -25px;
+            margin-left: -50px;
+            background: rgba(0,0,0,.5);
+            color: #fff;
+            -webkit-animation: wd 0.8s ease-in-out;
+            animation: wd 0.8s ease-in-out;
+            display: none;
+            font-size: 13px;
+    }
+        @keyframes wd{
+                10%, 90% {
+                    -webkit-transform:translate3d(-1px, 0, 0);
+                    transform: translate3d(-1px, 0, 0);
+                }
+                20%, 80% {
+                    -webkit-transform: translate3d(2px, 0, 0);
+                    transform: translate3d(2px, 0, 0);
+                }
+                30%, 50%, 70% {
+                    -webkit-transform: translate3d(-4px, 0, 0);
+                    transform: translate3d(-4px, 0, 0);
+                }
+                40%, 60% {
+                    -webkit-transform: translate3d(4px, 0, 0);
+                    transform: translate3d(4px, 0, 0);
+                }
+        }		
+	</style>
+	<body>
+		<div class="form">
+			<form action="">
+				<div class="form-mian">
+					<label>用户名:</label>
+					<input type="text" class="name"/>
+				</div>
+				<div class="form-mian">
+					<label>积分数量:</label>
+					<input type="text" class="num"/>
+				</div>
+				<div class="form-mian">
+					<label class="beiz">备注:</label>
+					<textarea>
+						
+					</textarea>
+				</div>
+				<div class="form-mian">
+					<input type="submit" class="sub"/>
+				</div>
+			</form>
+		</div>
+		<!--弹框提示-->
+		<div class="number">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".sub").on('click',function(){
+				var name = $(".name").val();
+				var num = $(".num").val();
+				if(name == ""){
+					$(".number").text("用户名不能为空").show().delay(2000).hide(50);
+					return false;
+				}else if(num == ""){
+					$(".number").text("积分数量不能为空").show().delay(2000).hide(50);
+					return false;
+				}else{
+					return true;
+				}
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuti.css"/>
+		<style type="text/css">
+   .section-right-main { width: 100%; }
+   .section-right-main p { width: 100%; border-bottom: 1px solid #ccc; }
+   .section-right-main p span { display: block; line-height: 30px; border-bottom: 2px solid #BD9F7B; width: 80px; text-align: center; margin-bottom: -1px; font-size: 18px; font-weight: 700; color: #BD9F7B; }
+   .section-right-main .section-right-account { width: 100%; margin-bottom: 10px; }
+   .section-right-main .section-right-account p { background-color: #efefef; line-height: 30px; color: #0D195D; font-weight: 700; font-size: 14px; padding-left: 20px; }
+   .section-right-main .section-right-main { width: 100%; font-size: 12px; }
+   .section-right-main .section-right-main i { display: inline-block; width: 200px; background-color: #efefef; font-style: normal; color: #888; padding-left: 50px; text-align: right; margin-bottom: 1px; line-height: 30px; margin-top: 1px; }
+   .section-right-main .section-right-main span { margin-left: 10px; }
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<iframe width="100%" id="iframeid" onload="Javascript:SetCwinHeight()" frameborder="0" src="top.html"  scrolling="no"></iframe>
+		</div>
+		<div class="section clearfix">
+			<div class="fl_lt section-left">
+				<iframe width="100%" id="iframeid2" onload="Javascript:left()" frameborder="0" src="zuo.html"  scrolling="no" height="702px"></iframe>
+			</div>
+			<div class="fl_lt section-right">
+				<div class="section-right-main">
+					<p>
+						<span>个人资料</span>
+					</p>
+				<!--账户信息-->
+				<div class="section-right-account">
+					<p>账号信息</p>
+					<div class="section-right-main">
+						<i>用户名:</i><span>xxxxx</span><br/>
+					</div>
+				</div>
+				<div class="section-right-account">
+					<p>联系信息</p>
+					<div class="section-right-main">
+						<i>邮箱:</i><span>xxxxx</span><br/>
+						<i>手机:</i><span>xxxxx</span>
+					</div>
+				</div>
+				<div class="section-right-account">
+					<p>银行信息</p>
+					<div class="section-right-main">
+						<i>银行账号:</i><span>xxxxx</span><br/>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>版权问题</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+	function SetCwinHeight()
+	{
+	    var iframeid=document.getElementById("iframeid");
+	    if (document.getElementById)
+	    {
+	        if (iframeid && !window.opera)
+	        {
+	            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+	                iframeid.height = iframeid.contentDocument.body.offsetHeight;
+	            }
+	            else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+	            {
+	                iframeid.height = iframeid.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+	}
+	</script>
+</html>

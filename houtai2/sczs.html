@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>市场走势图</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/right.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/highcharts.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+		<style type="text/css">
+			#wd td{
+				width: 50%;
+			}
+			#wd tr>td{
+				text-align: right;
+			}
+		</style>	
+	<body>
+		<div class="section">
+			<p class="section-top">您当前所在位置：首页 >> 市场走势>> 市场走势图</p>	
+			<div id="container">
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: '市场走势图',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '全局交易',
+            x: -20
+        },
+        xAxis: {//价格
+            categories: [0.10,0.15,0.20,0.25,0.30,0.35,0.40]
+        },
+        yAxis: {
+            title: {
+                text: '成交量 ($)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '$'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{ //成交量
+            name: '新增',
+            data: [2388000.00,16940975.00,3063467.00,484201.00,224387.00,4011039.00,638736.00]
+        }, {
+            name: '回购',
+            data: [0.00,432630.00,1206544.00,474468.00,68245.00,54095.00,53268.00]
+        }, {
+            name: '消费者',
+            data: [0.00,0,0,0,0,0,0]
+        }, {
+            name: '企业',
+            data: [0.00,0,0,0,0,0,0]
+        }],
+        exporting:{
+                    enabled:false
+                },
+                credits: {
+                    enabled: false
+                }
+    });
+});
+
+	</script>
+</html>
+
+
+
+
+
+
+
+

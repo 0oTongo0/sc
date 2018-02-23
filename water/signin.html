@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/signin.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/signin.js"></script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div class="heder-nav">
+			<div class="heder-nav-main">
+				<div class="row">
+					<div class="col-md-10 heder-nav-log">
+						<a href="">全球净</a>
+					</div>
+					<div class="col-md-2 heder-nav-right">
+						<a href="#" class="heder-nav-signin">登录</a>
+						<a href="signup.html" class="heder-nav-signup">注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--表单-->
+		<div class="centre-main">
+			<form action="" method="post" class="centre-main-form">
+				<p class="centre-main-form-top">登录</p>
+				<div class="centre-main-radio clearfix">
+					<!--<div class="row">-->
+					<div class="centre-main-radio-left fl_lt bg on">
+						<input type="radio" name="login" id="dealer" value="" checked="checked" />
+						<label for="dealer" class="lab">我是经销商</label>
+					</div>
+					<div class="centre-main-radio-right fl_lt bg">
+						<input type="radio" name="login" id="customer" value="" />
+						<label for="customer" class="lab">我是消费者</label>
+					</div>
+					<!--</div>-->
+				</div>
+				<div class="centre-main-form-width">
+					<input type="text" name="" id="name" value="" placeholder="请输入用户名" class="text" />
+					<div class="centre-main-form-text" id="name-text">
+					</div>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="text" name="" id="" value="" placeholder="请输入密码" class="text" />
+					<div class="centre-main-form-text" id="name-text">
+				</div>
+				<div class="centre-main-form-width clearfix">
+					<input type="checkbox" name="" id="me" value=""/>
+					<label for="me" class="me-label">自动登录</label>
+					<a href="forget_password.html" class="forget fl_rt">忘记密码？</a>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="submit" value="登录" id="sub"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

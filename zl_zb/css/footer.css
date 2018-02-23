@@ -1,0 +1,104 @@
+@charset "UTF-8";
+body {
+  background: #eaeaea; }
+
+.section-form {
+  overflow: hidden; }
+
+.section-form-right {
+  position: absolute;
+  animation: wd 0.8s ease-in-out;
+  right: 352px; }
+
+.form-img {
+  position: relative;
+  left: 0px;
+  animation: nd 0.8s ease-in-out; }
+
+@keyframes wd {
+  0% {
+    right: 0px;
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    right: 352px;
+    visibility: visible;
+    opacity: 1; } }
+@keyframes nd {
+  0% {
+    left: -616px;
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    left: 0px;
+    visibility: visible;
+    opacity: 1; } }
+.zl_footer {
+  width: 100%;
+  background: #363b3f; }
+
+.footer_left {
+  width: 230px; }
+
+.footer-main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0; }
+
+.footer-center {
+  min-width: 735px;
+  border-left: 1px solid #7d8391;
+  border-right: 1px solid #7d8391;
+  text-align: center; }
+
+.footer_right {
+  margin-left: 90px;
+  margin-top: 20px; }
+
+.footer_right img {
+  width: 80px;
+  height: 80px; }
+
+.footer-center-nav:nth-child(1) h5 {
+  background: url(img/1.png) no-repeat no-repeat 63px; }
+
+.footer-center-nav:nth-child(2) h5 {
+  background: url(img/2.png) no-repeat no-repeat 63px; }
+
+.footer-center-nav:nth-child(3) h5 {
+  background: url(img/3.png) no-repeat no-repeat 63px; }
+
+.footer-main .footer-center .footer-center-nav {
+  width: 33.333%;
+  float: left;
+  text-align: center; }
+
+.footer-main .footer-center .footer-center-nav h5 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px; }
+
+.footer-main .footer-center .footer-center-nav a {
+  line-height: 28px;
+  font-size: 12px;
+  color: #7e8492; }
+
+.footer-main .footer-center .footer-center-nav a:hover {
+  color: #ff5a59; }
+
+/*鐗堟潈*/
+.footer-fot {
+  width: 100%;
+  background: #404549;
+  padding: 10px 0; }
+
+.footer-fot p {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=footer.css.map */

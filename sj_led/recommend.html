@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<title>推荐关系</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/relation.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.section .section-main .section-main-nav li{
+			border: none;
+		}
+		.section .section-main .section-main-nav li span{
+			margin: 0;
+		}
+		#menu {
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 0.1rem;
+			padding-left: 0.15rem;
+			font-size: 0.15rem;
+		}		
+		#menu #tree_root li span {
+			display: block;
+			line-height: 0.2rem;
+			color: #222;
+		}
+		
+		#menu ul li b {
+			font-weight: normal;
+			position: relative;
+			padding-left: 0.3rem;
+			line-height: 0.2rem;
+			cursor: pointer;
+		}
+		
+		#menu ul li b:before {
+			display: block;
+			font-size: 0;
+			content: "";
+			width: 0.2rem;
+			height: 0.2rem;
+			position: absolute;
+		}
+		
+		#menu ul li .On:before,
+		#menu ul li .On2Off:before {
+			background: url(images/wenjian.png)no-repeat;
+			background-size: contain;
+		}
+		
+		#menu ul li .Off:before {
+			background: url(images/wenjian.png)no-repeat;
+			background-size: contain;
+		}
+		
+		#menu .wd {
+			margin-left: 0.1rem;
+			display: none
+		}
+	</style>	
+	<body>
+		<!--头部-->
+		<header class="header-log">
+			<div class="log">
+				<!--log-->
+				<h1>
+					<a href=""></a>
+				</h1>
+				<div class="log-right">
+					<img src="images/fl.png" />
+				</div>
+				<!--右侧隐藏导航-->
+				<div class="herder-nav">
+					<ul class="herder-nav-parent">
+						<!--有子集的添加 ICO-->				
+						<li>
+							<a href="">回到首页</a>
+						</li>
+						<li>
+							<a href="javascript:;">资料管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">我的资料</a>
+								</li>
+								<li>
+									<a href="">资料修改</a>
+								</li>
+								<li>
+									<a href="">账号修改</a>
+								</li>
+								<li>
+									<a href="">密码修改</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">业务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">推荐关系</a>
+								</li>
+								<li>
+									<a href="">业务分布</a>
+								</li>
+								<li>
+									<a href="">会员升级</a>
+								</li>
+							</ul>
+						</li>						
+						<li>
+							<a href="javascript:;">现金管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">信用转账</a>
+								</li>
+								<li>
+									<a href="">申请提款</a>
+								</li>
+								<li>
+									<a href="">公司账号</a>
+								</li>
+								<li>
+									<a href="">在线支付</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">财务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">积分币</a>
+								</li>
+								<li>
+									<a href="">奖金币</a>
+								</li>
+								<li>
+									<a href="">预存币</a>
+								</li>
+								<li>
+									<a href="">货币转换</a>
+								</li>
+								<li>
+									<a href="">汇账管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">商城中心</a>
+						</li>
+						<li>
+							<a href="">站内邮件</a>
+						</li>
+						<li>
+							<a href="javascript:;">新闻中心 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">最新公告</a>
+								</li>
+								<li>
+									<a href="">公司新闻</a>
+								</li>	
+							</ul>							
+						</li>
+					</ul>
+				</div>				
+			</div>
+		</header>
+		<!--中间开始-->
+		<section class="section">	
+			<!--有表单添加.form-->
+			<!--账号余额-->
+			<div class="section-main">
+				<p class="section-main-top clearfix"><img src="images/我的资料_03.png" /><span>推荐关系</span><a href="javascript:;" class="xiala"><img src="images/下拉三角.png"/></a></p>
+					<div class="section-main-nav">
+					<div id="menu">
+						<ul id="tree_root">
+							<!--<li>
+								<span><b class="Off">一级分类</b></span>
+								<ul class="wd">
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+								</ul>
+							</li>-->
+							<li>
+								<span><b class="Off">一级分类</b></span>
+								<ul class="wd">
+									<li class="a1">
+										<span><b class="Off">二级分类</b></span>
+										<ul class="wd">
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+										</ul>
+									</li>
+									<li>
+										<span><b class="Off">二级分类</b></span>
+										<ul class="wd">
+											<li><span><b>三级分类</b></span></li>
+											<li><span><b>三级分类</b></span></li>
+											<li class="a1">
+												<span><b class="Off">三级分类</b></span>
+												<ul class="wd">
+													<li><span><b>四级分类</b></span></li>
+													<li><span><b>四级分类</b></span></li>
+													<li><span><b>四级分类</b></span></li>
+													<li class="a1">
+														<span><b class="Off">四级分类</b></span>
+														<ul class="wd">
+															<li><span><b>五级分类</b></span></li>
+															<li><span><b>五级分类</b></span></li>
+															<li><span><b>五级分类</b></span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><span><b>二级分类</b></span></li>
+									<li><span><b>二级分类</b></span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>	
+										
+					</div>	
+			</div>			
+		</section>
+		<!--中间开始end-->
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/h_index.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_sc.png"/>
+							<span>我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_fl.png"/>
+							<span>商品分类</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<img src="images/top2.png"/>
+							<span>回到顶部</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->			
+	</body>
+</html>

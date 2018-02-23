@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<title>商城中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="header-log">
+			<div class="log">
+				<!--log-->
+				<h1>
+					<a href=""></a>
+				</h1>
+				<div class="log-right">
+					<img src="images/fl.png" />
+				</div>
+				<!--右侧隐藏导航-->
+				<div class="herder-nav">
+					<ul class="herder-nav-parent">
+						<!--有子集的添加 ICO-->
+						<li>
+							<a href="">回到首页</a>
+						</li>
+						<li>
+							<a href="javascript:;">资料管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">我的资料</a>
+								</li>
+								<li>
+									<a href="">资料修改</a>
+								</li>
+								<li>
+									<a href="">账号修改</a>
+								</li>
+								<li>
+									<a href="">密码修改</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">业务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">推荐关系</a>
+								</li>
+								<li>
+									<a href="">业务分布</a>
+								</li>
+								<li>
+									<a href="">会员升级</a>
+								</li>
+							</ul>
+						</li>						
+						<li>
+							<a href="javascript:;">现金管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">信用转账</a>
+								</li>
+								<li>
+									<a href="">申请提款</a>
+								</li>
+								<li>
+									<a href="">公司账号</a>
+								</li>
+								<li>
+									<a href="">在线支付</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">财务管理 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">积分币</a>
+								</li>
+								<li>
+									<a href="">奖金币</a>
+								</li>
+								<li>
+									<a href="">预存币</a>
+								</li>
+								<li>
+									<a href="">货币转换</a>
+								</li>
+								<li>
+									<a href="">汇账管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">商城中心</a>
+						</li>
+						<li>
+							<a href="">站内邮件</a>
+						</li>
+						<li>
+							<a href="javascript:;">新闻中心 <i class="ico"></i></a>
+							<ul class="herder-nav-next">
+								<li>
+									<a href="">最新公告</a>
+								</li>
+								<li>
+									<a href="">公司新闻</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="section">
+				<!--主体广告插件-->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href=""><img src="images/1.jpg"/></a></div>
+						<div class="swiper-slide"><a href=""><img src="images/2.jpg" /></a></div>
+						<div class="swiper-slide"><a href=""><img src="images/3.jpg"/></a></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<script>
+					var mySwiper = new Swiper('.swiper-container', {
+						pagination: ".swiper-pagination",
+						autoplay: 2000,
+						autoplayDisableOnInteraction: false,
+					})
+				</script>
+				<!--主题广告end-->	
+				<!--商品排列-->
+				<div class="section-main">
+					<h3 class="section-main-top"><span>产品展示</span></h3>
+					<ul class="section-main-nav clearfix">
+						<li>
+							<a href="">
+								<img src="images/123.jpg"/>
+								<p class="section-main-text">
+									文字介绍我单位玩的无无多无多无多无多无多无玩的我单位多
+								</p>								
+								<div class="section-main-footer">
+									<span>￥200</span><strong>购买</strong>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/213.jpg"/>
+								<p class="section-main-text">
+									文字介绍
+								</p>
+								<div class="section-main-footer">
+									<span>￥200</span><strong>购买</strong>
+								</div>
+							</a>
+						</li>	
+						<li>
+							<a href="">
+								<img src="images/123.jpg"/>
+								<p class="section-main-text">
+									文字介绍
+								</p>								
+								<div class="section-main-footer">
+									<span>￥200</span><strong>购买</strong>
+								</div>
+							</a>
+						</li>						
+					</ul>
+				</div>
+				<!--商品排列end-->
+		</section>
+		<!--中间开始end-->
+			<!--底部-->
+			<div class="footer">
+				<ul class="footer-nav">
+					<li>
+						<a href="">
+							<img src="images/h_index.png"/>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/hong_sc.png"/>
+							<span class="on">我的商城</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/h_fl.png"/>
+							<span>商品分类</span>
+						</a>
+					</li>
+					<li id="top">
+						<a href="">
+							<img src="images/top2.png"/>
+							<span>回到顶部</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--底部end-->			
+	</body>
+
+</html>

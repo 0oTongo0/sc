@@ -1,0 +1,97 @@
+@charset "UTF-8";
+th,td{
+    text-align: center;
+}
+.section{
+    width: 1200px;
+    margin: 0 auto;
+    .section-left{
+        width: 452px;
+    }
+    .section-right{
+        width: 730px;
+        margin-left: 10px;
+        .section-right-top,{
+            width: 100%;
+            text-align: center;
+            background-color: #6899ec;
+            line-height: 40px;
+        }
+            .top1-mian{
+                width: 100%;
+                margin-top: 50px;
+                .top1-left{
+                    width: 50%;
+                    text-align: center;
+                    background-color: #05B6A3;
+                    line-height: 30px;
+                    color: #fff;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+                .top1-right{
+                    width: 50%;
+                    text-align: center;
+                    background-color: #F4F4F4; 
+                    line-height: 30px;  
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;                 
+                }
+            }
+            a{
+                display: block;
+            }
+            .panel-body{
+                color: #006600;
+                p{
+                    line-height: 35px;
+                }
+                img{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+//       商城
+        .section-right-img{
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #E0E0E0;
+            position: relative;
+            p{
+                line-height: 35px;
+            }
+            .section-right-img-link{
+                display: block;
+                padding-right: 50px;
+                color: #fff;
+                margin-top: 0px;
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                margin-top: -15px;
+                font-size: 16px;
+                padding: 5px;
+                background-color: #6899ec;
+                border: 0px solid #fff;
+                border-radius: 4px;
+            }
+            img{
+                display: block;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+//底部
+.footer{
+    width: 100%;
+    background: #222;
+    p{
+        width: 1200px;
+        line-height: 35px;
+        margin: 0 auto;
+        color: #fff;
+    }
+}

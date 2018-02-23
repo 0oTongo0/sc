@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/sigin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+		</script>
+		<style type="text/css">
+		 .centre-main-form-width .dw {
+			    position: absolute;
+			    right: 1.11rem;
+			    top: 0;
+			    line-height: 40px;
+			    color: #fff;
+			    z-index: 99;
+			    cursor: pointer;
+			}
+			 .centre-main-form-width .dw img{
+			 	display: inline-block;
+			 	height: 1.8rem;
+			 }
+		</style>
+	</head>
+	<body>
+		<section class="main">
+			<form action="" method="post" class="centre-main-form">
+				<p>注册</p>
+				<div class="centre-main-form-width">
+					<input type="text" placeholder="编号:" id="text" readonly="readonly"/>
+					<span class="centre-main-form-width-text">11</span>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="text" name="" id="" value="" placeholder="手机号"/>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="password" name="" id="" value="" placeholder="密码"/>
+				</div>
+				<div class="centre-main-form-width">
+					<input type="" name="" id="yz" value="" placeholder="验证码6位数" />
+					<input type="button" id="btn" value="免费获取验证码" />
+				</div>
+				<div class="centre-main-form-width">
+					<input type="" name="" id="yz2" value="" placeholder="图片验证码" />
+					<div class="dw"><img src="img/log.png"/></div>
+					<div class="centre-main-form-text">
+					</div>
+				</div>				
+				<div class="centre-main-form-width">
+					<input type="submit" value="立即注册" id="sub"/>
+				</div>
+				<input type="submit" value=""/>
+			</form>
+		<div class="voice">
+			<span class="cn">中文</span>
+			<span class="en">英文</span>
+		</div>
+		</section>
+	</body>
+	<script>
+			//	验证码
+			$(function(){
+		var wait=60;  
+		function time(o) {  
+		        if (wait == 0) {  
+		            o.removeAttribute("disabled");            
+		            o.value="免费获取验证码";  
+		            wait = 60;  
+		        } else {  
+		            o.setAttribute("disabled", true);  
+		            o.value="重新发送(" + wait + ")";  
+		            wait--;  
+		            setTimeout(function() {  
+		                time(o)  
+		            },  
+		            1000)  
+		        }  
+		    }  
+		$("#btn").click(function(){
+			time(this)
+		})
+						
+			})
+	</script>
+</html>

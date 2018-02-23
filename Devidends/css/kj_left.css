@@ -1,0 +1,15 @@
+.left-nav { width: 150px; overflow: hidden; }
+.left-nav .left-nav-top { width: 100%; background: #363432; text-align: center; }
+.left-nav .left-nav-top span { display: inline-block; line-height: 30px; font-weight: 700; padding: 20px 0; color: red; }
+.left-nav .left-nav-noe { background: #52504d; text-align: center; font-size: 14px; padding-bottom: 400%; }
+.left-nav .left-nav-noe a { display: block; color: #ffffff; }
+.left-nav .left-nav-noe a:hover { background: rgba(0, 0, 0, 0.1); }
+.left-nav .left-nav-noe > li { font-weight: 600; line-height: 39px; border-bottom: 1px solid #64625f; position: relative; }
+.left-nav .left-nav-noe > li span { display: block; color: #fff; cursor: pointer; position: relative; }
+.left-nav .left-nav-noe > li span:hover { background: rgba(0, 0, 0, 0.1); }
+.left-nav .left-nav-noe > li span strong { position: absolute; background: #363432; right: 0; font-weight: 600; font-size: 10px; padding: 1px 8px; border-radius: 3px 3px 3px 3px; top: 10px; right: 15px; line-height: normal; }
+.left-nav .left-nav-noe > li .left-nav-noe-hide { display: none; background: #363432; }
+.left-nav .left-nav-noe > li .left-nav-noe-hide a { display: block; color: #fff; font-size: 12px; }
+.left-nav .left-nav-noe > li .left-nav-noe-hide a:hover { background: rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=kj_left.css.map */

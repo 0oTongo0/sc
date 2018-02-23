@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/particulars.css" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/particulars.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<span class="header-left"><img src="images/返回.png" onclick="javascript:history.back(-1);"/></span>
+			<span class="header-center">商品详情</span>
+			<a href="" class="header-right">分类</a>
+		</header>
+		<section class="section">
+			<!--主体广告插件-->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/1.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/2.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/3.jpg" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script>
+				var mySwiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					paginationType: 'fraction',
+				})
+			</script>
+			<!--主题广告end-->
+			<!--详情 +价格-->
+			<div class="particulaars">
+					<p class="particulaars-top">文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明</p>
+					<div class="particulaars-footer">
+						<span>￥200</span>
+					</div>
+			</div>
+			<!--型号-->
+			<div class="model">
+				<p class="model-main">
+					<span>已选</span>
+				</p>
+				<div class="model-main-center">
+					<strong>一个默认的规格</strong>
+				</div>	
+				<div class="model-main-right">
+					<img src="images/右 (1).png"/>
+				</div>
+			</div>
+			<!--数量+立即购买-->
+			<div class="section-footer">
+				<!--加减-->
+				<div class="section-footer-left">
+					<span class="minus">-</span>
+					<input type="text" class="num" value="1"/>
+					<span class="add">+</span>
+				</div>
+				<input type="submit"  value="立即购买" class="sub"/>
+			</div>
+			<!--弹框-->
+			<div class="mc">
+				<div class="pop">
+					<p>规格<span class="del">&times;</span></p>
+					<span class="sapn on">白色</span>
+					<span class="sapn">黑色</span>	
+					<input type="submit" name="" id="" value="立即购买" class="sub2"/>
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>

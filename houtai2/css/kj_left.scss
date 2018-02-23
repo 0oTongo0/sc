@@ -1,0 +1,174 @@
+@charset "UTF-8";
+a:hover{
+    text-decoration: none;
+}
+$yc:#25AAE8;
+body{
+   
+}
+.header-top{
+    width: 100%;
+    padding: 10px 0;
+   background: rgb(44, 59, 65);
+    h1{
+        width: 80px;
+        height: 36px;
+        line-height: 50px;
+        text-indent: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .header-top-left{
+        margin-right: 50px;
+        p{
+            line-height: 15px;
+            margin-bottom: 10px;
+            strong{
+                color: red;
+            }
+            span{
+                color: #ddd;
+            }
+            i{
+                font-size: 16px;
+                margin-right: 5px;
+                color: #ddd;
+            }
+        }
+        .header-top-left-ol{
+            background: rgba(245,245,245,0.2);
+        }
+        ol{
+            a{
+                display: inline-block;
+                vertical-align: middle;
+                color: #fff;
+            }
+            i{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 3px;
+            }
+        }
+    }
+}
+//主体
+.mian{
+    width: 100%;
+    text-align: center;
+    .nav-left{
+        width: 12%;
+        background: rgb(44, 59, 65);
+        border-right: 5px solid #efefef;
+        position: relative;
+//      overflow: auto;
+//      padding-bottom: 999px;
+//      margin-bottom: -999px;
+        &:after{
+            content: "";
+            display: block;
+            width: 12%;
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            z-index: -1;
+            background: rgb(44, 59, 65);
+            border-right: 5px solid #efefef;
+        }
+        .nav-left-top{
+            font-size: 30px;
+            text-align: center;
+            line-height: 40px;
+            background: #1e282c;
+            text-shadow: 1px 1px 2px #ddd;
+            padding: 6px 0;
+            color: #fff;
+        }
+        .nav-left-fj{
+            width: 100%;
+            background: rgb(44, 59, 65);
+            &>li{
+                border-bottom: 1px solid #64625f;
+                span{
+                    display: block;
+                    width: 100%;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 35px;
+                    color: #b8c7ce;
+                    background: rgb(34, 45, 50);
+                    &:hover{
+                        background: rgb(30, 40, 44);
+                    }
+                }
+            }
+            .nav-left-ez{
+                display: none;
+                background: rgb(44, 59, 65);
+                li{
+                    line-height: 35px;
+                    a{
+                        color: #fff;
+                        font-size: 12px;
+                        display: block;
+                        &:hover{
+                            background: #1e282c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-ringt{
+        width: 83%;
+        background-color: #fff;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
+//  下拉的样式
+        #menu .nav-left-fj {
+            overflow: hidden;
+        }
+        
+        #menu .nav-left-fj li b {
+            font-weight: normal;
+            position: relative;
+            padding-left: 16px;
+        }
+        
+        #menu .nav-left-fj li b:before {
+            display: block;
+            font-size: 0;
+            top: 0px;
+            left: 0;
+            content: "";
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+            border: solid 1px transparent;
+            transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            position: absolute;
+        }
+        
+        #menu .nav-left-fj li .On:before{
+            top: 1px;
+            border-bottom-color: #fff;
+            border-right-color: #fff;
+            transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -moz-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+        
+        #menu .nav-left-fj li .Off:before {
+            top: 3px;
+            border-top-color: #fff;
+            border-right-color: #fff;
+        }

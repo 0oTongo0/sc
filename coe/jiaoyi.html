@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuti.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<iframe width="100%" id="iframeid" onload="Javascript:SetCwinHeight()" frameborder="0" src="top.html"  scrolling="no"></iframe>
+		</div>
+		<div class="section clearfix">
+			<div class="fl_lt section-left">
+				<iframe width="100%" id="iframeid2" onload="Javascript:left()" frameborder="0" src="zuo.html"  scrolling="no" height="702px"></iframe>
+			</div>
+			<div class="fl_lt section-right">
+				<p class="section-right-top">我的交易</p>
+				<div class="top1-mian clearfix">
+					<div class="top1-left fl_lt" style="background: #6899ec;">我购买的</div>
+					<div class="top1-right fl_rt">我出售的</div>
+				</div>
+		<table class="table table-hover  table-bordered" style="text-align: center;">
+		  <caption style="text-align: center;">内容列表</caption>
+		  <thead >
+		    <tr>
+		      <th>11111111111</th>
+		      <th>2111111111</th>
+		      <th>3111111111</th>
+		      <th>4111111111</th>
+		      <th>5111111111</th>
+		      <th>611111111111</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>1</td>
+		      <td>2</td>
+		      <td>3</td>
+		      <td>4</td>
+		      <td>5</td>
+		      <td>
+		      	<button class="btn btn-primary btn-xs">修改</button>
+		      	<button class="btn btn-danger btn-xs">删除</button>
+		      	<button class="btn btn-warning btn-xs">关闭</button>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
+			</div>
+		</div>
+		<div class="footer">
+			<p>版权问题</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+	function SetCwinHeight()
+	{
+	    var iframeid=document.getElementById("iframeid");
+	    if (document.getElementById)
+	    {
+	        if (iframeid && !window.opera)
+	        {
+	            if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+	                iframeid.height = iframeid.contentDocument.body.offsetHeight;
+	            }
+	            else if(iframeid.Document && iframeid.Document.body.scrollHeight)
+	            {
+	                iframeid.height = iframeid.Document.body.scrollHeight;
+	            }
+	        }
+	    }
+	}
+	</script>
+</html>
+
+</html>
+

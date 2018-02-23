@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/hy-dl.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+			 $(function(){
+			 	//点击眼睛
+				$("#butt_b").click(function(){
+					var pas = $(".pass").attr("type");
+					if(pas =="password"){
+						$(".pass").attr("type","text");
+						 $("#butt_b").addClass("but");
+					}else{
+						$(".pass").attr("type","password")
+						$("#butt_b").removeClass("but");
+					}
+				})	
+				$("#sub").click(function(){
+					var val1 = $("#nane").val();
+					var val2 = $(".pass").val();
+					var val3 = $(".yz").val();
+					if(val1 ==""){
+						$(".pop").text("用户名不能为空")
+						$(".pop").stop().show().delay(1000).hide(300);
+						return false;
+					}else if(val2 ==""){
+						$(".pop").text("密码不能为空")
+						$(".pop").stop().show().delay(1000).hide(300);	
+						return false;
+					}else if(val3 ==""){
+						$(".pop").text("验证码不能为空")
+						$(".pop").stop().show().delay(1000).hide(300);	
+						return false;	
+					}else{
+						return true;
+					}
+				})
+		     })
+		</script>
+		<style type="text/css">
+			.yun{
+				width: 12vw;
+				height: 1rem;
+				-webkit-animation:12s linear cloudMove infinite;
+				animation: 8s linear cloudMove infinite;
+				position: absolute;
+			}
+			.yun1{
+				left: 4vw;
+				top: 14vw;
+				background: url(images/yun1.png)no-repeat;
+				background-size: 10vw;
+			}
+			.yun2{
+				left: 13vw;
+				top: 6vw;
+				background: url(images/yun2.png)no-repeat;
+				background-size: 10vw;
+			}	
+			.yun3{
+				right: 16vw;
+				top: 4vw;
+				background: url(images/yun1.png)no-repeat;
+				background-size: 10vw;				
+			}
+			.yun4{
+				right: 5vw;
+				top: 12vw;
+				background: url(images/yun2.png)no-repeat;
+				background-size: 10vw;				
+			}		
+			@-webkit-keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}			
+			@keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<!--云朵-->
+			<div class="yun yun1">
+			</div>
+			<div class="yun yun2">
+			</div>
+			<div class="yun yun3">
+			</div>
+			<div class="yun yun4">
+			</div>
+			<!--end-->
+			<div class="main">
+				<h1>金宝管理</h1>
+				<form action="" >
+					<div class="main-top">				
+						<input type="text"  id="nane"  placeholder="请输入会员名" class="text"/>
+					</div>
+					<div class="main-top">
+						<input type="password" placeholder="请输入密码" class="pass"/>
+						<!--眼睛图标↓-->
+						<a href="javascript:;" class="but_b" id="butt_b"></a>
+					</div>
+					<div class="main-top">
+						<input type="text"  class="yz" placeholder="验证码"/>
+						<img src="" id="imgs"/>
+					</div>
+					<input type="submit" value="登录" class="sub" id="sub"/>
+					<div class="link">
+						<a href="">
+							忘记密码？
+						</a>
+					</div>
+				</form>
+			</div>
+			<!--弹框-->
+			<div class="pop">
+				不能为空
+			</div>
+		</section>
+	</body>
+</html>

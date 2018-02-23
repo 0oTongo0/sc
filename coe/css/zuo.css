@@ -1,0 +1,14 @@
+.mian { width: 350px; }
+.mian .mian-nav { width: 100%; }
+.mian .mian-nav li { width: 46%; border: 1px solid #ddd; margin-bottom: 10px; margin-top: 10px; height: 200px; }
+.mian .mian-nav li a { color: #333; line-height: 35px; font-size: 14px; display: inline-block; width: 100%; text-align: center; }
+.mian .mian-nav li:nth-child(odd) { margin-left: 25px; }
+.mian .mian-nav .mian-nav-gr { width: 100%; border: 1px solid #ddd; padding-bottom: 20px; }
+.mian .mian-nav .mian-nav-gr p { width: 100%; line-height: 30px; background-color: #f4f4f4; text-indent: 40px; font-size: 16px; }
+.mian .mian-nav .mian-nav-gr span { color: #999; }
+.mian .mian-nav .mian-nav-gr i { color: #666; font-style: normal; }
+.mian .mian-nav .mian-nav-gr .mian-nav-gr-zt { text-align: center; line-height: 35px; letter-spacing: 2px; font-size: 16px; color: red; }
+.mian .mian-nav .mian-nav-gr .mian-nav-gr-nr { font-size: 14px; width: 100%; padding-left: 50px; text-align: left; line-height: 25px; }
+@media (max-width: 340px) { .mian .mian-nav li { background-image: none; line-height: 35px; height: 35px; } }
+
+/*# sourceMappingURL=zuo.css.map */

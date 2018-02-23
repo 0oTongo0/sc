@@ -1,0 +1,22 @@
+th, td { text-align: center; }
+
+.section { width: 1200px; margin: 0 auto; }
+.section .section-left { width: 452px; }
+.section .section-right { width: 730px; margin-left: 10px; }
+.section .section-right .section-right-top { width: 100%; text-align: center; background-color: #6899ec; line-height: 40px; }
+.section .section-right .top1-mian { width: 100%; margin-top: 50px; }
+.section .section-right .top1-mian .top1-left { width: 50%; text-align: center; background-color: #05B6A3; line-height: 30px; color: #fff; border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+.section .section-right .top1-mian .top1-right { width: 50%; text-align: center; background-color: #F4F4F4; line-height: 30px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+.section .section-right a { display: block; }
+.section .section-right .panel-body { color: #006600; }
+.section .section-right .panel-body p { line-height: 35px; }
+.section .section-right .panel-body img { width: 100%; text-align: center; margin-bottom: 10px; }
+.section .section-right .section-right-img { width: 100%; padding: 10px 0; border-bottom: 1px solid #E0E0E0; position: relative; }
+.section .section-right .section-right-img p { line-height: 35px; }
+.section .section-right .section-right-img .section-right-img-link { display: block; padding-right: 50px; color: #fff; margin-top: 0px; display: block; position: absolute; right: 10px; top: 50%; margin-top: -15px; font-size: 16px; padding: 5px; background-color: #6899ec; border: 0px solid #fff; border-radius: 4px; }
+.section .section-right .section-right-img img { display: block; margin-right: 5px; }
+
+.footer { width: 100%; background: #222; }
+.footer p { width: 1200px; line-height: 35px; margin: 0 auto; color: #fff; }
+
+/*# sourceMappingURL=zhuti.css.map */

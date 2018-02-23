@@ -1,0 +1,53 @@
+			.yun{
+				width: 12vw;
+				height: 1rem;
+				-webkit-animation:4s linear cloudMove infinite;
+				animation: 4s linear cloudMove infinite;
+				position: absolute;
+			}
+			.yun1{
+				left: 4vw;
+				top: 14vw;
+				background: url(../images/yun1.png)no-repeat;
+				background-size: 10vw;
+			}
+			.yun2{
+				left: 13vw;
+				top: 6vw;
+				background: url(../images/yun2.png)no-repeat;
+				background-size: 10vw;
+			}	
+			.yun3{
+				right: 16vw;
+				top: 4vw;
+				background: url(../images/yun1.png)no-repeat;
+				background-size: 10vw;				
+			}
+			.yun4{
+				right: 5vw;
+				top: 12vw;
+				background: url(../images/yun2.png)no-repeat;
+				background-size: 10vw;				
+			}		
+			@-webkit-keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}			
+			@keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}

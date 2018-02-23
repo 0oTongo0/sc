@@ -1,0 +1,138 @@
+@charset "UTF-8";
+$yc:#17b1f7;
+$bgc:#F7F7F5;
+$zyc:#5d6472;
+$rem:23;
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../img/aa.jpg)no-repeat fixed;
+    background-size: cover;
+}
+input{
+    display: block;
+   background: rgba(255,255,255,0.7);
+   font-size: 14/$rem+rem;
+}
+.main{
+    width: 100%;
+    padding: 0 30/$rem+rem;
+     padding-top: 30/$rem+rem;
+    .centre-main-form{
+        width: 100%;
+        background: rgba(255,255,255,0.5);
+        p{
+            font-size: 16/$rem+rem;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            color: #464646;
+            line-height: 20/$rem+rem;
+            padding-bottom: 10px;
+        }
+        .centre-main-form-width{
+            width: 100%;
+            position: relative;
+            padding: 0 25/$rem+rem;
+            font-size: 0;
+            padding-bottom: 10/$rem+rem;
+            input{
+                display: block;
+                width: 100%;
+                line-height: 25/$rem+rem;
+                display: block;
+                padding: 9/$rem+rem;
+                border-radius: 2px;
+            }
+            #text{
+                width: 20%;
+                display: inline-block;
+                vertical-align: middle;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            .centre-main-form-width-text{
+                width: 80%;
+                color: red;
+                display: inline-block;
+                vertical-align: middle;
+                background: rgba(255,255,255,0.7);
+                line-height: 25/$rem+rem;
+                padding: 9/$rem+rem;
+                font-size: 16/$rem+rem;
+            }
+            label{
+                width: 20%;
+                font-size: 14/$rem+rem;
+            }
+            select{
+                font-size: 14/$rem+rem;
+                line-height: 40/$rem+rem;
+                padding-bottom: 5/$rem+rem;
+            }
+            #btn{
+                width: 40%;
+                 position: absolute;
+                 right: 25/$rem+rem;
+                 top: 0;
+                 background-color: #17b1f7;
+                 line-height: 25/$rem+rem;
+                 color: #fff;
+                 z-index: 99;
+                 cursor: pointer;
+                 text-align: center;
+                 margin: 0;
+            }
+                #sub{
+                    background-color: #17b1f7;
+                    border-color: #17b1f7;
+                    color: #fff;
+                    margin-top: 20/$rem+rem;
+                    cursor: pointer;
+                }
+        }
+    }
+    #mt{
+        margin-top: 45%;
+    }
+                .voice{
+                width: 150/$rem+rem;
+                position: absolute;
+                top: 5/$rem+rem;
+                right: 10/$rem+rem;
+                font-size: 0;
+                margin-left: -5%;
+            }
+            .voice span{
+                display: inline-block;
+                width: 45%;
+                line-height: 25/$rem+rem;
+                margin-left: 5%;
+                font-size: 14/$rem+rem;
+                color: #ddd;
+                text-align: center;
+                border-radius: 20%;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            .voice .cn{
+                background: url(../img/cn.gif)no-repeat center left;
+            }
+            .voice .en{
+                background: url(../img/en.gif)no-repeat center left;
+            }
+            .mc{
+                position: absolute;
+                display: none;
+                width: 300/$rem+rem;
+                line-height: 30/$rem+rem;
+                text-align: center;
+                background-color: #fff;
+                font-size: 14/$rem+rem;
+                color: red;
+                border-radius: 4px;
+                top: 15%;
+                left: 50%;
+                margin-left: -150/$rem+rem;
+            }
+}

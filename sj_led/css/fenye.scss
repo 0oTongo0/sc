@@ -1,0 +1,46 @@
+@charset "UTF-8";
+$rc:200;
+html {
+    font-size: calc(100vw/3.75);
+}
+.fenye{
+    width: 100%;
+    display: flex;
+   background: rgba(0,0,0,.2);
+    padding: 20/$rc+rem;
+    margin-top: 30/$rc+rem;
+    .fenye-left{
+        width: 120/$rc+rem;
+        height: 60/$rc+rem;
+        background: #eee;
+        a{
+            display: block;
+            line-height: 60/$rc+rem;
+            color: #464646;
+            font-size: 25/$rc+rem;
+            text-align: center;
+        }
+    }
+    .fenye-center{
+        flex: 1;
+        text-align: center;
+        height: 60/$rc+rem;
+        line-height: 60/$rc+rem;
+         align-items: center;
+         position: relative;
+        .fenye-center-sel{
+            width: 240/$rc+rem;
+            height: 60/$rc+rem;
+            margin-top: 0/$rc+rem;
+            position: absolute;
+            padding:0 5%;
+            left: 50%;
+            margin-left: -120/$rc+rem;
+            border: none;
+            font-size: 25/$rc+rem;
+        }
+    }
+    .fenye-right{
+        @extend  .fenye-left;  
+    }
+}

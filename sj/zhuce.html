@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/hy-dl.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+			<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+		</script>
+		<style type="text/css">
+			.yun{
+				width: 12vw;
+				height: 1rem;
+				-webkit-animation:12s linear cloudMove infinite;
+				animation: 8s linear cloudMove infinite;
+				position: absolute;
+			}
+			.yun1{
+				left: 4vw;
+				top: 14vw;
+				background: url(images/yun1.png)no-repeat;
+				background-size: 10vw;
+			}
+			.yun2{
+				left: 13vw;
+				top: 6vw;
+				background: url(images/yun2.png)no-repeat;
+				background-size: 10vw;
+			}	
+			.yun3{
+				right: 16vw;
+				top: 4vw;
+				background: url(images/yun1.png)no-repeat;
+				background-size: 10vw;				
+			}
+			.yun4{
+				right: 5vw;
+				top: 12vw;
+				background: url(images/yun2.png)no-repeat;
+				background-size: 10vw;				
+			}		
+			@-webkit-keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}			
+			@keyframes cloudMove{
+				0{
+					transform: translate3d(0, 0, 0);
+				}
+				50%{
+					transform: translate3d(1rem, -0.1rem, 0);
+				}
+				100%{
+					transition: translate3d(0, 0, 0);
+				}
+			}
+		</style>		
+	<body>
+		<section>
+						<!--云朵-->
+			<div class="yun yun1">
+			</div>
+			<div class="yun yun2">
+			</div>
+			<div class="yun yun3">
+			</div>
+			<div class="yun yun4">
+			</div>
+			<!--end-->
+			<div class="main">
+				<h1>众联商城</h1>
+				<form action="" >
+					<div class="centre-main-radio clearfix">
+						<!--<div class="row">-->
+						<div class="centre-main-radio-left fl_lt bg on">
+							<!--<input type="radio" name="login" id="dealer" value="" checked="checked" />-->
+							<label for="dealer" class="lab">商家</label>
+						</div>
+						<div class="centre-main-radio-right fl_lt bg">
+							<!--<input type="radio" name="login" id="customer" value="" />-->
+							<label for="customer" class="lab">消费者</label>
+						</div>
+						<!--</div>-->
+					</div>
+					<!--<div>
+						<input type="number" name="" id="phone" value="" placeholder="推荐人"/>
+					</div>-->
+					<div>
+						<input type="number" name="" id="phone" value="" placeholder="请输入用户名"/>
+					</div>
+					<!--<div style="width: 100%; text-align: center; margin-top: 1rem;">
+						<input type="radio" name="sex" id="man" value="" class="rad"/><label class="lab" for="man" style="color: #fff;margin-right: 4rem;">男</label>
+						<input type="radio" name="sex" id="woman" value="" class="rad"/><label class="lab" for="woman" style="color: #fff;">女</label>
+					</div>-->
+					<div>
+						<input type="password" name="" id="pass" value="" placeholder="请输入密码"/>
+					</div>
+					<!--<div>
+						<input type="text" name="" id="pass" value="" placeholder="请输入邮箱"/>
+					</div>-->
+					<div>
+						<input type="text" name="" id="pass" value="" placeholder="请输入手机号"/>
+					</div>
+					<div style="position: relative;">
+						<input type="text" name="" id="pass" value="" placeholder="请输入验证码"/>
+						<button style="position: absolute; right: 0; top: 0;background-color: rgba(8, 32, 34,1); border: 0; line-height: 2.02rem;padding: 0 0.6rem;font-size:0.6rem;color: #fff;">获取验证码</button>
+					</div>
+					<input type="submit" value="立即注册"/>
+				</form>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+//	背景切换
+		$(".centre-main-radio>.bg").click(function() {
+				$(this).addClass("on").siblings().removeClass("on")
+		})
+//		$(".text").blur(function(){
+//				if($("#name").val() == ""){
+//					$("#name-text").text("请输入会员名");
+//					$("#name-text").css("color","red");
+//				}else{
+//					$("#name-text").text("")
+//				}
+//			})
+//			$("#name").blur(function(){
+//				if($("#name").val() != ""){
+//					$("#name-s").text("")
+//				}
+//			})		
+})
+	</script>
+</html>
+

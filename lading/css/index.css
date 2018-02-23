@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body { font-family: "微软雅黑"; background: url(../img/m-bg.png); }
+
+.header { width: 100%; }
+.header h1 { width: 100%; font-weight: 100; background: url(../img/logbg.jpg); }
+.header h1 a { display: block; width: 417px; height: 119px; margin: 0 auto; text-indent: -99999px; background: url(../img/download.png) no-repeat; }
+.header .nav { width: 100%; background-color: brown; color: #fff; }
+.header .nav .can { width: 1000px; margin: 0 auto; font-size: 0; }
+.header .nav .can li { line-height: 50px; font-size: 14px; margin-left: 10px; }
+.header .nav .can li.can-mg { margin-left: 520px; }
+.header .nav .can li a { display: block; color: #fff; }
+.header .nav .can li a .icon { margin-right: 5px; vertical-align: middle; }
+.header .nav .can li:hover { color: #333; }
+.header .nav .can li:hover a { color: #333; }
+
+.main { width: 100%; padding-top: 50px; padding-bottom: 100px; }
+.main h2 { width: 1000px; margin: 0 auto; color: #fff; line-height: 80px; padding-left: 20px; font-size: 20px; }
+.main .form { width: 1000px; margin: 0 auto; background: #f4f4f4; }
+.main form { width: 380px; margin: 0 auto; padding-top: 100px; padding-bottom: 50px; }
+.main form .select { width: 100%; font-size: 16px; margin: 10px auto; }
+.main form .select label { display: inline-block; width: 70px; vertical-align: middle; text-align: center; color: brown; font-weight: 700; }
+.main form .select input { width: 210px; line-height: 30px; padding-left: 5px; border-radius: 5px; margin-left: 10px; }
+.main form .form-footer { width: 100%; margin-top: 80px; }
+.main form .form-footer #sub { display: inline-block; width: 130px; color: #fff; line-height: 40px; border-radius: 10px; text-align: center; background: brown; }
+.main form .form-footer #sub:hover { background-color: #8ad900; }
+.main form .form-footer .link { display: inline-block; vertical-align: middle; margin-left: 20px; color: #333; }
+.main form .form-footer .link:hover { text-decoration: underline; color: red; }
+
+.footer { width: 100%; background: brown; }
+.footer h3 { width: 1000px; margin: 0 auto; color: #fff; line-height: 40px; padding-left: 20px; font-weight: 100; font-size: 14px; }
+
+/*# sourceMappingURL=index.css.map */

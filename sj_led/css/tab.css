@@ -1,0 +1,24 @@
+.section-tab {
+  width: 100%;
+  overflow: auto; }
+  .section-tab .tab-main {
+    width: 100%; }
+    .section-tab .tab-main th, .section-tab .tab-main td {
+      white-space: nowrap;
+      padding: 0.1rem;
+      font-size: 0.12rem;
+      text-align: center; }
+    .section-tab .tab-main thead tr {
+      border-top: 0.05rem solid #F4F4F4;
+      border-bottom: 0.05rem solid #F4F4F4;
+      background: #fff; }
+    .section-tab .tab-main thead th {
+      color: #a52a2a; }
+    .section-tab .tab-main tbody tr {
+      background: #fff; }
+      .section-tab .tab-main tbody tr td:nth-child(1) {
+        color: #888; }
+      .section-tab .tab-main tbody tr td:last-child {
+        color: #1f7eff; }
+
+/*# sourceMappingURL=tab.css.map */
