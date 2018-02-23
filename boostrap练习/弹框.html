@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<button class="btn btn-primary" data-toggle="modal" data-target="mymodal">点我</button>
+		<!--弹出的模态框-->
+		<div id="mymodal" class="modal fade bs-examlpe-modal-sm">
+			<!-- modal固定布局，上下左右都是0表示充满全屏，支持移动设备上使用触摸方式进行滚动。。-->
+			<div class="modal-dialog modal-sm">
+				<!-- modal-dialog默认相对定位，自适应宽度，大于768px时宽度600，居中-->
+				<div class="modal-content">
+					<!-- modal-content模态框的边框、边距、背景色、阴影效果。-->
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">
+                    <img src="image/footer_logo.png" alt=""/>
+                    <br/>
+                    微信电影演出票官网
+                </h4>
+					</div>
+					<div class="media-body">
+						<form action="#">
+							<div class="col-md-10 col-md-offset-1 myMP">
+								<input class="form-control" type="text" placeholder="手机/邮箱/用户名" />
+							</div>
+							<div class="col-md-10 col-md-offset-1 myMP">
+								<input class="form-control" type="text" placeholder="密码" />
+							</div>
+							<div class="col-md-10 col-md-offset-1 myMP">
+								<input type="checkbox" />下次自动登录
+							</div>
+							<div class="col-md-12 myB">
+								<input class="btn btn-primary form-control" type="submit" value="登录" />
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

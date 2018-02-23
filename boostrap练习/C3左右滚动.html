@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.nb{
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-right: -25px;
+			margin-left: -50px;
+			background: rgba(0,0,0,.5);
+			color: #fff;
+			-webkit-animation: wd 0.8s ease-in-out;
+			animation: wd 0.8s ease-in-out;
+		}
+		@keyframes wd{
+				10%, 90% {
+					transform: translate3d(-1px, 0, 0);
+				}
+				20%, 80% {
+					transform: translate3d(2px, 0, 0);
+				}
+				30%, 50%, 70% {
+					transform: translate3d(-4px, 0, 0);
+				}
+				40%, 60% {
+					transform: translate3d(4px, 0, 0);
+				}
+		}
+		body{
+			background-color: green;
+		}
+		.dade{
+			width: 100%;
+			overflow: hidden;
+		}
+		.dibu{
+			width: 200%;
+			height: 100px;
+			background: url(img/yunkuai.png);
+			background-size: 50%;
+			z-index: 99;
+			animation: img1 30s  infinite;
+		}
+		@keyframes img1{
+			0%{
+				transform: translateX(0);
+			}
+			50%{
+				transform: translateX(-25%);
+			}
+			100%{
+				transform: translateX(0);
+			}
+		}
+		.yhq{
+			width: 300px;
+			height: 150px;
+			border: 1px solid red;
+			font-size: 0;
+			text-align: center;
+		}
+		.yhq span{
+			display: inline-block;
+			width: 80%;
+			height: 100%;
+			background: #fff;
+			font-size: 14px;
+			line-height: 150px;
+		}
+		.yhq strong{
+			display: inline-block;
+			width: 18%;
+			height: 100%;
+			background-color: gold;
+			color: #fff;
+			border-left: 3px dotted #f4f4f4;
+			line-height: 150px;
+			z-index: 99999;
+			font-size: 14px;
+		}
+	</style>
+	<body>
+		<div>
+			点我
+		</div>
+		<div class="nb">
+			就是牛逼
+		</div>
+		<div class="dade">
+			<div class="dibu">
+			</div>
+		</div>
+		<div class="yhq">
+			<span>
+				什么什么东西
+				<b style="font-size: 16px;">55</b>
+			</span>
+			<strong>	
+				<b>
+					领
+					取
+				</b>
+			</strong>
+		</div>
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="" id="" value="" />
+		<input type="checkbox" name="quanxuan" id="wd" value="" />
+		<label for="wd">
+			全选
+		</label>
+	</body>
+	<script type="text/javascript">
+		$(function()
+	</script>
+</html>

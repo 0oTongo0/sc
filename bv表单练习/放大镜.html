@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+*{padding: 0; margin: 0;}  
+    #father .small{width: 50px; height: 50px; border: 2px solid #ccc; bottom: 0; position: absolute;}  
+    #father .second{left: 70px;}  
+    .third{left: 140px;}  
+    #father{position: relative; top: 100px; left: 50px; height: 460px;}  
+    #container{position: absolute;  width: 400px; height: 400px;}  
+    #container img{position: absolute; display: none;}  
+  
+    .shade{width: 200px; height: 200px; position: absolute; background: #000; opacity: 0.4; top: 0;  
+        left: 0; display: none;}  
+    .big{width: 400px; height: 400px; position: absolute; top: 100px; overflow: hidden; left: 500px; display: none;}  
+    .big img{width: 800px; height: 800px; position: absolute; display: none;} 	
+	</style>
+	<body>
+    <div id="father">  
+        <div id="container">  
+            <img src="images/dd.jpg" style="display: block;">  
+            <img src="images/bx.jpg" >  
+            <div class="shade"></div>  
+        </div>  
+        <div class="images/bx.jpg"><img src="images/dd.jpg"></div>  
+        <div class="small second"><img src="images/14.jpg"></div>  
+    </div>  
+      
+    <div class="big">  
+        <img src="images/dd.jpg" style="display: block;">  
+        <img src="images/14.jpg">  
+    </div> 		
+	</body>
+</html>
+<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	        $(function () {  
+  
+            changePic('.first',0);  
+            changePic('.second',1);  
+  
+            var shadeWidth = $('.shade').width(),//阴影的宽度  
+                shadeHeight = $('.shade').height(),//阴影的高度  
+                middleWidth = $('#container').width(),//容器的宽度  
+                middleHeight = $('#container').height(),//容器的高度  
+                bigWidth = $('.big').width(),//放大图片盒子的宽度  
+                bigHeight = $('.big').height(),//放大图片盒子的高度  
+                rateX = bigWidth / shadeWidth,//放大区和遮罩层的宽度比例  
+                rateY = bigHeight / shadeHeight;//放大区和遮罩层的高度比例  
+  
+            //当鼠标移入与移出时阴影与放大去显现/消失  
+            $('#container').hover(function() {  
+                $('.shade').show();  
+                $('.big').show();  
+            }, function() {  
+                $('.shade').hide();  
+                $('.big').hide();  
+            }).mousemove(function(e) {//当鼠标移动时，阴影和放大区图片进行移动  
+  
+                //记录下光标距离页面的距离  
+                var x = e.pageX,  
+                    y = e.pageY;  
+  
+                //设置遮罩层的位置  
+                $('.shade').offset({  
+                    top: y-shadeHeight/2,  
+                    left: x-shadeWidth/2  
+                });       
+  
+                //获取遮罩层相对父元素的位置  
+                var cur = $('.shade').position(),  
+                    _top = cur.top,  
+                    _left = cur.left,  
+                    hdiffer = middleHeight - shadeHeight,  
+                    wdiffer = middleWidth - shadeWidth;  
+  
+                if (_top < 0) _top = 0;  
+                else if (_top > hdiffer) _top = hdiffer;  
+                if (_left < 0) _left = 0;  
+                else if (_left > wdiffer) _left =wdiffer;  
+  
+                //判断完成后设置遮罩层的范围  
+                $('.shade').css({  
+                    top: _top,  
+                    left: _left  
+                });  
+  
+                //设置放大区图片移动  
+                $('.big img').css({  
+                    top: - rateY*_top,  
+                    left: - rateX*_left  
+                });  
+  
+            });;  
+  
+            //封装的改变图片显示的函数  
+            function changePic (element,index) {  
+                $(element).click(function() {  
+                    $('#container img').eq(index).css('display', 'block').siblings().css('display', 'none');  
+                    $('.big img').eq(index).css('display', 'block').siblings().css('display', 'none');  
+                });  
+            }  
+              
+        });  
+
+</script>

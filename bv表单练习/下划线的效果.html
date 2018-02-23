@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 40px;
+			margin: 50px auto;
+			position: relative;
+/*			overflow: hidden;*/
+		}
+		input{
+			width: 200px;
+			height: 40px;
+			border-bottom: 1px solid #999;
+		}
+		i{
+			display: block;
+			position: absolute;
+			height: 1px;
+		    left: 50%;
+		    width: 0;
+			background: red;
+			bottom: 0px;
+			transition: all 0.5s ease-in-out;
+		}
+		.on{
+			width: 100%;
+			left: 0%;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#wd").focus(function(){
+//				alert("wd")
+				$(".qq").addClass("on")
+			})
+			$("#wd").blur(function(){
+				$(".qq").removeClass("on")
+			})
+		})
+	</script>
+	<body>
+		<div>
+			<input type="text" name="" id="wd" value="" placeholder="请输入你想要的"/>
+			<i class="qq"></i>
+		</div>
+	</body>
+</html>

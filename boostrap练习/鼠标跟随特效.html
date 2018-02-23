@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery弹出光标跟随提示框- 何问起</title><base target="_blank" />
+<style type="text/css">
+#tooltip {
+position: absolute;
+border: #333 1PX solid;
+background: #f7f5d1;
+padding: 1px;
+color: #333;
+display: none;
+padding: 1px;
+}a{color:blue}
+#hovertree,#yestop,#hoverclock{width:789px;margin:20px auto}
+</style>
+<script src="http://hovertree.com/ziyuan/jquery/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div id="hovertree"><a href="http://hovertree.com" class="tooltip" title="何问起首页">何问起首页</a> <a href="http://hovertree.com/texiao/" class="tooltip" title="网页特效库">特效</a></div>
+<div id="yestop"><a href="http://hovertree.com/h/bjaf/tishikuang.htm" class="tooltip" title="本效果代码">原文</a>
+<a href="http://hovertree.com/texiao/jsstudy/2/" class="tooltip" title="本效果网址">效果</a>
+<br /><br /><a href="#" class="tooltip" title="弹出层">test</a>
+</div>
+
+<div id="hoverclock">请把光标在各个链接上面移动，将会弹出跟随光标的提示框。
+
+<br /></div>
+<script>
+$(function () {
+var x = 15;
+var y = 10;
+$("a.tooltip").mouseover(function (e) { //当鼠标指针从元素上移入时 
+this.myTitle = this.title;
+this.title = "";
+var tooltip = "<div id='tooltip'>" + this.myTitle + "</div>";
+$("body").append(tooltip);
+$("#tooltip").css({ "top": (e.pageY + y) + "px", "left": (e.pageX + x) + "px" }).show("fast");
+}).mouseout(function () { //当鼠标指针从元素上移开时 
+this.title = this.myTitle;
+$("#tooltip").remove();
+}).mousemove(function (e) { //当鼠标指针从元素上移动时 
+$("#tooltip").css({ "top": (e.pageY + y) + "px", "left": (e.pageX + x) + "px" });
+});
+});
+</script>
+</body>
+</html>

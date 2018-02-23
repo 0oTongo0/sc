@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fadjing.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		#showbox { background:#eee;}
+		#showbox span { background:url(../images/whitebg.png) repeat;}
+		#showsum { left:25px; margin-top:10px;}
+		#showsum span { border:1px solid #ddd;}
+		#showsum span.sel { border:1px solid #f60;}
+		
+		.showpage { width:400px; position:relative;}
+		.showpage a { display:block; width:15px; border:1px solid #ddd; height:60px; line-height:60px; background:#eee; text-align:center; font-size:18px; position:absolute; left:0; top:-62px; text-decoration:none; color:#999;}
+		.showpage a#shownext { left:auto; right:0;}
+		.showpage a:hover { background:#ccc; color:#777;}
+	</style>
+	<body>
+		<div id="showbox">
+		  <img src="images/ba.jpg" width="320" height="180" />
+		  <img src="images/dd.jpg" width="320" height="180" />
+		</div><!--展示图片盒子-->
+		<div id="showsum"></div><!--展示图片里边-->
+		<p class="showpage">
+		  <a href="javascript:void(0);" id="showlast"> < </a>
+		  <a href="javascript:void(0);" id="shownext"> > </a>
+		</p>
+	</body>
+	<script type="text/javascript">
+  $(document).ready(function(){
+	  var showproduct = {
+		  "boxid":"showbox",
+		  "sumid":"showsum",
+		  "boxw":400,//宽度,该版本中请把宽高填写成一样
+		  "boxh":400,//高度,该版本中请把宽高填写成一样
+		  "sumw":60,//列表每个宽度,该版本中请把宽高填写成一样
+		  "sumh":60,//列表每个高度,该版本中请把宽高填写成一样
+		  "sumi":7,//列表间隔
+		  "sums":5,//列表显示个数
+		  "sumsel":"sel",
+		  "sumborder":1,//列表边框，没有边框填写0，边框在css中修改
+		  "lastid":"showlast",
+		  "nextid":"shownext"
+		  };//参数定义	  
+	 $.ljsGlasses.pcGlasses(showproduct);//方法调用，务必在加载完后执行
+  });
+</script>
+
+</html>

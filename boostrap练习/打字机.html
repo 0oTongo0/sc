@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style>
+		#page2Txt{
+			display: none;
+		}
+	</style>
+	<body>
+		<div class="page">
+		    <p class="li-none" id="page2Txt">
+		    深圳达农保险经纪有限公司成立于2016年5月，总部设立于深圳，立足打造农村互联网保险平台，首期注册资本5000万人民币，是诺普信农化股份有限公司控股的保险经纪服务商。达农保险将一直秉持“保险基于需求”的理念，以国家农业现代化的发展趋势为导向，积极发挥保险经纪金融工具的特有优势，以创新的模式，深入三农，为农业的现代化发展提供保障。展望未来，达农保险将以金融手段持续附着产业共同发展。
+		    </p>
+		    <div class="el-page2 li-none">
+		        <h1 class="page2-title">公司介绍</h1>
+		        <p class="fenge-solid"></p>
+		        <p class="page2-txt" id="page2TxtShow"></p>
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var i = 0,
+			    timer = setInterval(function(){ 
+			        i++;
+			        $("#page2TxtShow").text($("#page2Txt").text().substring(0,i));
+			        if ($("#page2TxtShow").text() === $("#page2Txt").text()) {	
+			            clearInterval(timer);
+			        }
+			    },60);
+		})
+	</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 0;
+			background: green;
+			transition: all 2s;
+		}
+		.on{
+			height: 100px;
+		}
+	</style>
+	<body>
+		<div>
+			11111111111111111111111111111111111
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("div").on('click',function(){
+				$(this).toggleClass("on")	
+//				var wd = $(this);
+//				setTimeout(function(){
+////					alert("wd")
+//				    wd.toggleClass("on")
+//				}, 100 );				
+			})
+		
+		})
+	</script>
+</html>

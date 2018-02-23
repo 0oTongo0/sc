@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ond>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			display: flex;
+			width: 500px;
+			height: 300px;
+			border: 10px solid red;
+			margin: 50px auto;
+			flex-direction: row;    /*设置主轴的位子 默认（row）水平      column  垂直*/
+			justify-content: flex-end;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			flex: 1;
+			background-color: #ccc;
+		}
+		.item{
+			la
+		}
+	</style>
+	<script type="text/javascript">
+		function initPage()   
+			{   
+			    var objLoading = document.getElementById("LoadingBar");   
+			    if (objLoading != null)   
+			    {   
+			        objLoading.style.display = "none";   
+			    }   
+			} 
+			window.onload = initPage();
+	</script>
+	<body>
+		<div id="LoadingBar">正在载入，请稍候……</div> 
+		<ul class="box">
+			<li>a1</li>
+			<li>a2</li>
+			<li>a3</li>
+			<li>a4</li>
+			<li class="item">a5</li>
+			<li>a1</li>
+			<li>a2</li>
+			<li>a3</li>
+			<li>a4</li>
+			<li>a5</li>
+		</ul>
+		
+	</body>
+</html>

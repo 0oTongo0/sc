@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		.main{
+			width: 500px;
+			border: 1px solid red;
+			margin: 50px auto;
+		}
+		.nav{
+			width: 500px;
+			border: 1px solid green;
+			margin: 10px auto;
+		}
+		ul{
+			list-style: none;
+			position: relative;
+		}
+		.row{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			position: relative !important;
+			text-align: center;
+			padding: 0 !important;
+			cursor: pointer;
+		}
+		.icon{
+			position: absolute;
+			width: 60px;
+			height: 1px;
+			bottom: 1px;
+			left: 1px;
+			background: red;
+		}
+	</style>
+	<body>
+		<div class="main">
+			<div class="row">
+				<div class="col-md-6">
+					他爸1
+					<div class="row">
+						<div class="col-md-6 col-xs-6">
+							儿子1号
+						</div>
+						<div class="col-md-6 col-xs-6">
+							儿子2号
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					他爸的兄弟
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-9">.col-xs-9</div>
+			  <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+			  <div class="col-md-7">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="row">
+				<li class="col-md-2">A1
+				</li>
+				<li class="col-md-2">A2
+				</li>
+				<li class="col-md-2">A3
+				</li>
+				<li class="col-md-2">A4
+				</li>
+				<li class="col-md-2">A5
+				</li>
+				<div class="icon"></div>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("ul li").hover(function(){
+				$(".icon").stop(true).animate({"left":$(this).position().left+"px"},100);
+			},function(){
+				$(".icon").stop(true).animate({left:"0px"},100)
+			})
+		})
+	</script>
+</html>

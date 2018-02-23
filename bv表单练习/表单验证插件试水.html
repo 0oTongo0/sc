@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<style type="text/css">
+			/*全局注释*/
+*{
+    padding: 0px;
+    marign:0px;
+}
+ul,li{
+    list-style: none;
+}
+/*表单部分*/
+.main{
+    margin-top:30px; 
+    background: #fff;
+}
+
+.main .box{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main .box ul li{
+    margin-top: 5px;
+}
+.main .box ul li input{
+    height: 20px;
+    width: 140px;
+}
+
+.main .box ul li input.radio,.main .box ul li input.check{
+    width: 13px;
+    height: 13px;
+}
+
+/*固定文本框大小*/
+.main .box ul li textarea{
+    resize: none;
+    width: 200px;
+    height: 100px;
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/*表单提交按钮*/
+.main .box ul li input.btn{
+    margin:5px; 
+    width: 40px;
+    height: 30px;
+}
+
+#dump{
+    width: 50%;
+    margin:10px auto;   
+}
+
+/*提示信息*/
+.Validform_checktip{
+    /*display: none;*/
+    font-size: 14px;
+    padding-left: 20px;
+} 
+.Validform_wrong{
+    font-size: 14px;
+    color: red;
+    padding-left: 20px;
+}
+		</style>
+    <div class="main">
+        <div class="box">
+            <form action="test.php" id="myForm">
+                <ul>
+                    <li>账号：
+                        <input type="text" name="number" ajaxurl="number.php" datatype="s5-16" errormsg="昵称至少5个字符,最多16个字符！">
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>密码：
+                        <input type="password" name="password" datatype="*6-15" errormsg="密码范围在6~15位之间！">
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>邮箱：
+                        <input type="email" name="email" datatype="e" errormsg="邮箱格式不正确！">
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>内容：
+                        <textarea name="content" id="" cols="30" rows="10" tip="请在这里输入您的意见。" errormsg="很感谢您花费宝贵时间给我们提供反馈，请填写有效内容！"  datatype="s" altercss="gray"></textarea>
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>性别：
+                        <input type="radio" class="radio" name="sex" value='1' datatype="*" nullmsg="请选择性别！" errormsg="请选择性别！" >男 
+                        <input type="radio" class="radio" name="sex" value='0' >女 
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>
+                        select：
+                        <select name="select" datatype="*" nullmsg="请选择！" errormsg="请选择！" >
+                            <option value="开启">开启</option>
+                            <option value="关闭">关闭</option>
+                        </select>
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li>爱好：
+                        <input type="checkbox" class="check" name="hopoy[]" value="足球" datatype="*" nullmsg="请选择爱好！" errormsg="请选择性别！" >足球
+                        <input type="checkbox" class="check" name="hopoy[]" value="篮球" >篮球
+                        <input type="checkbox" class="check" name="hopoy[]" value="排球" >排球
+                        <div class="Validform_checktip"></div>
+                    </li>
+                    <li><input type="submit" value="提交" class="btn"><input type="reset" value="重置" class="btn"></li>
+                </ul>
+                <div id="dump"></div>
+            </form>
+        </div>
+
+    </div>
+	</body>
+	<script type="text/javascript">
+		        $("#myForm").Validform({
+            tiptype:function(msg,o,cssctl){
+
+                if(!o.obj.is("form")){
+                    var objtip=o.obj.siblings(".Validform_checktip");
+                    cssctl(objtip,o.type);
+                    objtip.text(msg);
+                }else{
+                    var objtip=o.obj.find("#dump");
+                    cssctl(objtip,o.type);
+                    objtip.text(msg);
+                }
+
+            },
+            ajaxPost:true
+        });
+	</script>
+</html>

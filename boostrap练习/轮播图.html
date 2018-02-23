@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="banner">
+			<ul class="nav">
+				<li>
+					<a href=""><img src="img/br5.jpg"/></a>
+				</li>
+				<li>
+					<a href=""><img src="img/br6.jpg"/></a>
+				</li>
+				<li>
+					<a href=""><img src="img/b2.jpg"/></a>
+				</li>				
+			</ul>
+			<!--原点-->
+			<div class="yuand">
+			</div>
+			<!--左右-->
+			<span class="left hide">
+			</span>
+			<span class="right hide">
+			</span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var imgs = $(".nav img")
+			var len = imgs.length;
+			var left = $(".left")
+			var right = $(".right")
+			var index = 0;
+			var spanFather = $(".yuand");
+			var timer = null
+			for(var i=0; i<imgs.length; i++){
+				var span = $("<span class='yuan'></span>");
+				spanFather.append(span);
+			}
+			var spans = $(".yuand").children("span");
+			$(spans[0]).addClass("col");
+			function showimgs(idx){
+				$(".yuand span").eq(idx).addClass("col").siblings().removeClass("col");
+				$(".nav>li").stop(true,true).eq(idx).fadeIn().siblings().fadeOut();
+			}
+			$(".yuand span").mouseover(function(){
+				index = $(this).index();
+				$(this).addClass("col").siblings().removeClass("col");
+				$(".nav>li").eq(index).fadeIn().siblings().fadeOut();
+			});
+			right.click(function(){
+				index ++;
+				if(index > len-1){
+					index = 0;
+				}
+				showimgs(index);
+			});
+			left.click(function(){
+				index --;
+				if(index < 0){
+					index = len-1;
+				}
+				showimgs(index);
+			});			
+			$(".banner").hover(function(){
+				clearInterval(timer);
+				$(".left,.right").fadeIn();
+			},function(){
+				$(".left,.right").fadeOut();
+				timer = setInterval(function(){
+					index ++;
+					if(index == len){
+						index = 0;
+					}
+					showimgs(index);
+				}, 2000);			
+		}).trigger("mouseleave");
+	});
+	</script>
+</html>

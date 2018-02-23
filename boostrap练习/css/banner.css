@@ -1,0 +1,66 @@
+		.banner {
+			width: 1200px;
+			height: 400px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.nav {
+			width: 1200px;
+			overflow: hidden;
+			position: relative;
+			height: 400px;
+		}
+		
+		li {
+			position: absolute;
+			height: 400px;
+		}
+		
+		.yuand {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+		}
+		
+		.yuan {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: #fff;
+			cursor: pointer;
+			-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+			margin: 0 5px;
+		}
+		
+		.col {
+			width: 40px;
+			border-radius: 15px;
+			background-color: red;
+		}
+		
+		.hide {
+			display: block;
+			width: 64px;
+			height: 64px;
+			position: absolute;
+			top: 50%;
+			margin-top: -32px;
+			cursor: pointer;
+			display: block;
+		}
+		
+		.left {
+			left: 20px;
+			background: url(../img/zuo.png)no-repeat;
+			background-size: contain;
+		}
+		
+		.right {
+			right: 20px;
+			background: url(../img/右.png)no-repeat;
+			background-size: contain;
+		}
