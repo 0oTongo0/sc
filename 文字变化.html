@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<style type="text/css">
+		ul{
+			width: 1200px;
+			margin: 100px auto;
+			display: flex;
+		}
+		li{
+			flex: 1;
+		}
+		a{
+			color: #464646;
+			display: block;
+			text-align: center;
+			line-height: 35px;
+			overflow: hidden;
+		}
+		span{
+			display: block;
+			width: 80px;
+			position: relative;
+			background: #F4F4F4;
+			transition: all ease-in-out 0.3s; 
+		}
+		span:hover{
+			transform: translateY(-100%);
+		}
+		span:before{
+			content: attr(title);
+			color: #fff;
+			width: 100%;
+			position: absolute;
+			background: #46be8a;
+			left: 0;
+			transform: translateY(100%);
+		}
+		.wd{
+			background: pink;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			margin: 0 auto;
+			color: #fff;text-shadow: 0 0 5px rgba(0,0,0,0.5);
+			-webkit-transform-origin: bottom center;
+			transform-origin: bottom center;
+		}
+		.wd:hover{
+			-webkit-transform: rotate( -30deg);
+		}
+		.nide{
+			width: 200px;
+			background: plum;
+			text-align: center;
+			height: 200px;
+			line-height: 200px;
+			color: #fff;
+			transition: all ease 0.3s; 
+		/*	pointer-events: none;  禁止鼠标事件*/
+			
+		}
+		.nide:hover{
+			transform: perspective(900px) rotateX(45deg);
+		}
+		.tade{
+			width: 200px;
+			height: 200px;
+			background: palegreen;
+			margin: 0 auto;
+			-webkit-animation:dh 1s .2s ease both;
+		}
+		@keyframes dh{
+			0%{
+			    opacity: 0;
+			    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+			    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+			}
+			60%{
+				opacity: 1;
+			    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+			    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+			}
+		}
+		.aa{
+			width: 200px;
+			height: 200px;
+			background: palegoldenrod;
+			margin: 10px auto;	
+			animation: lightSpeedOut 1s 0.2s ease both;
+		}
+			@keyframes lightSpeedOut {
+			  0% {
+			    opacity: 1;
+			  }
+			
+			  100% {
+			    transform: translate3d(100%, 0, 0) skewX(30deg);
+			    opacity: 0;
+			  }
+			}
+		
+		.bb{
+			width: 300px;
+			height: 200px;
+			background: brown;
+			animation: bb 2s 0.2s ease;
+		}	
+		@keyframes bb{
+			from{
+				opacity: 0;
+				transform: scale3d(.3,.3,.3);
+			}
+			50%{
+				opacity: 1;
+			}
+		}	
+	</style>
+	<body>
+		<ul>
+			<li>
+				<a href="">
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+			<li>
+				<a href="" >
+					<span title="我的我的">我的我的</span>
+				</a>
+			</li>
+		</ul>
+		<div class="wd">
+			哥就是摇摆
+		</div>
+		<div class="nide">
+			
+		</div>
+		<div class="tade">
+			
+		</div>
+		<div class="aa">
+			
+		</div>
+		<div class="bb">
+			
+		</div>
+	</body>
+</html>
